@@ -1,0 +1,131 @@
+@use 'global' as *;
+
+.p-top-sightseeing {
+	padding: myrem(80) myrem(30);
+	background-color: #F7F8F5;
+
+	@include mq('md') {
+		padding: myrem(100) myrem(8);
+	}
+}
+
+.p-top-sightseeing__title {
+	font-weight: $Medium;
+	font-size: myrem(28);
+	line-height: 1;
+	color: $head-color;
+
+	@include mq('md') {
+		text-align: center;
+		font-weight: $Regular;
+		font-size: myrem(40);
+		line-height: calc(48 / 40);
+	}
+}
+
+.p-top-sightseeing__lists {
+	margin-top: myrem(40);
+	max-width: myrem(500);
+	margin-inline: auto;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: myrem(20);
+
+	@include mq('md') {
+		margin-top: myrem(60);
+		max-width: initial;
+		grid-template-columns: repeat(4,1fr);
+		gap: myrem(8);
+	}
+}
+
+.p-top-sightseeing__list {
+	position: relative;
+	padding-top: myrem(80);
+	padding-bottom: myrem(40);
+	padding-left: myrem(37);
+	padding-right: myrem(38);
+	z-index: 1;
+
+	@include mq('md') {
+		padding-top: myrem(281);
+		padding-left: myrem(19);
+		padding-right: myrem(19);
+	}
+}
+
+.p-top-sightseeing__list::before {
+	content: "";
+	position: absolute;
+	background: url("../images/sightseeing-img1-sp.jpg") no-repeat center center / cover;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+
+	@include mq('md') {
+		background: url("../images/sightseeing-img1.jpg") no-repeat center center / cover;
+	}
+}
+
+.p-top-sightseeing__list--2::before {
+	background: url("../images/sightseeing-img2-sp.jpg") no-repeat center center / cover;
+
+	@include mq('md') {
+		background: url("../images/sightseeing-img2.jpg") no-repeat center center / cover;
+	}
+}
+
+.p-top-sightseeing__list--3::before {
+	background: url("../images/sightseeing-img3-sp.jpg") no-repeat center center / cover;
+
+	@include mq('md') {
+		background: url("../images/sightseeing-img3.jpg") no-repeat center center / cover;
+	}
+}
+
+.p-top-sightseeing__list--4::before {
+	background: url("../images/sightseeing-img4-sp.jpg") no-repeat center center / cover;
+
+	@include mq('md') {
+		background: url("../images/sightseeing-img4.jpg") no-repeat center center / cover;
+	}
+}
+
+.p-top-sightseeing__list-title {
+	font-weight: $Medium;
+	font-size: myrem(24);
+	line-height: calc(28 / 24);
+	letter-spacing: 0.1em;
+	color: $white;
+	text-align: center;
+
+	@include mq('md') {
+		font-size: myrem(32);
+		line-height: calc(38 / 32);
+	}
+}
+
+.p-top-sightseeing__list-text {
+	margin-top: myrem(183);
+	font-weight: $Regular;
+	font-size: myrem(15);
+	line-height: calc(27 / 15);
+	color: $white;
+
+	@include mq('md') {
+		margin-top: myrem(160);
+		max-width: myrem(302);
+		margin-inline: auto;
+	}
+}
+
+.p-top-sightseeing__btn {
+	margin-top: myrem(32);
+	text-align: center;
+}
+
+.p-top-sightseeing__btn a {
+	opacity: 1;
+}

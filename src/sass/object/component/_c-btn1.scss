@@ -1,0 +1,48 @@
+@use 'global' as *;
+
+.c-btn1 {
+	min-width: myrem(104);
+	display: inline-block;
+	font-weight: $Regular;
+	font-size: myrem(15);
+	letter-spacing: 0.01em;
+	line-height: calc(18 / 15);
+	color: $head-color;
+	position: relative;
+	padding-right: myrem(41);
+	padding-bottom: myrem(12);
+}
+.c-btn1:before {
+	content: "";
+	position: absolute;
+	background-color: $black;
+	width: 100%;
+	height: 1px;
+	bottom: 0;
+	left: 0;
+	transition: .3s;
+}
+
+.c-btn1::after {
+	content: "";
+	position: absolute;
+	background: url("../images/arrow.png") no-repeat center center / contain;
+	width: myrem(23);
+	height: myrem(4);
+	top	: myrem(7);
+	right: 0;
+	transition: .3s;
+}
+
+@media (hover: hover) {
+	.c-btn1:hover {
+
+		&::before {
+			width: 0%;
+		}
+		
+		&::after {
+			transform: translateX(5px);
+		}
+	}
+}

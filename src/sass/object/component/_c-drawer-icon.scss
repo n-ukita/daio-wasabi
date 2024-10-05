@@ -1,0 +1,49 @@
+@use 'global' as *;
+
+.c-drawer-icon {
+	margin-left: auto;
+  padding: myrem(12) myrem(10);
+  position: relative;
+  z-index: 1000;
+
+	@include mq('md') {
+    display: none;
+  }
+}
+
+.c-drawer-icon__bars {
+	width: myrem(41);
+  height: myrem(4);
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.c-drawer-icon__bar {
+	width: myrem(41);
+  height: myrem(1);
+  background-color: $black;
+  transition: .5s;
+}
+
+.c-drawer-icon__bar--color {
+  background-color: $black;
+
+}
+
+.c-drawer-icon__bar.change-color {
+  background-color: $black;
+}
+
+.c-drawer-icon__bar.is-active:first-child {
+  
+  transform: translateY(2px) rotate(15deg);
+  background-color: $black;
+}
+
+.c-drawer-icon__bar.is-active:nth-child(2) {
+  transform: translateY(-1px) rotate(-15deg);
+  background-color: $black;
+}

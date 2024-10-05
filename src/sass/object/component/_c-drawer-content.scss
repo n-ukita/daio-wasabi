@@ -1,0 +1,122 @@
+@use 'global' as *;
+
+.c-drawer-content {
+	padding-top: myrem(88);
+	background-color: #F7F8F5;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+	overflow-y: scroll;
+
+/*   opacity: 0;
+  visibility: hidden;
+  clip-path: inset(0% 0% 0% 100%); 
+ */
+  @include mq('md') {
+    display: none;
+  }
+}
+
+.c-drawer-content__lists {
+	padding-left: myrem(14);
+	padding-right: myrem(14);
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap:myrem(18) myrem(47);
+}
+
+.c-drawer-content__list {
+	font-weight: $Medium;
+	font-size: myrem(12);
+	line-height: calc(17/ 12);
+}
+
+.c-drawer-content__list a {
+	opacity: 1;
+}
+
+.c-drawer-content__tel-wrapper {
+	margin-top: myrem(40);
+
+}
+
+.c-drawer-content__tel-box {
+	padding: myrem(19) myrem(40);
+	border: 1px solid rgba($black, $alpha: 0.5);
+	text-align: center;
+
+}
+
+.c-drawer-content__tel-box + .c-drawer-content__tel-box {
+	margin-top: myrem(16);
+}
+
+.c-drawer-content__tel-text {
+	font-weight: $Regular;
+	font-size: myrem(14);
+	line-height: 1;
+	letter-spacing: 0.05em;
+}
+
+.c-drawer-content__tel {
+	margin-top: myrem(10);
+	font-weight: $Regular;
+	font-size: myrem(20);
+	line-height: 1;
+	letter-spacing: 0.05em;
+}
+
+.c-drawer-content__tel-url {
+	margin-top: myrem(10);
+	font-weight: $Medium;
+	font-size: myrem(14);
+	line-height: 1;
+	letter-spacing: 0.05em;
+}
+
+.c-drawer-content__bottom-wrapper {
+	margin-top: myrem(32);
+}
+
+.c-drawer-content__bottom-menu {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap:myrem(12) myrem(20);
+
+}
+
+.c-drawer-content__bottom-menu-item a {
+	opacity: 1;
+	font-weight: $Regular;
+	font-size: myrem(13);
+	line-height: calc(18 / 13);
+	display: inline-block;
+	position: relative;
+}
+
+.c-drawer-content__bottom-box {
+	text-align: center;
+}
+
+.c-drawer-content__bottom-sns {
+	margin-top: myrem(20);
+}
+
+.c-drawer-content__bottom-img {
+	display: inline-block;
+}
+
+.c-drawer-content__bottom-img + .c-drawer-content__bottom-img {
+	margin-left: myrem(16);
+}
+
+.c-drawer-content__bottom-img img {
+	width: myrem(28);
+	height: myrem(28);
+
+}
+

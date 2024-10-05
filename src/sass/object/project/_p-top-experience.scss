@@ -1,0 +1,133 @@
+@use 'global' as *;
+
+.p-top-experience {
+	padding-top: myrem(80);
+	position: relative;
+	padding-left: myrem(30);
+	padding-right: myrem(30);
+
+	@include mq('md') {
+		padding-top: myrem(116);
+		padding-right: initial;
+		padding-left: initial;
+		padding-bottom: myrem(100);
+	}
+}
+
+.p-top-experience::before {
+	content: "";
+	position: absolute;
+	background-color: #F7F8F5;
+	width: 100%;
+	height: 93%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.p-top-experience__wrapper {
+	@include mq('md') {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: start;
+	}
+}
+
+.p-top-experience__content {
+	position: relative;
+
+	@include mq('md') {
+		max-width: myrem(383);
+		width: 100%;
+		margin-left: myrem(150);
+	}
+}
+
+.p-top-experience__title {
+	font-weight: $Medium;
+	font-size: myrem(28);
+	color: $head-color;
+	line-height: 1;
+
+	@include mq('md') {
+		font-size: myrem(40);
+		font-weight: $Regular;
+		line-height: calc(48 / 40);
+	}
+}
+
+.p-top-experience__text {
+	margin-top: myrem(40);
+	font-weight: $Regular;
+	font-size: myrem(15);
+	line-height: calc(27 / 15);
+	letter-spacing: 0.02em;
+
+	@include mq('md') {
+		line-height: calc(28 / 15);
+	}
+}
+
+.p-top-experience__btn {
+	margin-top: myrem(32);
+
+	@include mq('md') {
+		margin-top: myrem(61);
+	}
+}
+
+.p-top-experience__btn a {
+	opacity: 1;
+}
+
+.p-top-experience__img1 {
+	position: absolute;
+	max-width: myrem(160);
+	bottom: myrem(-80);
+	right: myrem(-15);
+
+	@include mq('md') {
+		max-width: myrem(340);
+		bottom: myrem(-150);
+		right: myrem(-150);
+	
+	}
+}
+
+.p-top-experience__img1 img {
+	aspect-ratio: 160 / 104;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+
+	@include mq('md') {
+		aspect-ratio: 340 / 220;
+	}
+}
+
+.p-top-experience__img2 {
+	margin-top: myrem(124);
+	max-width: myrem(225);
+
+	@include mq('md') {
+		margin-top: myrem(-190);
+		max-width: initial;
+		width: 44.28%;
+		flex-shrink: 0;
+		max-height: myrem(660);
+	}
+}
+
+.p-top-experience__img2 img {
+	aspect-ratio: 225 / 265;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+
+	@include mq('md') {
+		aspect-ratio: 620 / 660;
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+}

@@ -1,0 +1,108 @@
+@use 'global' as *;
+
+.p-top-sponsor {
+	padding-top: myrem(80);
+	padding-bottom: myrem(80);
+
+	@include mq('md') {
+		padding-top: myrem(100);
+		padding-bottom: myrem(100);
+	}
+}
+
+.p-top-sponsor__title {
+	position: relative;
+	font-weight: $Medium;
+	font-size: myrem(28);
+	line-height: 1;
+	color: $head-color;
+	padding-top: myrem(32);
+
+	@include mq('md') {
+		padding-top: myrem(34);
+		font-weight: $Regular;
+		font-size: myrem(40);
+		line-height: calc(48 / 40);
+	}
+}
+
+.p-top-sponsor__title::before {
+	content: attr(data-en);
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-weight: $Medium;
+	font-size: myrem(16);
+	line-height: 1;
+	letter-spacing: 0.2em;
+	color: $black;
+
+	@include mq('md') {
+		font-size: myrem(18);
+	}
+}
+
+.p-top-sponsor__wrapper {
+	margin-top: myrem(40);
+	max-width: myrem(500);
+	margin-inline: auto;
+
+	@include mq('md') {
+		margin-top: myrem(70);
+		max-width: initial;
+		margin-inline: initial;
+		display: flex;
+	}
+}
+
+.p-top-sponsor__img {
+	@include mq('md') {
+		flex: 0 0 myrem(669);
+	}
+}
+
+.p-top-sponsor__img img {
+	aspect-ratio: 315 / 176;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+
+	@include mq('md') {
+		aspect-ratio: 669 / 376;
+	}
+}
+
+.p-top-sponsor__body {
+	margin-top: myrem(32);
+
+	@include mq('md') {
+		margin-top: initial;
+		max-width: myrem(300);
+		margin-left: myrem(100);
+	}
+}
+
+.p-top-sponsor__text {
+	font-weight: $Regular;
+	font-size: myrem(15);
+	line-height: calc(27 / 15);
+	letter-spacing: 0.02em;
+
+	@include mq('md') {
+		line-height: calc(30 / 15);
+	}
+}
+
+.p-top-sponsor__btn {
+	margin-top: myrem(32);
+	text-align: right;
+
+	@include mq('md') {
+		margin-top: myrem(81);
+		text-align: left;
+	}
+}
+
+.p-top-sponsor__btn a {
+	opacity: 1;
+}

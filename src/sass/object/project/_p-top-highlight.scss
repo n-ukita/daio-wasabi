@@ -1,0 +1,51 @@
+@use 'global' as *;
+
+.p-top-highlight {
+	padding-top: myrem(100);
+	padding-bottom: myrem(100);
+	border-bottom: 1px solid rgba($color: #CCC, $alpha: 0.5);
+
+	@include mq('md') {
+		padding-top: myrem(150);
+	}
+}
+
+.p-top-highlight__title-box {
+	@include mq('md') {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.p-top-highlight__title {
+	font-weight: $Medium;
+	font-size: myrem(28);
+	color: $head-color;
+
+	@include mq('md') {
+		font-size: myrem(40);
+		font-weight: $Regular;
+		line-height: calc(48 / 40);
+	}
+}
+
+.p-top-highlight__cards {
+	margin-top: myrem(48);
+
+	@include mq('md') {
+		margin-top: myrem(61);
+	}
+}
+
+.p-top-highlight__btn {
+	margin-top: myrem(56);
+	text-align: right;
+
+	@include mq('md') {
+		margin-top: myrem(20);
+	}
+}
+
+.p-top-highlight__btn a {
+	opacity: 1;
+}

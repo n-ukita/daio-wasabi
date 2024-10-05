@@ -1,0 +1,51 @@
+@use 'global' as *;
+
+.p-top-event {
+	padding-top: myrem(100);
+	padding-bottom: myrem(80);
+
+	@include mq('md') {
+		padding-bottom: myrem(234);
+	}
+}
+
+.p-top-event__title-box {
+	@include mq('md') {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.p-top-event__title {
+	font-weight: $Medium;
+	font-size: myrem(28);
+	color: $head-color;
+
+	@include mq('md') {
+		font-size: myrem(40);
+		font-weight: $Regular;
+		line-height: calc(48 / 40);
+	}
+}
+
+.p-top-event__cards {
+	margin-top: myrem(48);
+
+	@include mq('md') {
+		margin-top: myrem(61);
+	}
+}
+
+.p-top-event__btn {
+	margin-top: myrem(56);
+	text-align: right;
+
+	@include mq('md') {
+		margin-top: myrem(20);
+	}
+}
+
+.p-top-event__btn a {
+	opacity: 1;
+}
+

@@ -1,0 +1,9 @@
+@use 'global' as *;
+
+#weather-wrapper {
+	max-width: myrem(1000) !important;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-inline: auto;
+}

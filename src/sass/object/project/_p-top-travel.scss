@@ -1,0 +1,129 @@
+@use 'global' as *;
+
+.p-top-travel {
+	position: relative;
+	padding: myrem(80) myrem(30) myrem(100);
+
+	@include mq('md') {
+		padding-top: myrem(116);
+		padding-right: initial;
+		padding-left: initial;
+		padding-bottom: myrem(205);
+	}
+}
+
+.p-top-travel::before {
+	content: "";
+	position: absolute;
+	background-color: #F7F8F5;
+	width: 100%;
+	height: 81%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+
+	@include mq('md') {
+		width: 94%;
+	}
+}
+
+.p-top-travel__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@include mq('md') {
+		flex-direction: row;
+		justify-content: end;
+		align-items: initial;
+	}
+}
+
+.p-top-travel__content {
+}
+
+.p-top-travel__title {
+	font-weight: $Medium;
+	font-size: myrem(28);
+	line-height: calc(42 / 28);
+	color: $head-color;
+
+	@include mq('md') {
+		font-weight: $Regular;
+		font-size: myrem(40);
+		line-height: calc(48 / 40);
+	}
+}
+
+.p-top-travel__text {
+	margin-top: myrem(40);
+	font-weight: $Regular;
+	font-size: myrem(15);
+	line-height: calc(27 / 15);
+	letter-spacing: 0.02em;
+
+	@include mq('md') {
+		line-height: calc(25 / 15);
+		max-width: myrem(432);
+	}
+}
+
+.p-top-travel__btn {
+	margin-top: myrem(32);
+	text-align: right;
+
+	@include mq('md') {
+		margin-top: myrem(73);
+		text-align: left;
+	}
+}
+
+.p-top-travel__btn a {
+	opacity: 1;
+} 
+
+.p-top-travel__img {
+	margin-top: myrem(124);
+	max-width: myrem(225);
+	margin-left: myrem(6);
+
+	@include mq('md') {
+		max-width: initial;
+		margin-top: myrem(-180);
+		margin-left: myrem(200);
+		width: calc(688 / 1400 * 100%);
+		max-height: myrem(660);
+	}
+}
+
+.p-top-travel__img img {
+	aspect-ratio: 225 / 265;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.p-top-travel__img2 {
+	position: absolute;
+	top: 47%;
+	left: myrem(15);
+	max-width: myrem(160);
+
+	@include mq('md') {
+		max-width: myrem(340);
+		top: 65%;
+		left: 10%;
+	}
+}
+
+.p-top-travel__img2 img {
+	aspect-ratio: 160 / 104;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+
+	@include mq('md') {
+		aspect-ratio: 340 / 220;
+	}
+}
+

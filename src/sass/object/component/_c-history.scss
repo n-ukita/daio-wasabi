@@ -1,0 +1,208 @@
+@use 'global' as *;
+
+.c-history {
+}
+
+.c-history__scroll {
+	text-align: right;
+	padding-right: myrem(30);
+}
+
+.c-history__scroll span {
+	position: relative;
+	display: inline-block;
+	font-weight: $Regular;
+	font-size: myrem(14);
+	letter-spacing: 0.01em;
+	padding-right: myrem(70);
+
+	@include mq('md') {
+		font-size: myrem(15);
+		padding-right: myrem(90);
+	}
+}
+
+.c-history__scroll span::before {
+	content: "";
+	position: absolute;
+	background-color: $black;
+	width: myrem(60);
+	height: myrem(1);
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+
+	@include mq('md') {
+		width: myrem(82);
+	}
+}
+
+.c-history__table {
+	margin-top: myrem(16);
+	width: 100%;
+	padding-left: myrem(30);
+	padding-bottom: myrem(20);
+	overflow-x: scroll;
+
+	@include mq('md') {
+		margin-top: myrem(60);
+		padding-left: myrem(148);
+	}
+}
+
+.c-history__table::-webkit-scrollbar {
+	display: none;
+}
+
+.c-history__table-items {
+	display: flex;
+	padding-top: myrem(50);
+}
+
+.c-history__table-item {
+	padding-top: myrem(143);
+	padding-left: myrem(40);
+	border-top: 1px solid $black;
+	position: relative;
+}
+
+.c-history__year-number {
+	position: relative;
+}
+
+.c-history__year-number::before {
+	content: attr(data-year);
+	position: absolute;
+	font-weight: $Regular;
+	font-size: myrem(16);
+	line-height: calc(19 / 16);
+	letter-spacing: 0.1em;
+	top: myrem(-50);
+	left: myrem(30);
+	border: 1px solid rgba($black, $alpha: 0.5);
+	border-radius: 50%;
+	padding: myrem(4) myrem(16);
+}
+
+
+.c-history__table-year {
+	display: inline-block;
+	position: relative;
+	font-weight: $Regular;
+	font-size: myrem(20);
+	line-height: calc(24 / 20);
+	letter-spacing: 0.1em;
+}
+
+.c-history__table-year::before {
+	content: "";
+	position: absolute;
+	background-color: $black;
+	border-radius: 50%;
+	width: myrem(5);
+	height: myrem(5);
+	top: myrem(-6);
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.c-history__table-year::after {
+	content: "";
+	position: absolute;
+	background-color: $black;
+	width: myrem(1);
+	height: myrem(143);
+	top: myrem(-144);
+	left:50%;
+	transform: translateX(-50%);
+
+}
+
+
+.c-history__table-text {
+	margin-top: myrem(14);
+	width: myrem(163);
+	font-weight: $Regular;
+	font-size: myrem(14);
+	line-height: calc(21 / 14);
+}
+
+.c-history__table-text--mw {
+	width: myrem(197);
+}
+
+.c-history__wrapper {
+	margin-top: myrem(20);
+}
+
+.c-history__img1 {
+	text-align: right;
+	max-width: myrem(148);
+	margin-left: auto;
+	margin-right: myrem(19);
+
+	@include mq('md') {
+		margin-right: myrem(173);
+		max-width: initial;
+		width: 20.625%;
+	}
+}
+
+.c-history__img1 img {
+	aspect-ratio: 148 / 101;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+	@include mq('md') {
+		aspect-ratio: 297 / 203;
+	}
+}
+
+.c-history__img2 {
+	margin-top: myrem(-40);
+	max-width: myrem(165);
+
+	@include mq('md') {
+		margin-top: myrem(-80);
+		max-width: initial;
+		width: 23%;
+		margin-left: myrem(148);
+	}
+}
+
+.c-history__img2 img {
+	aspect-ratio: 165 / 122;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+	@include mq('md') {
+		aspect-ratio: 331 / 245;
+	}
+}
+
+.c-history__img3 {
+	margin-top: myrem(40);
+	max-width: myrem(224);
+	padding-left: myrem(10);
+	margin-inline: auto;
+
+	@include mq('md') {
+		max-width: initial;
+		width: 30.2%;
+		padding-left: myrem(50);
+	}
+}
+
+.c-history__img3 img {
+	aspect-ratio: 214 / 146;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+	@include mq('md') {
+		aspect-ratio: 385 / 263;
+	}
+}
+

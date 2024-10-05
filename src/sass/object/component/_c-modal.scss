@@ -1,0 +1,173 @@
+@use 'global' as *;
+
+.c-modal {
+}
+
+.c-modal__overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba($color: #000000, $alpha: 0.8);
+	width: 100%;
+	height: 100%;
+	z-index: 49;
+}
+
+.c-modal__window {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 500px;
+	z-index: 50;
+	width: 90%;
+
+	@include mq('md') {
+		width: 100%;
+		max-width: myrem(915);
+	}
+}
+
+.c-modal__content {
+	display: flex;
+	flex-direction: column;
+	background-color: $white;
+
+	@include mq('md') {
+		flex-direction: row;
+		align-items: center;
+	}
+}
+
+.c-modal__content + .c-modal__content {
+
+	@include mq('md') {
+		border-top: 1px solid rgba($color: #CCC, $alpha: 0.5);
+	}
+}
+
+.c-modal__content__head {
+	position: relative;
+	font-weight: $Medium;
+	font-size: myrem(15);
+	letter-spacing: 0.1em;
+	padding-left: myrem(40);
+	width: 100%;
+	padding-top: myrem(10);
+	padding-bottom: myrem(10);
+
+	@include mq('md') {
+		width: 30%;
+		padding-top: initial;
+		padding-bottom: initial;
+		padding-left: myrem(50);
+	}
+}
+
+.c-modal__content__head::before {
+	content: "";
+	position: absolute;
+	background: url('../images/icon-car.png') no-repeat center center / contain;
+	width: myrem(16);
+	height: myrem(16);
+	top: 50%;
+	transform: translateY(-50%);
+	left: myrem(15);
+
+	@include mq('md') {
+		left: myrem(25);
+	}
+}
+
+.c-modal__content__head--train::before {
+	background: url('../images/icon-train.png') no-repeat center center / contain;
+	width: myrem(20);
+	height: myrem(20);
+}
+
+.c-modal__content__head--bus::before {
+	background: url('../images/icon-bus.png') no-repeat center center / contain;
+	width: myrem(26);
+	height: myrem(26);
+	left: myrem(22);
+}
+
+.c-modal__content__text {
+	background-color: #F7F8F5;
+	font-weight: $Medium;
+	letter-spacing: 0.02em;
+	width: 100%;
+	padding: myrem(10) myrem(15);
+	font-size: myrem(14);
+	line-height: 1.5;
+
+	@include mq('md') {
+		width: 70%;
+		padding: myrem(15);
+		font-size: myrem(15);
+	}
+}
+
+.c-modal__content__text a {
+	opacity: 1;
+	pointer-events: auto;
+
+	@include mq('md') {
+		pointer-events: none;
+	}
+}
+
+.c-modal__content__text span {
+	font-weight: $Bold;
+}
+
+.c-modal__btn-wrapper {
+	text-align: center;
+}
+
+.c-modal__btn-wrapper button {
+	opacity: 1;
+	@include mq('md') {
+		cursor: pointer;
+	}
+}
+
+.c-modal__close-btn {
+	color: $white;
+	margin-top: myrem(40);
+	padding: myrem(10) myrem(20);
+}
+
+.c-modal__close-btn span {
+	display: inline-block;
+	padding-left: myrem(30);
+	font-size: myrem(15);
+	font-weight: $Medium;
+	letter-spacing: 0.02em;
+	position: relative;
+}
+
+.c-modal__close-btn span::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) rotate(45deg);
+	left: 0;
+	width: myrem(1);
+	height: myrem(35);
+	background-color: $white;
+}
+
+.c-modal__close-btn span::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) rotate(-45deg);
+	left: 0;
+	width: myrem(1);
+	height: myrem(35);
+	background-color: $white;
+}
+

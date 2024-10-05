@@ -1,0 +1,89 @@
+@use 'global' as *;
+
+.c-btn2 {
+	position: relative;
+	min-width: myrem(245);
+	display: inline-block;
+	padding: myrem(16) myrem(5) myrem(17);
+	font-weight: $Medium;
+	font-size: myrem(15);
+	letter-spacing: 0.1em;
+	line-height: calc(27 / 15);
+	border: 1px solid rgba($color: #000000, $alpha: 0.5);
+	text-align: center;
+	transition: .5s ease-in-out;
+
+	@include mq('md') {
+		min-width: myrem(600);
+		padding: myrem(42) myrem(10) myrem(43);
+	}
+}
+
+.c-btn2__arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: myrem(-30);
+	width: myrem(54);
+	height: myrem(8);
+	overflow: hidden;
+	--hover-x: -50%;
+	--hover-x1: -200%;
+	@include mq('md') {
+		width: myrem(110);
+		right: myrem(-60);
+	}
+}
+
+.c-btn2__arrow span {
+	display: inline-block;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	width: myrem(54);
+	height: myrem(20);
+	/* overflow: hidden; */
+
+	@include mq('md') {
+		width: myrem(110);
+	}
+}
+
+.c-btn2__arrow span::before {
+	content: "";
+	position: absolute;
+	background: url("../images/arrow-long.png") no-repeat center center / contain;
+	width: myrem(54);
+	height: myrem(8);
+	top: 50%;
+	left: 50%;
+	transform: translate( var(--hover-x) ,-50%);
+	transition: .3s;
+
+	@include mq('md') {
+		width: myrem(110);
+	}
+}
+
+.c-btn2__arrow span::after {
+	content: "";
+	position: absolute;
+	background: url("../images/arrow-long.png") no-repeat center center / contain;
+	width: myrem(54);
+	height: myrem(8);
+	top: 50%;
+	left: 50%;
+	transform: translate( var(--hover-x1) ,-50%);
+	transition: .3s;
+
+	@include mq('md') {
+		width: myrem(110);
+	}
+}
+
+@media (hover: hover) {
+	.c-btn2:hover {
+		border-color: rgba($color: #000000, $alpha: 1.0);
+	}
+}

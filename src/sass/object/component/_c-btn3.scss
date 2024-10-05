@@ -1,0 +1,38 @@
+@use 'global' as *;
+
+.c-btn3 {
+	display: inline-block;
+	position: relative;
+	min-width: myrem(134);
+	color: $white;
+	font-weight: $SemiBold;
+	font-size: myrem(12);
+	line-height: calc(17/ 12);
+	padding: myrem(11) myrem(10);
+	border: 1px solid $white;
+
+	@include mq('md') {
+		min-width: myrem(178);
+		font-size: myrem(15);
+		line-height: calc(21/ 15);
+		padding: myrem(10) myrem(16);
+	}
+}
+
+.c-btn3::before {
+	content: "";
+	position: absolute;
+	background: url("../images/icon-cart.svg") no-repeat center center / contain;
+	width: myrem(14);
+	height: myrem(14);
+	top: 50%;
+	transform: translateY(-50%);
+	left: myrem(8);
+	filter: invert(99%) sepia(1%) saturate(0%) hue-rotate(152deg) brightness(110%) contrast(101%);
+
+	@include mq('md') {
+		width: myrem(18);
+		height: myrem(18);	
+		left: myrem(16);
+	}
+}

@@ -1,0 +1,87 @@
+@use 'global' as *;
+
+.c-card1 {
+	max-width: myrem(500);
+	margin-inline: auto;
+
+	@include mq('md') {
+		max-width: initial;
+		display: grid;
+		grid-template-columns: repeat(4,1fr);
+		gap: myrem(40);
+	}
+}
+
+.c-card1__list {
+}
+
+.c-card1__list + .c-card1__list {
+	margin-top: myrem(32);
+
+	@include mq('md') {
+		margin-top: initial;
+	}
+}
+
+.c-card1__list-title {
+	writing-mode: vertical-lr;
+	font-weight: $Medium;
+	font-size: myrem(18);
+	padding: myrem(16) myrem(14);
+	border: 1px solid $black;
+	letter-spacing: 0.2em;
+	margin-left: myrem(34);
+	background-color: $white;
+	line-height: 1;
+
+	@include mq('md') {
+		margin-left: myrem(24);
+	}
+}
+
+.c-card1__list-img {
+	margin-top: myrem(-80);
+	position: relative;
+	z-index: -1;
+}
+
+.c-card1__list-img--mt1 {
+	margin-top: myrem(-55);
+}
+
+.c-card1__list-img--mt2 {
+	margin-top: myrem(-140);
+}
+
+.c-card1__list-img--mt3 {
+	margin-top: myrem(-100);
+}
+
+.c-card1__list-img--mt4 {
+	margin-top: myrem(-210);
+}
+
+.c-card1__list-img img {
+	aspect-ratio: 315 / 340;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+
+	@include mq('md') {
+		aspect-ratio: 280 / 340;
+	}
+}
+
+.c-card1__list-text {
+	margin-top: myrem(16);
+	font-weight: $Regular;
+	font-size: myrem(15);
+	line-height: calc(24 / 15);
+	letter-spacing: 0.02em;
+
+	@include mq('md') {
+		margin-top: myrem(26);
+		line-height: calc(25 / 15);
+	}
+}
+

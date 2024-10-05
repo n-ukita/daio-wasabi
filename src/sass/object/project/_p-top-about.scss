@@ -1,0 +1,129 @@
+@use 'global' as *;
+
+.p-top-about {
+	padding-bottom: myrem(80);
+	height: auto;
+	overflow: hidden;
+}
+
+.p-top-about__inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	@include mq('md') {
+		height: 100vh;
+		/* overflow: hidden; */
+	}
+}
+/*
+.p-top-about__inner::before {
+	content: "";
+	position: absolute;
+	background-color: rgba($color: #000000, $alpha: 0.7);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+
+}
+*/
+.p-top-about__bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -2;
+
+}
+
+.p-top-about__bg img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	top: 50%;
+	left: 50%;
+	z-index: -1;
+	transform: translate(-50%,-50%);
+
+	
+}
+
+.p-top-about__wrapper {
+	padding-top: myrem(100);
+	padding-bottom: myrem(75);
+
+	@include mq('md') {
+		padding-top: myrem(160);
+		padding-left: myrem(75);
+		padding-right: myrem(75);
+		display: flex;
+	}
+}
+
+.p-top-about__title {
+	position: relative;
+	font-weight: $Medium;
+	font-size: myrem(28);
+	color: $white;
+	padding-top: myrem(32);
+
+	@include mq('md') {
+		font-size: myrem(50);
+		padding-top: myrem(60);
+	}
+}
+
+.p-top-about__title::before {
+	content: attr(data-en);
+	position: absolute;
+	font-weight: $Medium;
+	font-size: myrem(16);
+	letter-spacing: 0.2em;
+	top: 0;
+	left: 0;
+
+	@include mq('md') {
+		font-size: myrem(18);
+	}
+}
+
+.p-top-about__text {
+	margin-top: myrem(80);
+	font-weight: $Regular;
+	font-size: myrem(15);
+	line-height: calc(30 / 15);
+	letter-spacing: 0.05em;
+	color: $white;
+
+	@include mq('md') {
+		max-width: myrem(378);
+		margin-left: myrem(272);
+		line-height: calc(36 / 15);
+	}
+}
+
+.p-top-about__text--grace {
+	@include mq('md') {
+		max-width: myrem(432);
+		margin-left: myrem(222);
+	}
+}
+
+.p-top-about__btn {
+	margin-top: myrem(40);
+	margin-left: myrem(17);
+
+	@include mq('md') {
+		margin-top: myrem(97);
+		margin-left: initial;
+		text-align: center;
+	}
+}
+
+.p-top-about__btn a {
+	opacity: 1;
+}

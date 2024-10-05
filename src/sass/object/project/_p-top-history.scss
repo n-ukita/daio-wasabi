@@ -1,0 +1,154 @@
+@use 'global' as *;
+
+.p-top-history {
+	position: relative;
+	padding-top: myrem(50);
+	overflow: hidden;
+}
+
+.p-top-history::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 97%;
+	background-color: #F7F8F5;
+	z-index: -1;
+}
+
+
+.p-top-history__wrapper {
+	padding-bottom: myrem(40);
+
+	@include mq('md') {
+		display: flex;
+		flex-direction: row-reverse;
+		gap: myrem(172);
+		padding-bottom: myrem(49);
+	}
+}
+
+.p-top-history__img {
+	padding-left: myrem(83);
+	padding-right: myrem(15);
+
+	@include mq('md') {
+		width: 54%;
+		flex-shrink: 0;
+		padding-right: myrem(40);
+		padding-left: initial;
+		position: relative;
+		z-index: 2;
+		max-height: myrem(477);
+	}
+}
+
+.p-top-history__img img {
+	aspect-ratio: 277 / 179;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+
+	@include mq('md') {
+		aspect-ratio: 738 / 477;
+	}
+}
+
+.p-top-history__contents {
+	margin-top: myrem(40);
+	padding-left: myrem(30);
+	padding-right: myrem(30);
+	position: relative;
+	
+
+	@include mq('md') {
+		padding-left: myrem(80);
+		padding-right: myrem(30);
+	}
+}
+
+.p-top-history__title {
+	font-weight: $Medium;
+	font-size: myrem(28);
+	color: $head-color;
+	padding-top: myrem(32);
+	position: relative;
+	z-index: 1;
+
+	@include mq('md') {
+		font-size: myrem(40);
+		padding-top: myrem(30);
+	}
+}
+
+.p-top-history__title::before {
+	content: attr(data-en);
+	position: absolute;
+	font-size: myrem(16);
+	font-weight: $Medium;
+	letter-spacing: 0.2em;
+	top: 0;
+	left: 0;
+
+	@include mq('md') {
+		font-size: myrem(18);
+	}
+}
+
+.p-top-history__title::after {
+	content: "DAIO'S HISTORY";
+	position: absolute;
+	font-weight: $Medium;
+	font-size: myrem(120);
+	white-space: nowrap;
+	color: rgba($color: #000000, $alpha: 0.05);
+	line-height: 1;
+	z-index: -1;
+	top: myrem(-40);
+	left: myrem(-30);
+
+	@include mq('md') {
+		font-size: myrem(150);
+		top: myrem(-50);
+		left: myrem(-80);
+	}
+}
+
+.p-top-history__lead {
+	margin-top: myrem(32);
+	font-weight: $Medium;
+	font-size: myrem(20);
+	line-height: calc(36 / 20);
+
+	@include mq('md') {
+		margin-top: myrem(80);
+		font-size: myrem(26);
+		line-height: calc(46 / 26);
+		max-width: myrem(352);
+	}
+}
+
+.p-top-history__text {
+	margin-top: myrem(32);
+	font-size: myrem(15);
+	font-weight: $Regular;
+	line-height: calc(27 / 15);
+	letter-spacing: 0.02em;
+
+	@include mq('md') {
+		margin-top: myrem(40);
+		font-size: myrem(16);
+		line-height: calc(32 / 16);
+	}
+
+}
+
+.p-top-history__btn {
+	margin-top: myrem(32);
+	text-align: left;
+}
+
+.p-top-history__btn a {
+	opacity: 1;
+}

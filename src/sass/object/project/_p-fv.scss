@@ -1,0 +1,156 @@
+@use 'global' as *;
+
+.p-fv {
+	width: 100%;
+	overflow: hidden;
+	height: 100svh;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: myrem(170);
+	padding-bottom: myrem(20);
+
+	@include mq('md') {
+		padding-top: initial;
+		padding-bottom: initial;
+	}
+}
+
+.p-fv__img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.p-fv__img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.p-fv__title {
+	width: 100%;
+	padding-left: myrem(19);
+	padding-right: myrem(20);
+
+	@include mq('md') {
+		width: 39.1%;
+	}
+}
+
+.p-fv__title img {
+	aspect-ratio: 336 / 240;
+	object-fit: contain;
+	width: 100%;
+}
+
+.p-fv__lists {
+	margin-top: auto;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+
+	@include mq('md') {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 0;
+		margin-top: initial;
+		grid-template-columns: repeat(1,1fr);
+	}
+
+}
+
+.p-fv__list {
+	text-align: center;
+	padding-left: myrem(11);
+	padding-right: myrem(11);
+
+	@include mq('md') {
+		padding-top: myrem(10);
+		padding-bottom: myrem(14);
+	}
+}
+
+.p-fv__list-time {
+	font-weight: $Regular;
+	font-size: myrem(13);
+	line-height: calc(19 / 13);
+	color: $white;
+}
+
+.p-fv__text {
+	font-weight: $Regular;
+	font-size: myrem(13);
+	line-height: calc(19 / 13);
+	color: $white;
+
+	@include mq('md') {
+		font-size: myrem(14);
+		line-height: calc(20 / 14);
+	}
+}
+
+.p-fv__icon {
+	margin-top: myrem(8);
+	max-width: myrem(24);
+	width: 100%;
+	margin-inline: auto;
+
+}
+
+.p-fv__icon img {
+	aspect-ratio: 24 / 24;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.p-fv__bottom-text {
+	margin-top: myrem(8);
+	font-weight: $Regular;
+	font-size: myrem(13);
+	line-height: calc(19 / 13);
+	color: $white;
+
+	@include mq('md') {
+		font-size: myrem(14);
+		line-height: calc(20 / 14);
+	}
+}
+
+.p-fv__list:not(:first-child) {
+	border-left: 1px solid rgba($white, $alpha: 0.5);
+
+	@include mq('md') {
+		border-left: none;
+		border-top: 1px solid rgba($white, $alpha: 0.5);
+	}
+
+	.p-fv__text {
+		line-height: calc(38 / 13);
+	}
+}
+
+.p-fv__instagrum {
+	display: none;
+
+	@include mq('md') {
+		position: absolute;
+		display: inline-block;
+		width: myrem(60);
+		height: myrem(60);
+		bottom: myrem(10);
+		right: myrem(10);
+	}
+}
+
+.p-fv__instagrum img {
+	aspect-ratio: 60 / 60;
+	object-fit: contain;
+	width: 100%;
+}

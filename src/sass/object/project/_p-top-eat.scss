@@ -1,0 +1,142 @@
+@use 'global' as *;
+
+.p-top-eat {
+	padding-top: myrem(100);
+	padding-bottom: myrem(80);
+
+	@include mq('md') {
+		padding-top: myrem(146);
+		padding-bottom: myrem(234);
+	}
+}
+
+.p-top-eat__title {
+	font-weight: $Medium;
+	font-size: myrem(28);
+	line-height: calc(42 / 28);
+	color: $head-color;
+	margin-left: myrem(30);
+
+	@include mq('md') {
+		max-width: myrem(1240);
+		margin-inline: auto;
+		font-weight: $Regular;
+		font-size: myrem(40);
+		line-height: calc(48 / 40);
+	}
+}
+
+.p-top-eat__lists {
+	@include mq('md') {
+		margin-top: myrem(80);
+	}
+}
+
+.p-top-eat__list {
+	margin-top: myrem(48);
+
+	@include mq('md') {
+		margin-top: initial;
+		height: 100svh;
+		position: sticky;
+		top: 0;
+		/* margin-bottom: 20vh; */
+	}
+}
+
+.p-top-eat__list:last-child {
+	margin-bottom: initial;
+}
+
+
+.p-top-eat__list-wrapper {
+	@include mq('md') {
+		display: flex;
+		justify-content: center;
+		height: 100%;
+		border-top: 1px solid rgba($color: #CCC, $alpha: 0.5);
+		border-bottom: 1px solid rgba($color: #CCC, $alpha: 0.5);
+	}
+}
+
+.p-top-eat__img {
+	width: 100%;
+
+	@include mq('md') {
+		width: 49.3%;
+		height: 100%;
+	}
+}
+
+.p-top-eat__img img {
+	aspect-ratio: 375 / 330;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+
+	@include mq('md') {
+		aspect-ratio: 690 / 800;
+	}
+}
+
+.p-top-eat__body {
+	margin-top: myrem(24);
+	padding-left: myrem(30);
+	padding-right: myrem(30);
+	background-color: $white;
+
+	@include mq('md') {
+		margin-top: initial;
+		padding-top: myrem(200);
+		padding-left: myrem(86);
+		padding-right: myrem(24);
+	}
+}
+
+.p-top-eat__lead {
+	font-weight: $Regular;
+	font-size: myrem(18);
+	line-height: calc(21 / 18);
+
+	@include mq('md') {
+		font-size: myrem(20);
+		line-height: calc(24 / 20);
+	}
+}
+
+.p-top-eat__list-title {
+	margin-top: myrem(16);
+	font-weight: $Regular;
+	font-size: myrem(24);
+	line-height: calc(28 / 24);
+
+	@include mq('md') {
+		margin-top: myrem(24);
+		font-size: myrem(30);
+		line-height: calc(36 / 30);
+	}
+}
+
+.p-top-eat__text {
+	margin-top: myrem(32);
+	font-weight: $Regular;
+	font-size: myrem(15);
+	line-height: calc(27 / 15);
+	letter-spacing: 0.02em;
+
+	@include mq('md') {
+		margin-top: myrem(121);
+		font-weight: $Medium;
+		line-height: calc(33 / 15);
+		letter-spacing: 0.03em;
+		max-width: myrem(440);
+	}
+}
+
+.p-top-eat__btn {
+	margin-top: myrem(40);
+}
+
+.p-top-eat__btn a {
+	opacity: 1;
+}

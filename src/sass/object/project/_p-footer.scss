@@ -1,0 +1,374 @@
+@use 'global' as *;
+
+.p-footer {
+	padding-top: myrem(35);
+	padding-bottom: myrem(30);
+	background-color: #EEEEEE;
+
+	@include mq('md') {
+		padding-top: myrem(31);
+		padding-bottom: myrem(72);
+	}
+}
+
+.p-footer__top-wrapper {
+	padding-bottom: myrem(27);
+	border-bottom: 1px solid #CCC;
+	max-width: myrem(500);
+	width: 100%;
+	margin-inline: auto;
+
+	@include mq('md') {
+		max-width: initial;
+	}	
+}
+
+.p-footer__menu {
+	@include mq('md') {
+		display: grid;
+		grid-template-columns: repeat(7,1fr);
+		gap:myrem(6) myrem(4);
+	}
+}
+
+.p-footer__menu-item {
+}
+
+.p-footer__menu-item + .p-footer__menu-item {
+	margin-top: myrem(6);
+
+	@include mq('md') {
+		margin-top: initial;
+	}
+}
+
+.p-footer__menu-item a {
+	opacity: 1;
+	position: relative;
+	display: inline-block;
+	font-weight: $Medium;
+	font-size: myrem(14);
+	line-height: calc(20 / 14);
+	padding: myrem(5) myrem(10) myrem(5) 0;
+}
+
+.p-footer__menu-item a::before {
+	content: "";
+	position: absolute;
+	background-color: $black;
+	height: 1px;
+	width: 0%;
+	bottom: 0;
+	left: 0;
+	transition: .3s ease-in-out;
+}
+
+.p-footer__menu-item a:hover::before {
+
+	@include mq('md') {
+		width: 100%;
+	}
+}
+
+.p-footer__middle-wrapper {
+	padding-top: myrem(32);
+	padding-bottom: myrem(32);
+	border-bottom: 1px solid #CCC;
+	max-width: myrem(500);
+	width: 100%;
+	margin-inline: auto;
+
+	@include mq('md') {
+		padding-top: myrem(32);
+		padding-bottom: myrem(32);
+		max-width: initial;
+		display: grid;
+		grid-template-columns: repeat(4,auto);
+		gap: myrem(26);
+		align-items: center;
+	}
+}
+
+.p-footer__logo-box {
+}
+
+.p-footer__logo {
+	max-width: myrem(254);
+	width: 100%;
+	margin-inline: auto;
+
+	@include mq('md') {
+		max-width: myrem(296);
+	}
+}
+
+.p-footer__logo img {
+	aspect-ratio: 254 / 61;
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+
+	@include mq('md') {
+		aspect-ratio: 296 / 71;
+	}
+}
+
+.p-footer__days {
+	margin-top: myrem(16);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	@include mq('md') {
+		margin-top: myrem(24);
+	}
+}
+
+.p-footer__days-text {
+	font-weight: $Regular;
+	font-size: myrem(14);
+	line-height: calc(25 / 14);
+	letter-spacing: 0.05em;
+	margin-right: myrem(16);
+
+	@include mq('md') {
+		font-size: myrem(18);
+		line-height: calc(32 / 18);
+	}
+}
+
+.p-footer__days-time {
+	font-weight: $Regular;
+	font-size: myrem(14);
+	line-height: calc(25 / 14);
+	letter-spacing: 0.05em;
+	padding-left: myrem(16);
+	border-left: 1px solid rgba($black, $alpha: 0.5);
+
+	@include mq('md') {
+		font-size: myrem(16);
+		line-height: calc(28 / 16);
+	}
+}
+
+.p-footer__tel-box {
+	margin-top: myrem(24);
+	padding: myrem(24) myrem(36);
+	border: 1px solid rgba($black, $alpha: 0.5);
+	text-align: center;
+
+	@include mq('md') {
+		margin-top: initial;
+		padding: myrem(40);
+	}
+}
+
+.p-footer__tel-box + .p-footer__tel-box {
+	margin-top: myrem(16);
+
+	@include mq('md') {
+		margin-top: initial;
+	}
+}
+
+.p-footer__tel-text {
+	font-weight: $Regular;
+	font-size: myrem(14);
+	line-height: calc(25 / 14);
+	letter-spacing: 0.05em;
+
+	@include mq('md') {
+		font-size: myrem(15);
+		line-height: calc(27 / 15);
+	}
+}
+
+.p-footer__tel {
+	margin-top: myrem(4);
+	font-weight: $Regular;
+	font-size: myrem(26);
+	line-height: calc(46 / 26);
+	letter-spacing: 0.05em;
+
+	@include mq('md') {
+		margin-top: initial;
+		font-size: myrem(28);
+		line-height: calc(50 / 28);
+	}
+}
+
+.p-footer__tel a {
+	opacity: 1;
+	pointer-events: auto;
+	
+	@include mq('md') {
+		pointer-events: none;
+		cursor: default;
+		text-decoration: none;
+	}
+}
+
+.p-footer__tel-url {
+	margin-top: myrem(4);
+	font-weight: $Medium;
+	font-size: myrem(16);
+	line-height: calc(28 / 16);
+	letter-spacing: 0.05em;
+
+	@include mq('md') {
+		margin-top: initial;
+		font-size: myrem(17);
+		line-height: calc(30 / 17);
+	}
+}
+
+.p-footer__online {
+	margin-top: myrem(32);
+
+	@include mq('md') {
+		margin-top: initial;
+	}
+}
+
+.p-footer__online-img {
+	@include mq('md') {
+		max-width: myrem(220);		
+	}
+}
+
+.p-footer__online-img img {
+	aspect-ratio: 315 / 158;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+
+	@include mq('md') {
+		aspect-ratio: 220 / 158;
+	}
+}
+
+.p-footer__online-body {
+	background-color: $white;
+	text-align: center;
+	padding-top: myrem(16);
+	padding-bottom: myrem(16);
+
+	@include mq('md') {
+		padding-bottom: myrem(22);
+	}
+}
+
+.p-footer__online-text {
+	font-weight: $Regular;
+	font-size: myrem(13);
+	line-height: calc(18 / 13);
+}
+
+.p-footer__online-text + .p-footer__online-text {
+	margin-top: myrem(16);
+}
+
+.p-footer__bottom-wrapper {
+	padding-top: myrem(32);
+	max-width: myrem(500);
+	width: 100%;
+	margin-inline: auto;
+
+	@include mq('md') {
+		padding-top: myrem(24);
+		max-width: initial;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+.p-footer__bottom-menu {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: myrem(10);
+}
+
+.p-footer__bottom-menu-item {
+}
+
+.p-footer__bottom-menu-item a {
+	opacity: 1;
+	font-weight: $Regular;
+	font-size: myrem(13);
+	line-height: calc(18 / 13);
+	padding: myrem(5);
+	display: inline-block;
+	position: relative;
+}
+
+.p-footer__bottom-menu-item a::before {
+	content: "";
+	position: absolute;
+	background-color: $black;
+	height: 1px;
+	width: 0%;
+	bottom: 0;
+	left: 0;
+	transition: .3s ease-in-out;
+}
+
+.p-footer__bottom-menu-item a:hover::before {
+
+	@include mq('md') {
+		width: 100%;
+	}
+}
+
+.p-footer__bottom-box {
+	text-align: center;
+
+	@include mq('md') {
+		text-align: initial;
+		display: flex;
+		align-items: center;
+	}
+}
+
+.p-footer__bottom-sns {
+	margin-top: myrem(24);
+
+	@include mq('md') {
+		margin-top: initial;
+		display: flex;
+		align-items: center;
+	}
+}
+
+.p-footer__bottom-img {
+	display: inline-block;
+}
+
+.p-footer__bottom-img + .p-footer__bottom-img {
+	margin-left: myrem(16);
+}
+
+.p-footer__bottom-img img {
+	width: myrem(28);
+	height: myrem(28);
+
+	@include mq('md') {
+		width: myrem(36);
+		height: myrem(36);
+	}
+}
+
+.p-footer__bottom-copyright {
+	display: inline-block;
+	margin-top: myrem(32);
+	font-weight: $Regular;
+	font-size: myrem(13);
+	line-height: calc(18 / 13);
+
+	@include mq('md') {
+		margin-top: initial;
+		margin-left: myrem(32);
+	}
+}
+
