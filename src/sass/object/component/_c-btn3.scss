@@ -28,7 +28,6 @@
 	top: 50%;
 	transform: translateY(-50%);
 	left: myrem(8);
-	filter: invert(99%) sepia(1%) saturate(0%) hue-rotate(152deg) brightness(110%) contrast(101%);
 
 	@include mq('md') {
 		width: myrem(18);

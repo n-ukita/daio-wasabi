@@ -30,13 +30,17 @@ document.addEventListener('DOMContentLoaded', function () {
 			const todayWeather = data[0]?.timeSeries[0]?.areas[0]?.weathers[0] || '情報なし';
 			const tomorrowWeather = data[0]?.timeSeries[0]?.areas[0]?.weathers[1] || '情報なし';
 
-			const todayMinTemp = data[0].timeSeries[2].areas[0].temps[0];  // 本日の最低気温
-			const todayMaxTemp = data[0].timeSeries[2].areas[0].temps[1];  // 本日の最高気温
+			const todayMinTemp = Math.floor(data[1]?.tempAverage?.areas[0]?.min) || '情報なし';  // 本日の最低気温
+			const todayMaxTemp = Math.floor(data[1]?.tempAverage?.areas[0]?.max) || '情報なし';  // 本日の最高気温
 
 			// 明日の気温データを取得（必要に応じて修正）
+			const tomorrowMinTemp = data[0].timeSeries[2].areas[0].temps[0];  // 明日の最低気温
+			const tomorrowMaxTemp = data[0].timeSeries[2].areas[0].temps[1];  // 明日の最高気温
+
+			/*
 			const tomorrowMinTemp = data[1].timeSeries[1].areas[0].tempsMin[1];  // 明日の最低気温
 			const tomorrowMaxTemp = data[1].timeSeries[1].areas[0].tempsMax[1];  // 明日の最高気温
-
+      */
 			// 天気アイコンを更新する関数
 			function updateWeatherIcon(weatherDescription, iconElement) {
 				if (weatherDescription.includes("晴")) {
@@ -121,6 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		// ページが読み込まれたら天気情報を取得して表示
 		window.onload = fetchWeatherData;
 */
+
 });	
 
 

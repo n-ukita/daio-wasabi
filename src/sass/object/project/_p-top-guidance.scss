@@ -155,6 +155,7 @@
 	padding-bottom: myrem(6);
 	padding-right: myrem(26);
 	position: relative;
+	color: $black;
 
 	@include mq('md') {
 		min-width: myrem(154);

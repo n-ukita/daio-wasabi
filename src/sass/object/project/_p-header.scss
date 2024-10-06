@@ -8,6 +8,18 @@
 	z-index: 1001;
 }
 
+.p-header.change-color {
+	background-color: #F7F8F5;
+}
+
+.p-header.change-color .p-header__link {
+	color: $black;
+}
+
+.p-header.change-color .p-header__link::before {
+	background-color: $black;
+}
+
 .p-header__wrapper {
 	display: grid;
 	grid-template-columns: repeat(3,auto);
@@ -22,16 +34,18 @@
 	}
 }
 
-.p-header__logo--top.is-active {
-	display: none;
+.p-header__logo.is-active {
+	.p-header__logo--change {
+		display: block;
+	}
+
+	.p-header__logo--top {
+		display: none;
+	}
 }
 
 .p-header__logo--change {
 	display: none;
-}
-
-.p-header__logo--change.is-active {
-	display: block;
 }
 
 .p-header__logo img {
@@ -54,7 +68,8 @@
 	gap: myrem(14);
 }
 
-.p-header__list {
+.p-header__list a {
+	opacity: 1;
 }
 
 .p-header__link {
@@ -64,6 +79,25 @@
 	line-height: calc(21 / 15);
 	color: $white;
 	padding: myrem(10) myrem(5);
+	position: relative;
+}
+
+.p-header__link::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: myrem(1);
+	background-color: $white;
+	bottom: 0;
+	left: 0;
+	transition: .3s;
+}
+
+.p-header__link:hover::before {
+
+	@include mq('md') {
+		width: 100%;
+	}
 }
 
 .p-header__btn {
@@ -76,6 +110,14 @@
 
 	&::before {
 		background: url("../images/icon-cart-black.svg") no-repeat center center / contain;
+	}
+}
 
+.p-header__btn.change-color .c-btn3 {
+	border-color: $black;
+	color: $black;
+
+	&::before {
+		background: url("../images/icon-cart-black.svg") no-repeat center center / contain;
 	}
 }

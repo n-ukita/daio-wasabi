@@ -1,7 +1,7 @@
 @use 'global' as *;
 
 .l-header {
-	padding: myrem(12) myrem(27) myrem(24) myrem(15);
+	padding: myrem(12) myrem(15) myrem(24) myrem(15);
 	
 	@include mq('md') {
 		padding: myrem(24)  myrem(40) myrem(33) myrem(24);

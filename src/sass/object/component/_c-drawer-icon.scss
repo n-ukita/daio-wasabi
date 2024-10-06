@@ -24,7 +24,7 @@
 .c-drawer-icon__bar {
 	width: myrem(41);
   height: myrem(1);
-  background-color: $black;
+  background-color: $white;
   transition: .5s;
 }
 
@@ -33,17 +33,25 @@
 
 }
 
-.c-drawer-icon__bar.change-color {
-  background-color: $black;
+.c-drawer-icon__bars.change-color {
+
+	.c-drawer-icon__bar {
+  	background-color: $black;
+	}
 }
 
-.c-drawer-icon__bar.is-active:first-child {
+.c-drawer-icon__bars.is-active {
+
+	.c-drawer-icon__bar:first-child {
   
-  transform: translateY(2px) rotate(15deg);
-  background-color: $black;
+		transform: translateY(2px) rotate(15deg);
+		background-color: $black;
+	}
+	
+	.c-drawer-icon__bar:nth-child(2) {
+		transform: translateY(-1px) rotate(-15deg);
+		background-color: $black;
+	}
+
 }
 
-.c-drawer-icon__bar.is-active:nth-child(2) {
-  transform: translateY(-1px) rotate(-15deg);
-  background-color: $black;
-}

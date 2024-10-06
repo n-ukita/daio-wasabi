@@ -1,5 +1,70 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+	/*================
+	アコーディオン
+	=================*/
+
+  let icon = document.querySelector('.c-drawer-icon');
+  let bar = document.querySelector('.c-drawer-icon__bars');
+  let content = document.querySelector('.c-drawer-content');
+  let items = document.querySelectorAll('.p-header__link');
+  let headerLogo = document.querySelector('.p-header__logo');
+	let onlineBtn = document.querySelector('.p-header__btn');
+  let menuTL = gsap.timeline();
+
+  icon.addEventListener('click',function(){
+    //既に開いていたら閉じる
+    if(content.classList.contains('is-active')){
+      menuTL
+      .fromTo(content,{clipPath:'inset(0% 0% 0% 0%)'},{clipPath:'inset(0% 0% 0% 100%)',duration:.3})
+      .fromTo(content,{autoAlpha:1},{autoAlpha:0})
+      .add(()=>{
+        content.classList.remove('is-active');
+        headerLogo.classList.remove('is-active');
+				onlineBtn.classList.remove('is-active');
+        bar.classList.remove('is-active');
+      },'<')
+    }else{//開く
+      menuTL
+      .add(()=>{
+        content.classList.add('is-active');
+        headerLogo.classList.add('is-active');
+				onlineBtn.classList.add('is-active');
+        bar.classList.add('is-active');
+      })
+      .to(content,{autoAlpha:1,clipPath:'inset(0% 0% 0% 0%)',duration:.3 })
+    }
+  })
+
+	  /*================
+  ヘッダーの背景色変更
+  =================*/
+  if(this.location.pathname === '/'){
+    const imgHeight = document.querySelector('.p-fv').offsetHeight;
+    const header = document.querySelector('.p-header');
+    const triggerHeight = imgHeight - 150;
+    const headerLogo = document.querySelector('.p-header__logo');
+		const bar = document.querySelector('.c-drawer-icon__bars');
+		const onlineBtn = document.querySelector('.p-header__btn');
+
+
+    window.addEventListener('scroll', function () {
+      if (window.scrollY < imgHeight) {
+        header.classList.remove('change-color');
+				bar.classList.remove('change-color');
+				onlineBtn.classList.remove('change-color');
+        headerLogo.classList.remove('is-active');
+      } else {
+        header.classList.add('change-color');
+				bar.classList.add('change-color');
+				onlineBtn.classList.add('change-color');
+        headerLogo.classList.add('is-active');
+      }
+    });
+  }
+
+
+
 
 	/*================
   各セクションのアニメーション
@@ -10,28 +75,28 @@ document.addEventListener('DOMContentLoaded', function () {
   let jsItemsLeft = document.querySelectorAll('.js-float-left');
   let jsItemsRight = document.querySelectorAll('.js-float-right');
   jsItemsUp.forEach((jsItemUp)=>{
-      gsap.fromTo(jsItemUp,{autoAlpha:0,y:'5%'},{autoAlpha:1,y:'0%',duration:1,delay:.05,scrollTrigger:{
+      gsap.fromTo(jsItemUp,{autoAlpha:0,y:'3%'},{autoAlpha:1,y:'0%',duration:1,delay:.05,scrollTrigger:{
         trigger:jsItemUp,
         start:'center bottom',
     }})
   })
 
   jsItemsDown.forEach((jsItemDown)=>{
-      gsap.fromTo(jsItemDown,{autoAlpha:0,y:'-5%'},{autoAlpha:1,y:'0%',duration:1,delay:.05,scrollTrigger:{
+      gsap.fromTo(jsItemDown,{autoAlpha:0,y:'-3%'},{autoAlpha:1,y:'0%',duration:1,delay:.05,scrollTrigger:{
         trigger:jsItemDown,
         start:'center bottom',
     }})
   })
 
   jsItemsLeft.forEach((jsItemLeft)=>{
-      gsap.fromTo(jsItemLeft,{autoAlpha:0,x:'5%'},{autoAlpha:1,x:'0%',duration:1,delay:.05,scrollTrigger:{
+      gsap.fromTo(jsItemLeft,{autoAlpha:0,x:'3%'},{autoAlpha:1,x:'0%',duration:1,delay:.05,scrollTrigger:{
         trigger:jsItemLeft,
         start:'center bottom',
     }})
   })
 
   jsItemsRight.forEach((jsItemRight)=>{
-      gsap.fromTo(jsItemRight,{autoAlpha:0,x:'-2%'},{autoAlpha:1,x:'0%',duration:1,delay:.05,scrollTrigger:{
+      gsap.fromTo(jsItemRight,{autoAlpha:0,x:'-3%'},{autoAlpha:1,x:'0%',duration:1,delay:.05,scrollTrigger:{
         trigger:jsItemRight,
         start:'center bottom',
     }})
