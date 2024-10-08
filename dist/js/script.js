@@ -160,6 +160,39 @@ document.addEventListener('DOMContentLoaded', function () {
 	const mmp = gsap.matchMedia();
 
 	parallaxes.forEach((parallax) => {
+
+			gsap.fromTo(parallax, { yPercent: 0 }, {
+				yPercent: -7, 
+					scrollTrigger: {
+							trigger: parallax,  // 直接parallaxをトリガーに
+							start: 'top bottom',
+							end: 'center top',
+							scrub: 1,
+							markers: false,
+					}
+			});
+
+			mmp.add('(max-width:767px)', function() {
+					gsap.fromTo(parallax, { yPercent: 0 }, {
+						yPercent: -5, 
+							scrollTrigger: {
+									trigger: parallax,  // 同じくparallaxをトリガーに
+									start: 'top bottom',
+									end: 'top top',
+									scrub: 1,
+									markers: false,
+							}
+					});
+			});
+	});
+
+
+	/*
+	const parallaxes = document.querySelectorAll('.js-parallax');
+	const boxes = document.querySelectorAll('.p-top-about__inner');
+	const mmp = gsap.matchMedia();
+
+	parallaxes.forEach((parallax) => {
 		boxes.forEach((box) => {
 
 			gsap.fromTo(parallax,{y:50},{y:-50,scrollTrigger:{
@@ -185,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	});
 	
-
+*/
 });
 
 

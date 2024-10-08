@@ -34,12 +34,12 @@
   <script defer src="./js/script.js"></script>
 </head>
 <body>
-	<header class="p-header">
+	<header class="p-header p-header--top">
 		<div class="l-header">
 			<div class="p-header__wrapper">
 				<div class="p-header__logo">
 					<a href="/"><img class="p-header__logo--top" src="./images/header-logo.png" alt="大王わさび農場"></a>
-					<a href="/"><img class="p-header__logo--change" src="./images/footer-logo.png" alt="大王わさび農場"></a>
+					<a href="/"><img class="p-header__logo--change" src="./images/header-logo-black.png" alt="大王わさび農場"></a>
 				</div>
 				<nav class="p-header__nav">
 					<ul class="p-header__lists">
@@ -131,9 +131,10 @@
 	<main>
 		<section class="p-fv">
 			<figure class="p-fv__img">
-				<img class="u-mobile" src="./images/fv-bg-sp.png" alt="わさび背景" width="375" height="667">
+					<video src="./movie/fv-movie.mp4" loop autoplay muted></video>
+<!-- 				<img class="u-mobile" src="./images/fv-bg-sp.png" alt="わさび背景" width="375" height="667">
 				<img class="u-desktop" src="./images/fv-bg.png" alt="わさび背景" width="1400" height="800">
-			</figure>
+ -->			</figure>
 			<h1 class="p-fv__title js-float-up">
 				<img src="./images/fv-title.png" alt="大王わさび">
 			</h1>
@@ -161,14 +162,14 @@
 					</figure>
 					<p class="p-fv__bottom-text" id="tomorrow-temperature">Loading...</p>
 				</li>
-				<li class="p-fv__list">
+<!-- 				<li class="p-fv__list">
 					<p class="p-fv__text">現在の月</p>
 					<figure class="p-fv__icon">
 						<img src="./images/icon-moon.png" alt="">
 					</figure>
 					<p class="p-fv__bottom-text">月齢:12.0</p>
 				</li>
-			</ul>
+ -->			</ul>
 			<a href="" class="p-fv__instagrum">
 				<img src="./images/instagrum-icon.png" alt="インスタグラム">
 			</a>
@@ -179,7 +180,7 @@
 					<div class="p-top-info__title-box">
 						<h2 class="p-top-info__title js-float-up" data-en="Information">お知らせ</h2>
 						<div class="p-top-info__btn u-desktop">
-							<a href="" class="c-btn1">View All</a>
+							<a href="/information.html" class="c-btn1">View All</a>
 						</div>
 					</div>
 					<ul class="p-top-info__lists">
@@ -219,38 +220,44 @@
 		</section>
 		<section class="p-top-about">
 			<div class="p-top-about__inner">
-				<figure class="p-top-about__bg">
-					<img class="u-mobile js-parallax" src="./images/about-img1-sp.jpg" alt="大王わさびとは" loading="lazy" width="375" height="667">
-					<img class="u-desktop js-parallax" src="./images/about-img1.jpg" alt="大王わさびとは" loading="lazy" width="1400" height="800">
-				</figure>
-				<div class="l-inner">
-					<div class="p-top-about__wrapper">
-						<div class="p-top-about__title js-float-up" data-en="About">大王わさびとは</div>
-						<div class="p-top-about__text js-float-down">
-							大王わさび農場は、北アルプスの澄んだ空気と豊富な湧水に抱かれた、日本最大級のわさび農場です。<br class="u-desktop">
-							一歩足を踏み入れると、広がるわさび田と流れる水の音が心を癒し、自然との一体感に引き込まれます。<br>
-							ここで栽培されるわさびは、名水に育まれた本物の風味。わさびソフトクリームや地元ならではのグルメが、訪れる人々を驚きと感動で満たします。<br class="u-desktop">
-							美しい自然と共にわさびの深い味わいを堪能できる、<br class="u-desktop">
-							大切なひとときがここにあります。
+				<div class="p-top-about__wrapper">
+					<div class="p-top-about__inner">
+						<figure class="p-top-about__bg">
+							<img class="u-mobile js-parallax" src="./images/about-img1-sp.jpg" alt="大王わさびとは" loading="lazy" width="375" height="667">
+							<img class="u-desktop js-parallax" src="./images/about-img1.jpg" alt="大王わさびとは" loading="lazy" width="1400" height="800">
+						</figure>
+						<div class="l-inner">
+							<div class="p-top-about__box">
+								<div class="p-top-about__title js-float-up" data-en="About">大王わさびとは</div>
+								<div class="p-top-about__text js-float-down">
+									大王わさび農場は、北アルプスの澄んだ空気と豊富な湧水に抱かれた、日本最大級のわさび農場です。<br class="u-desktop">
+									一歩足を踏み入れると、広がるわさび田と流れる水の音が心を癒し、自然との一体感に引き込まれます。<br>
+									ここで栽培されるわさびは、名水に育まれた本物の風味。わさびソフトクリームや地元ならではのグルメが、訪れる人々を驚きと感動で満たします。<br class="u-desktop">
+									美しい自然と共にわさびの深い味わいを堪能できる、<br class="u-desktop">
+									大切なひとときがここにあります。
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="p-top-about__inner ">
-				<figure class="p-top-about__bg">
-					<img class="u-mobile js-parallax" src="./images/about-img2-sp.jpg" alt="北アルプスの恵み" loading="lazy" width="375" height="667">
-					<img class="u-desktop js-parallax" src="./images/about-img2.jpg" alt="北アルプスの恵み" loading="lazy" width="1400" height="800">
-				</figure>
-				<div class="l-inner">
-					<div class="p-top-about__wrapper">
-						<div class="p-top-about__title js-float-up" data-en="Grace">北アルプスの恵み</div>
-						<div class="p-top-about__text p-top-about__text--grace js-float-down">
-							日本の屋根と称される雄大な山々が連なり、四季折々の豊かな自然をもたらしています。<br>
-							その大地には長い年月をかけてろ過された清らかな雪解け水が流れ込み、地域に豊富な水資源を供給します。<br>
-							この恵みの水はわさび栽培に最適な条件を作り出し、香り高く、風味豊かなわさびを育てます。<br>
-							また北アルプスの厳しくも美しい自然環境は、野生動物や植物たちにとっても貴重な生息地となっています。<br>
-							この豊かな自然が育む食材や風景は、訪れる人々に感動と癒しを与え、北アルプスの力強さと優しさを感じさせてくれるのです。
+				<div class="p-top-about_wrapper">
+					<div class="p-top-about__inner">
+						<figure class="p-top-about__bg">
+							<img class="u-mobile js-parallax" src="./images/about-img2-sp.jpg" alt="北アルプスの恵み" loading="lazy" width="375" height="667">
+							<img class="u-desktop js-parallax" src="./images/about-img2.jpg" alt="北アルプスの恵み" loading="lazy" width="1400" height="800">
+						</figure>
+						<div class="l-inner">
+							<div class="p-top-about__box">
+								<div class="p-top-about__title js-float-up" data-en="Grace">北アルプスの恵み</div>
+								<div class="p-top-about__text p-top-about__text--grace js-float-down">
+									日本の屋根と称される雄大な山々が連なり、四季折々の豊かな自然をもたらしています。<br>
+									その大地には長い年月をかけてろ過された清らかな雪解け水が流れ込み、地域に豊富な水資源を供給します。<br>
+									この恵みの水はわさび栽培に最適な条件を作り出し、香り高く、風味豊かなわさびを育てます。<br>
+									また北アルプスの厳しくも美しい自然環境は、野生動物や植物たちにとっても貴重な生息地となっています。<br>
+									この豊かな自然が育む食材や風景は、訪れる人々に感動と癒しを与え、北アルプスの力強さと優しさを感じさせてくれるのです。
+									</div>
 							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -395,32 +402,40 @@
 				</div>
 				<ul class="c-card1 p-top-highlight__cards">
 					<li class="c-card1__list js-float-down">
-						<h3 class="c-card1__list-title">３連水車</h3>
-						<figure class="c-card1__list-img">
-							<img src="./images/highlights-img1.jpg" alt="3連水車" loading="lazy" width="315" height="340">
-						</figure>
-						<p class="c-card1__list-text">新鮮なわさびを使ったわさび漬けやわさび塩、ユニークなお菓子や調味料が豊富に揃います。大切な人への贈り物や、自分への特別な一品が見つかるスポットです。</p>
+						<a href="">
+							<h3 class="c-card1__list-title">３連水車</h3>
+							<figure class="c-card1__list-img">
+								<img src="./images/highlights-img1.jpg" alt="3連水車" loading="lazy" width="315" height="340">
+							</figure>
+							<p class="c-card1__list-text">新鮮なわさびを使ったわさび漬けやわさび塩、ユニークなお菓子や調味料が豊富に揃います。大切な人への贈り物や、自分への特別な一品が見つかるスポットです。</p>
+						</a>
 					</li>
 					<li class="c-card1__list js-float-down">
-						<h3 class="c-card1__list-title">大王神社</h3>
-						<figure class="c-card1__list-img">
-							<img src="./images/highlights-img2.jpg" alt="大王神社" loading="lazy" width="315" height="340">
-						</figure>
-						<p class="c-card1__list-text">透き通る川を透明なボートで進む特別な体験です。川底に広がるわさびや美しい水流を間近で楽しめ、自然との一体感を感じながら癒しのひとときを過ごせます。</p>
+						<a href="">
+							<h3 class="c-card1__list-title">大王神社</h3>
+							<figure class="c-card1__list-img">
+								<img src="./images/highlights-img2.jpg" alt="大王神社" loading="lazy" width="315" height="340">
+							</figure>
+							<p class="c-card1__list-text">透き通る川を透明なボートで進む特別な体験です。川底に広がるわさびや美しい水流を間近で楽しめ、自然との一体感を感じながら癒しのひとときを過ごせます。</p>
+						</a>
 					</li>
 					<li class="c-card1__list js-float-down">
-						<h3 class="c-card1__list-title">見張り台</h3>
-						<figure class="c-card1__list-img">
-							<img src="./images/highlights-img3.jpg" alt="見張り台" loading="lazy" width="315" height="340">
-						</figure>
-						<p class="c-card1__list-text">長い歴史とわさび栽培への情熱を象徴する存在です。先人たちが築き上げた伝統と自然への感謝が刻まれ、訪れる人々に農場の歩みと深い敬意を感じさせます。</p>
+						<a href="">
+							<h3 class="c-card1__list-title">見張り台</h3>
+							<figure class="c-card1__list-img">
+								<img src="./images/highlights-img3.jpg" alt="見張り台" loading="lazy" width="315" height="340">
+							</figure>
+							<p class="c-card1__list-text">長い歴史とわさび栽培への情熱を象徴する存在です。先人たちが築き上げた伝統と自然への感謝が刻まれ、訪れる人々に農場の歩みと深い敬意を感じさせます。</p>
+						</a>
 					</li>
 					<li class="c-card1__list js-float-down">
-						<h3 class="c-card1__list-title">親水広場</h3>
-						<figure class="c-card1__list-img">
-							<img src="./images/highlights-img4.jpg" alt="親水広場" loading="lazy" width="315" height="340">
-						</figure>
-						<p class="c-card1__list-text">季節ごとのイベントが開催され、四季折々の自然と触れ合えます。春の桜や夏の清涼感、秋の紅葉といった美しい風景を楽しみながら、わさびを使った体験や限定グルメも堪能できます。</p>
+						<a href="">
+							<h3 class="c-card1__list-title">親水広場</h3>
+							<figure class="c-card1__list-img">
+								<img src="./images/highlights-img4.jpg" alt="親水広場" loading="lazy" width="315" height="340">
+							</figure>
+							<p class="c-card1__list-text">季節ごとのイベントが開催され、四季折々の自然と触れ合えます。春の桜や夏の清涼感、秋の紅葉といった美しい風景を楽しみながら、わさびを使った体験や限定グルメも堪能できます。</p>
+						</a>
 					</li>
 				</ul>
 				<div class="p-top-highlight__btn u-mobile js-float-down">
@@ -438,32 +453,40 @@
 				</div>
 				<ul class="c-card1 p-top-event__cards">
 					<li class="c-card1__list js-float-down">
-						<h3 class="c-card1__list-title">熱気球</h3>
-						<figure class="c-card1__list-img c-card1__list-img--mt1">
-							<img src="./images/highlights-img1.jpg" alt="熱気球" loading="lazy" width="315" height="340">
-						</figure>
-						<p class="c-card1__list-text">新鮮なわさびを使ったわさび漬けやわさび塩、ユニークなお菓子や調味料が豊富に揃います。大切な人への贈り物や、自分への特別な一品が見つかるスポットです。</p>
+						<a href="">
+							<h3 class="c-card1__list-title">熱気球</h3>
+							<figure class="c-card1__list-img c-card1__list-img--mt1">
+								<img src="./images/highlights-img1.jpg" alt="熱気球" loading="lazy" width="315" height="340">
+							</figure>
+							<p class="c-card1__list-text">新鮮なわさびを使ったわさび漬けやわさび塩、ユニークなお菓子や調味料が豊富に揃います。大切な人への贈り物や、自分への特別な一品が見つかるスポットです。</p>
+						</a>
 					</li>
 					<li class="c-card1__list js-float-down">
-						<h3 class="c-card1__list-title">わさびの花祭り</h3>
-						<figure class="c-card1__list-img c-card1__list-img--mt2">
-							<img src="./images/highlights-img2.jpg" alt="わさびの花祭り" loading="lazy" width="315" height="340">
-						</figure>
-						<p class="c-card1__list-text">透き通る川を透明なボートで進む特別な体験です。川底に広がるわさびや美しい水流を間近で楽しめ、自然との一体感を感じながら癒しのひとときを過ごせます。</p>
+						<a href="">
+							<h3 class="c-card1__list-title">わさびの花祭り</h3>
+							<figure class="c-card1__list-img c-card1__list-img--mt2">
+								<img src="./images/highlights-img2.jpg" alt="わさびの花祭り" loading="lazy" width="315" height="340">
+							</figure>
+							<p class="c-card1__list-text">透き通る川を透明なボートで進む特別な体験です。川底に広がるわさびや美しい水流を間近で楽しめ、自然との一体感を感じながら癒しのひとときを過ごせます。</p>
+						</a>
 					</li>
 					<li class="c-card1__list js-float-down">
-						<h3 class="c-card1__list-title">元旦初売り</h3>
-						<figure class="c-card1__list-img c-card1__list-img--mt3">
-							<img src="./images/highlights-img3.jpg" alt="元旦初売り" loading="lazy" width="315" height="340">
-						</figure>
-						<p class="c-card1__list-text">長い歴史とわさび栽培への情熱を象徴する存在です。先人たちが築き上げた伝統と自然への感謝が刻まれ、訪れる人々に農場の歩みと深い敬意を感じさせます。</p>
+						<a href="">
+							<h3 class="c-card1__list-title">元旦初売り</h3>
+							<figure class="c-card1__list-img c-card1__list-img--mt3">
+								<img src="./images/highlights-img3.jpg" alt="元旦初売り" loading="lazy" width="315" height="340">
+							</figure>
+							<p class="c-card1__list-text">長い歴史とわさび栽培への情熱を象徴する存在です。先人たちが築き上げた伝統と自然への感謝が刻まれ、訪れる人々に農場の歩みと深い敬意を感じさせます。</p>
+						</a>
 					</li>
 					<li class="c-card1__list js-float-down">
-						<h3 class="c-card1__list-title">わさび田ウォーキング</h3>
-						<figure class="c-card1__list-img c-card1__list-img--mt4">
-							<img src="./images/highlights-img4.jpg" alt="わさび田ウォーキング" loading="lazy" width="315" height="340">
-						</figure>
-						<p class="c-card1__list-text">季節ごとのイベントが開催され、四季折々の自然と触れ合えます。春の桜や夏の清涼感、秋の紅葉といった美しい風景を楽しみながら、わさびを使った体験や限定グルメも堪能できます。</p>
+						<a href="">
+							<h3 class="c-card1__list-title">わさび田ウォーキング</h3>
+							<figure class="c-card1__list-img c-card1__list-img--mt4">
+								<img src="./images/highlights-img4.jpg" alt="わさび田ウォーキング" loading="lazy" width="315" height="340">
+							</figure>
+							<p class="c-card1__list-text">季節ごとのイベントが開催され、四季折々の自然と触れ合えます。春の桜や夏の清涼感、秋の紅葉といった美しい風景を楽しみながら、わさびを使った体験や限定グルメも堪能できます。</p>
+						</a>
 					</li>
 				</ul>
 				<div class="p-top-highlight__btn u-mobile js-float-down">
@@ -486,7 +509,7 @@
 						<img src="./images/experienceimg2.jpg" alt="川" loading="lazy" width="160" height="104">
 					</figure>	
 				</div>
-				<figure class="p-top-experience__img2 js-float-right">
+				<figure class="p-top-experience__img2 js-float-down">
 					<img src="./images/experience-img1.jpg" alt="クリアボート体験" loading="lazy" width="225" height="265">
 				</figure>
 			</div>
@@ -595,7 +618,7 @@
 			<div class="p-top-travel__wrapper">
 				<div class="p-top-travel__content">
 					<h2 class="p-top-travel__title js-float-up">旅行会社・団体様</h2>
-					<p class="p-top-travel__text js-float-right">
+					<p class="p-top-travel__text js-float-down">
 						大王わさび農場では、5名様以上の団体のお客様からのご予約を承っております。広大な農場で自然を感じながら、わさびの魅力をみなさまでご堪能いただけます。<br>
 						お申し込みは3日前までとなっておりますので、スケジュールに余裕をもってご予約ください。<br>
 						皆様のお越しをスタッフ一同心よりお待ちしております。
@@ -608,7 +631,7 @@
 						<img class="u-desktop" src="./images/travel-img2.jpg" alt="料理の写真2" loading="lazy" width="340" height="220">
 					</figure>		
 				</div>
-				<figure class="p-top-travel__img js-float-left">
+				<figure class="p-top-travel__img js-float-down">
 					<img class="u-mobile" src="./images/travel-img1-sp.jpg" alt="料理の写真1" loading="lazy" width="225" height="265">
 					<img class="u-desktop" src="./images/travel-img1.jpg" alt="料理の写真1" loading="lazy" width="688" height="660">
 				</figure>
@@ -814,7 +837,7 @@
 							</dl>
 						</li>
 					</ul>
-					<div class="p-top-guidance__map js-float-left">
+					<div class="p-top-guidance__map js-float-down">
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6427.802019992569!2d137.9066132762536!3d36.33894889356366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601d6da35d71bd7d%3A0xd8adcf7ab2065700!2z5aSn546L44KP44GV44Gz6L6y5aC0!5e0!3m2!1sja!2sjp!4v1727940483708!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 						<div class="p-top-guidance__map-btn-wrapper">
 							<button class="p-top-guidance__map-btn js-open" data-id="1">お車でお越しの方</button>

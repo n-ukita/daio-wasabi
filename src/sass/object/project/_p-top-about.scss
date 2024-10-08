@@ -1,58 +1,54 @@
 @use 'global' as *;
 
 .p-top-about {
-	padding-bottom: myrem(80);
-	height: auto;
-	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	padding-bottom: myrem(105);
+}
+
+.p-top-about__inner {
+	width: 100%;
+	height: inherit;
+	padding-bottom: myrem(40);
+
+	@include mq('md') {
+		padding-bottom: myrem(80);
+	}
+
+}
+
+.p-top-about__wrapper {
+	width: 100%;
+	height: 100%;
 }
 
 .p-top-about__inner {
 	position: relative;
-	width: 100%;
-	height: 100%;
-
-	@include mq('md') {
-		height: 100vh;
-		/* overflow: hidden; */
-	}
-}
-/*
-.p-top-about__inner::before {
-	content: "";
-	position: absolute;
-	background-color: rgba($color: #000000, $alpha: 0.7);
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	z-index: -1;
+	width: inherit;
+	height: inherit;
+	overflow: hidden;
 
 }
-*/
+
 .p-top-about__bg {
+	aspect-ratio: 1400 / 800;
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
-	z-index: -2;
-
+	overflow: hidden;
 }
 
 .p-top-about__bg img {
-	position: absolute;
 	width: 100%;
-	height: 100%;
+	height: 110%;
 	object-fit: cover;
-	top: 50%;
-	left: 50%;
-	z-index: -1;
-	transform: translate(-50%,-50%);
-
-	
+	aspect-ratio: 1400 / 800;
 }
 
-.p-top-about__wrapper {
+
+.p-top-about__box {
 	padding-top: myrem(100);
 	padding-bottom: myrem(75);
 
@@ -114,16 +110,13 @@
 }
 
 .p-top-about__btn {
-	margin-top: myrem(40);
 	margin-left: myrem(17);
 
 	@include mq('md') {
-		margin-top: myrem(97);
+		margin-top: myrem(20);
 		margin-left: initial;
 		text-align: center;
 	}
 }
 
-.p-top-about__btn a {
-	opacity: 1;
-}
+

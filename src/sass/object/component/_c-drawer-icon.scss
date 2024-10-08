@@ -21,10 +21,14 @@
 
 }
 
+.p-header--top .c-drawer-icon__bar {
+	background-color: $white;
+}
+
 .c-drawer-icon__bar {
 	width: myrem(41);
   height: myrem(1);
-  background-color: $white;
+  background-color: $black;
   transition: .5s;
 }
 

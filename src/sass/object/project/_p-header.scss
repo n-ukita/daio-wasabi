@@ -6,6 +6,11 @@
 	left: 0;
 	width: 100%;
 	z-index: 1001;
+	background-color: #F7F8F5;
+}
+
+.p-header.p-header--top {
+	background-color: transparent;
 }
 
 .p-header.change-color {
@@ -72,14 +77,22 @@
 	opacity: 1;
 }
 
+.p-header--top .p-header__link {
+	color: white;
+}
+
 .p-header__link {
 	display: inline-block;
 	font-weight: $Regular;
 	font-size: myrem(15);
 	line-height: calc(21 / 15);
-	color: $white;
+	color: $black;
 	padding: myrem(10) myrem(5);
 	position: relative;
+}
+
+.p-header--top .p-header__link::before {
+	background-color: $white;
 }
 
 .p-header__link::before {
@@ -87,7 +100,7 @@
 	position: absolute;
 	width: 0;
 	height: myrem(1);
-	background-color: $white;
+	background-color: $black;
 	bottom: 0;
 	left: 0;
 	transition: .3s;
@@ -102,6 +115,15 @@
 
 .p-header__btn {
 	text-align: right;
+}
+
+.p-header--top .c-btn3 {
+	border-color: $white;
+	color: $white;
+
+	&::before {
+		background: url("../images/icon-cart.svg") no-repeat center center / contain;
+	}
 }
 
 .p-header__btn.is-active .c-btn3 {
