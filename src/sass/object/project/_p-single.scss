@@ -1,0 +1,252 @@
+@use 'global' as *;
+
+.p-single {
+background-color: #F7F8F5;
+padding-top: myrem(70);
+padding-bottom: myrem(40);
+
+	@include mq('md') {
+		padding-top: myrem(110);
+	}
+}
+
+.p-single__wrapper {
+	margin-top: myrem(120);
+	max-width: myrem(500);
+	margin-inline: auto;
+	padding-bottom: myrem(80);
+	border-bottom: 1px solid #CCC;
+
+	@include mq('md') {
+		margin-top: myrem(160);
+		max-width: initial;
+		display: flex;
+		padding-bottom: myrem(150);
+	}
+}
+
+.p-single__title-wrapper {
+	@include mq('md') {
+		margin-top: myrem(32);
+		width: 32.25%;
+	}
+}
+
+.p-single__title {
+	font-weight: $Medium;
+	font-size: myrem(24);
+	line-height: calc(28 / 24);
+	letter-spacing: 0.05em;
+	color: $head-color;
+
+	@include mq('md') {
+		font-size: myrem(40);
+		line-height: calc(48 / 40);
+	}
+}
+
+.p-single__main {
+	margin-top: myrem(80);
+
+	@include mq('md') {
+		margin-top: initial;
+		width: 67.75%;
+	}
+}
+
+.p-single__thumbnail {
+
+}
+
+.p-single__wrapper .p-single__thumbnail img {
+	aspect-ratio: 375 / 261;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+
+	@include mq('md') {
+		aspect-ratio: 840 / 586;
+	}
+}
+
+.p-single__wrapper h2 {
+	margin-top: myrem(60);
+	font-weight: $Medium;
+	font-size: myrem(18);
+	line-height: calc(28 / 18);
+	letter-spacing: 0.02em;
+	padding-bottom: myrem(16);
+	border-bottom: 1px solid #CCC;
+	margin-bottom: myrem(24);
+	color: $head-color;
+
+	@include mq('md') {
+		margin-top: myrem(100);
+		font-size: myrem(24);
+		line-height: calc(28 / 24);
+		padding-bottom: myrem(24);
+	}
+}
+
+.p-single__wrapper a {
+	display: inline-block;
+	font-size: myrem(16);
+	font-weight: $Regular;
+	line-height: calc(28 / 16);
+	letter-spacing: 0.01em;
+	text-decoration: underline;
+}
+
+
+.p-single__wrapper a.pdf-download {
+	position: relative;
+	display: inline-block;
+	font-weight: $Regular;
+	font-size: myrem(15);
+	line-height: calc(22 / 15);
+	letter-spacing: 0.02em;
+	margin-top: myrem(18);
+	padding-left: myrem(32);
+
+	@include mq('md') {
+		display: block;
+		font-size: myrem(16);
+		line-height: calc(28 / 16);
+		letter-spacing: 0.01em;
+		padding-left: myrem(38);
+	}
+}
+
+.p-single__wrapper a.pdf-download::before {
+	content: "";
+	position: absolute;
+	background: url("../images/pdf-icon.png") no-repeat center center / contain;
+	width: myrem(24);
+	height: myrem(24);
+	top: 0;
+	left: 0;
+
+	@include mq('md') {
+		width: myrem(30);
+		height: myrem(30);
+	}
+}
+
+.p-single__wrapper img {
+	aspect-ratio: 315 / 180;
+	object-fit: cover;
+	width: 100%;
+
+	@include mq('md') {
+		aspect-ratio: 840 / 430;
+	}
+}
+
+.p-single__wrapper p {
+	margin-top: myrem(24);
+	font-weight: $Regular;
+	font-size: myrem(15);
+	line-height: calc(24 / 15);
+	letter-spacing: 0.02em;
+
+	@include mq('md') {
+		margin-top: myrem(56);
+		font-size: myrem(16);
+		line-height: calc(28 / 16);
+		letter-spacing: 0.01em;
+	}
+}
+
+.p-single__pagination {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: myrem(120);
+	max-width: myrem(315);
+	margin-inline: auto;
+
+	@include mq('md') {
+		padding-top: myrem(40);
+		flex-direction: row;
+		max-width: initial;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.p-single__pagination-box-prev,
+.p-single__pagination-box-next {
+	width: myrem(315);
+	height: myrem(100);
+}
+
+.p-single__pagination-box-prev {
+	margin-top: myrem(40);
+	order: 2;
+
+	@include mq('md') {
+		margin-top: initial;
+		order: initial;
+	}
+}
+
+.p-single__pagination-box-next {
+	margin-top: myrem(24);
+	order: 3;
+
+	@include mq('md') {
+		order: initial;
+		margin-top: initial;
+	}
+}
+
+.p-single__prev,
+.p-single__next {
+	display: flex;
+	align-items: center;
+	height: myrem(100);
+}
+
+
+.p-single__pagination-img {
+	max-width: myrem(150);
+	width: 100%;
+}
+
+.p-single__pagination-img img {
+	aspect-ratio: 150 / 100;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.p-single__pagination-btn {
+	order: 1;
+	margin-top: myrem(40);
+
+	@include mq('md') {
+		order: initial;
+		margin-top: initial;
+	}
+}
+
+.p-single__next {
+
+	@include mq('md') {
+		order: initial;
+	}	
+}
+
+.p-single__pagination p {
+	background-color: $white;
+	width: 60%;
+	height: 100%;
+	padding-left: myrem(20);
+	font-size: myrem(15);
+	line-height: calc(16 / 15);
+	display: flex;
+	align-items: center;
+}
+
+.p-single__pagination-btn a {
+	opacity: 1;
+}

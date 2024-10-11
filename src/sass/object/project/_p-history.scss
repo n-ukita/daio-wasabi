@@ -1,0 +1,153 @@
+@use 'global' as *;
+
+.p-history {
+	padding-top: myrem(80);
+	background-color: #F7F8F5;
+	padding-bottom: myrem(40);
+	overflow: hidden;
+
+	@include mq('md') {
+		padding-top: myrem(100);
+	}
+}
+
+.p-history__lead {
+	font-weight: $Regular;
+	font-size: myrem(28);
+	line-height: calc(44 / 28);
+
+	@include mq('md') {
+		font-size: myrem(40);
+		font-weight: $Medium;
+		line-height: calc(72 / 40);
+		max-width: myrem(452);
+		margin-inline: auto;
+	}
+}
+
+.p-history__body {
+	position: relative;
+	margin-top: myrem(56);
+	padding-bottom: myrem(236);
+
+	@include mq('md') {
+		margin-top: myrem(100);
+		display: flex;
+		padding-bottom: myrem(273);
+	}
+}
+
+.p-history__body::before {
+	content: "";
+	position: absolute;
+	background: url("../images/history-wasabi.jpg") no-repeat center center / cover;
+	bottom: myrem(80);
+	left: 0;
+	width: myrem(180);
+	height: myrem(124);
+
+	@include mq('md') {
+		width: myrem(300);
+		height: myrem(207);
+		bottom: myrem(120);
+		left: myrem(120);
+
+	}
+}
+
+.p-history__text {
+	font-weight: $Regular;
+	font-size: myrem(15);
+	line-height: calc(27 / 15);
+	letter-spacing: 0.02em;
+
+	@include mq('md') {
+		font-size: myrem(16);
+		line-height: calc(28 / 16);
+		letter-spacing: 0.01em;
+	}
+}
+
+.p-history__img {
+	margin-top: myrem(48);
+	margin-left: auto;
+	max-width: myrem(270);
+
+	@include mq('md') {
+		max-width: initial;
+		margin-top: initial;
+		flex: 0 0 myrem(738);
+		margin-left: myrem(102);
+	}
+}
+
+.p-history__img img {
+	aspect-ratio: 270 / 174;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.p-history__inner {
+	padding-bottom: myrem(120);
+
+	@include mq('md') {
+		position: relative;
+		padding-top: myrem(100);
+	}
+}
+
+.p-history__inner::before {
+	@include mq('md') {
+		content: "";
+		position: absolute;
+		background-color: $white;
+		width: 100%;
+		height: 87%;
+		top: 0;
+		left: 0;
+	}
+}
+
+.p-history__title-box {
+	text-align: center;
+}
+
+.p-history__title {
+	position: relative;
+	display: inline-block;
+	font-weight: $Regular;
+	font-size: myrem(28);
+	line-height: calc(44 / 28);
+	padding-bottom: myrem(17);
+
+	@include mq('md') {
+		font-size: myrem(40);
+		line-height: calc(48 / 40);
+		padding-bottom: myrem(25);
+	}
+}
+
+.p-history__title::before {
+	content: "";
+	position: absolute;
+	width: myrem(50);
+	height: 1px;
+	background-color: #5A6715;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+
+	@include mq('md') {
+		width: myrem(100);
+	}
+}
+
+.p-history__wrapper {
+	margin-top: myrem(48);
+
+	@include mq('md') {
+		margin-top: myrem(80);
+	}
+}
+

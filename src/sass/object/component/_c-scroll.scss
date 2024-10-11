@@ -1,0 +1,47 @@
+@use 'global' as *;
+
+.c-scroll {
+	position: fixed;
+	right:myrem(24);
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1000;
+
+}
+
+.c-scroll__btn {
+	@include mq('md') {
+		cursor: pointer;
+	}
+}
+
+@media (hover: hover) {
+	.c-scroll__btn:hover {
+		span::before {
+			top: myrem(-10);
+		}
+	}
+}
+
+.c-scroll__btn span {
+	position: relative;
+	display: inline-block;
+	font-weight: $Regular;
+	font-size: myrem(14);
+	line-height: 1;
+	letter-spacing: 0.1em;
+	writing-mode: vertical-rl;
+	padding-top: myrem(57);
+}
+
+.c-scroll__btn span::before {
+	content: "";
+	position: absolute;
+	background: url("../images/arrow-scroll.png") no-repeat center center / contain;
+	width: myrem(6);
+	height: myrem(45);
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: .3s;
+}

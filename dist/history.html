@@ -8,7 +8,7 @@
 	<meta name="robots" content="noindex,nofollow" />
 	
   <!-- meta情報 -->
-  <title>お知らせ ｜ 大王わさび農場</title>
+  <title>食べる・買う ｜ 大王わさび農場</title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <!-- ogp -->
@@ -25,12 +25,16 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
   <!-- css -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
   <link rel="stylesheet" href="./css/styles.css">
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js' integrity='sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==' crossorigin='anonymous'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js' integrity='sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==' crossorigin='anonymous'></script>
 	<script src="./js/weather.js"></script>
+	<script defer src="./js/splide.js"></script>
   <script defer src="./js/script.js"></script>
 </head>
 <body>
@@ -49,7 +53,7 @@
 							<a href="/points.html" class="p-header__link">見どころ</a>
 						</li>
 						<li class="p-header__list">
-							<a href="" class="p-header__link">食べる・買う</a>
+							<a href="/eat.html" class="p-header__link">食べる・買う</a>
 						</li>
 						<li class="p-header__list">
 							<a href="" class="p-header__link">旅行会社・団体様</a>
@@ -127,95 +131,163 @@
 			</div>
 		</div>
 	</div>
-<main>
-	<section class="p-info">
-		<div class="l-inner">
-			<div class="p-info__mv js-float-up">
-				<h1 class="p-info__mv-title" data-en="Information">お知らせ</h1>
-			</div>	
-			<ul class="p-info__lists">
-				<li class="js-float-up">
-					<a class="p-info__list" href="">
-						<figure class="p-info__img">
-							<img src="./images/example-img.jpg" alt="" loading="lazy">
-						</figure>
-						<div class="p-info__content">
-							<div class="p-info__body">
-								<h2 class="p-info__list-title">ここにタイトルが入ります。ここにタイトルが入ります。</h2>
-								<p class="p-info__list-text">ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。</p>
-							</div>
-							<div class="p-info__meta">
-								<div class="p-info__category">お知らせ</div>
-								<time datetime="" class="p-info__date">2024.07.08</time>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li class="js-float-up">
-					<a class="p-info__list" href="">
-						<figure class="p-info__img">
-							<img src="./images/example-img.jpg" alt="" loading="lazy">
-						</figure>
-						<div class="p-info__content">
-							<div class="p-info__body">
-								<h2 class="p-info__list-title">ここにタイトルが入ります。ここにタイトルが入ります。ここにタイトルが入ります。ここにタイトルが入ります。</h2>
-								<p class="p-info__list-text">ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。</p>
-							</div>
-							<div class="p-info__meta">
-								<div class="p-info__category">お知らせ</div>
-								<time datetime="" class="p-info__date">2024.07.08</time>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li class="js-float-up">
-					<a class="p-info__list" href="">
-						<figure class="p-info__img">
-							<img src="./images/eat-img1.jpg" alt="" loading="lazy">
-						</figure>
-						<div class="p-info__content">
-							<div class="p-info__body">
-								<h2 class="p-info__list-title">ここにタイトルが入ります。ここにタイトルが入ります。ここにタイトルが入ります。ここにタイトルが入ります。</h2>
-								<p class="p-info__list-text">ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。</p>
-							</div>
-							<div class="p-info__meta">
-								<div class="p-info__category">お知らせ</div>
-								<time datetime="" class="p-info__date">2024.07.08</time>
-							</div>
-						</div>
-					</a>
-				</li>
-			</ul>
-			<div class="p-info__pagination">
-				<ul class="p-info__pagination-list">
-					<!--<li><img class="p-info__pagination-list-prev" src="./images/arrow.png" alt=""></li>-->
-					<li class="is-active">1</li>
-					<li><a href="">2</a></li>
-					<li><a href="">3</a></li>
-					<li><a href="">4</a></li>
-					<li><a href="">5</a></li>
-					<li><a href=""><img class="p-info__pagination-list-next" src="./images/arrow.png" alt=""></a></li>
-				</ul>
+	<main>
+		<section class="c-mv">
+			<figure class="c-mv__img">
+				<img class="u-mobile" src="./images/history-mv-sp.jpg" alt="大王の歴史">
+				<img class="u-desktop" src="./images/history-mv.jpg" alt="大王の歴史">
+			</figure>
+			<div class="c-mv__title-box">
+				<h1 class="c-mv__title js-float-up" data-en="History">大王の歴史</h1>
 			</div>
-			<ul class="c-breadcrumb">
-				<li><a href="/">ホーム</a></li>
-				<li>お知らせ</li>
-			</ul>
-		</div>
-	</section>
-
-</main>
+		</section>
+		<section class="p-history">
+			<div class="l-inner">
+				<p class="p-history__lead js-float-up">
+					大王は、<br>
+					この地でわさび100年、<br>
+					この先もわさび100年。
+				</p>
+				<div class="p-history__body">
+					<p class="p-history__text js-float-right">開拓100年ものがたり。15ヘクタールという広さです。畳を9万枚敷くことが出来る大きさです。開拓者たちが命をかけて切り拓いた魂の結晶です。この大王農場は大正、昭和、平成、令和と4つの時代を重ねてきました。今でこそ「安曇野の原風景」と言われ、日本一の観光農場として知られていますが、目の前の風景はけしてあたりまえの風景ではないのです。この風景の向こう側には開拓者たちのこの地を守ろう、豊かにしようという思いが今でも湧き水のように脈々とながれています。</p>
+					<figure class="p-history__img js-float-left">
+						<img src="./images/history-img1.jpg" alt="" loading="lazy" width="270" height="174">
+					</figure>
+				</div>
+			</div>
+			<div class="p-history__inner">
+				<div class="p-history__title-box">
+					<h2 class="p-history__title js-float-down">大王の歩み</h2>
+				</div>
+				<div class="p-history__wrapper">
+					<div class="c-history">
+						<div class="c-history__scroll js-float-left"><span>scroll</span></div>
+						<div class="c-history__table">
+							<ul class="c-history__table-items js-float-down">
+								<li class="c-history__table-item c-history__year-number" data-year="大正">
+									<div class="c-history__table-year">1915</div>
+									<p class="c-history__table-text c-history__table-text--mw">扇状地に豊富な湧水を利用したわさび畑の開拓に着眼し、5町村にまたがる所有者と交渉を繰り返し2年の歳月をかけて15丁歩の土地を個人の所有とした。当時土地は砂利ばかりの荒地であった。</p>
+								</li>
+								<li class="c-history__table-item">
+									<div class="c-history__table-year">1917</div>
+									<p class="c-history__table-text">
+										土地の所有に成功。<br>
+										3月開拓に着手。</p>
+								</li>
+								<li class="c-history__table-item">
+									<div class="c-history__table-year">1923</div>
+									<p class="c-history__table-text">古畑完成。</p>
+								</li>
+								<li class="c-history__table-item">
+									<div class="c-history__table-year">1926</div>
+									<p class="c-history__table-text">大王畑完成。<br>大王神社をまつる。</p>
+								</li>
+								<li class="c-history__table-item c-history__year-number" data-year="昭和">
+									<div class="c-history__table-year">1935</div>
+									<p class="c-history__table-text c-history__table-text--mw">新畑の開拓終わる。<br>約20年に亘る開拓は終わった。</p>
+								</li>
+								<li class="c-history__table-item">
+									<div class="c-history__table-year">1941</div>
+									<p class="c-history__table-text">初代逝去。<br>享年55歳。</p>
+								</li>
+								<li class="c-history__table-item">
+									<div class="c-history__table-year">1961</div>
+									<p class="c-history__table-text">東畑完成。</p>
+								</li>
+								<li class="c-history__table-item">
+									<div class="c-history__table-year">1964</div>
+									<p class="c-history__table-text">実生苗育成に着手。</p>
+								</li>
+								<li class="c-history__table-item">
+									<div class="c-history__table-year">1976</div>
+									<p class="c-history__table-text">1月売店建設。販売開始。<br>8月現天皇・皇后両陛下御来場。</p>
+								</li>
+								<li class="c-history__table-item">
+									<div class="c-history__table-year">1982</div>
+									<p class="c-history__table-text">4月レストラン棟建設。</p>
+								</li>
+								<li class="c-history__table-item">
+									<div class="c-history__table-year">1984</div>
+									<p class="c-history__table-text">2代目逝去。</p>
+								</li>
+								<li class="c-history__table-item">
+									<div class="c-history__table-year">1985</div>
+									<p class="c-history__table-text">
+										7月22日<br>
+										環境庁名水百選＜安曇野わさび田湧水群＞として3町に亘り認定される。
+									</p>
+								</li>
+								<li class="c-history__table-item c-history__year-number" data-year="平成">
+									<div class="c-history__table-year">1997</div>
+									<p class="c-history__table-text">4月本社屋・工場新設移転。<br>5月売店新設移転。</p>
+								</li>
+								<li class="c-history__table-item">
+									<div class="c-history__table-year">2010</div>
+									<p class="c-history__table-text">4月売店リニューアル</p>
+								</li>
+								<li class="c-history__table-item">
+									<div class="c-history__table-year">2015</div>
+									<p class="c-history__table-text">8月大王わさび農場100年記念館開館</p>
+								</li>
+								<li class="c-history__table-item">
+									<div class="c-history__table-year">2018</div>
+									<p class="c-history__table-text">6月13日代表取締役 深澤幸子就任</p>
+								</li>
+								<li class="c-history__table-item c-history__year-number" data-year="令和">
+									<div class="c-history__table-year">2020</div>
+									<p class="c-history__table-text">4月1日代表取締役 深澤大輔就任</p>
+								</li>
+								<li class="c-history__table-item">
+									<div class="c-history__table-year">2020</div>
+									<p class="c-history__table-text">4月7日～5月30日 新型インフルエンザ等対策特別措置法に基づく緊急事態宣言発令により臨時休場</p>
+								</li>
+								<li class="c-history__table-item">
+									<div class="c-history__table-year">2020</div>
+									<p class="c-history__table-text">12月31日～令和3年1月3日 新型コロナウィルス感染症拡大防止のため臨時休場</p>
+								</li>
+								<li class="c-history__table-item">
+									<div class="c-history__table-year">2021</div>
+									<p class="c-history__table-text">3月1日 株式会社大王 登記変更</p>
+								</li>
+								<li class="c-history__table-item">
+									<div class="c-history__table-year">2021</div>
+									<p class="c-history__table-text">4月16日 大王わさび農場飲食 3 施設リニューアルオープン<br>湧水釜飯「大王庵」、レストラン・オアシス、DAIO‘s CAFE</p>
+								</li>
+							</ul>
+						</div>	
+						<div class="c-history__wrapper">
+							<figure class="c-history__img1 js-float-left">
+								<img src="./images/history-img2.jpg" alt="" loading="lazy" width="148" height="101">
+							</figure>
+							<figure class="c-history__img2 js-float-right">
+								<img src="./images/history-img3.jpg" alt="" loading="lazy" width="165" height="122">
+							</figure>
+							<figure class="c-history__img3 js-float-down">
+								<img src="./images/history-img4.jpg" alt="" loading="lazy" width="214" height="146">
+							</figure>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div class="l-inner">
+				<ul class="c-breadcrumb">
+					<li><a href="/">ホーム</a></li>
+					<li>大王の歴史</li>
+				</ul>	
+			</div>
+		</section>
+	</main>
 <footer class="p-footer">
 	<div class="l-inner">
 		<div class="p-footer__top-wrapper">
 			<ul class="p-footer__menu">
 				<li class="p-footer__menu-item"><a href="/information.html">お知らせ</a></li>
 				<li class="p-footer__menu-item"><a href="">大王わさびについて</a></li>
-				<li class="p-footer__menu-item"><a href="">大王の歴史</a></li>
+				<li class="p-footer__menu-item"><a href="/history.html">大王の歴史</a></li>
 				<li class="p-footer__menu-item"><a href="/points.html">見どころ</a></li>
 				<li class="p-footer__menu-item"><a href="/events.html">イベント</a></li>
 				<li class="p-footer__menu-item"><a href="">クリアボート体験</a></li>
-				<li class="p-footer__menu-item"><a href="">食べる・買う</a></li>
+				<li class="p-footer__menu-item"><a href="/eat.html">食べる・買う</a></li>
 				<li class="p-footer__menu-item"><a href="">旅行会社・団体様</a></li>
 				<li class="p-footer__menu-item"><a href="">スポンサーチーム</a></li>
 				<li class="p-footer__menu-item"><a href="">近隣観光案内</a></li>

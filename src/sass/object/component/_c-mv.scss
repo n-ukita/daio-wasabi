@@ -1,0 +1,78 @@
+@use 'global' as *;
+
+.c-mv {
+	width: 100%;
+	height: 100svh;
+	padding-top: myrem(70);
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.c-mv::before {
+	content: "";
+	position: absolute;
+	background-color: rgba($color: #000000, $alpha: 0.4);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.c-mv__img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+}
+
+.c-mv__img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.c-mv__title-box {
+	margin-top: myrem(300);
+	margin-left: myrem(30);
+
+	@include mq('md') {
+		margin-top: myrem(360);
+		margin-left: myrem(80);
+	}
+}
+
+.c-mv__title {
+	position: relative;
+	padding-top: myrem(64);
+	font-weight: $Regular;
+	font-size: myrem(24);
+	line-height: calc(28 / 24);
+	color: $white;
+	text-shadow: 0 0 myrem(4) rgba($color: #000000, $alpha: 0.05);
+
+	@include mq('md') {
+		padding-top: myrem(88);
+		font-size: myrem(30);
+		line-height: calc(36 / 30);
+	}
+}
+
+.c-mv__title::before {
+	position: absolute;
+	content: attr(data-en);
+	top: 0;
+	left: 0;
+	font-size: myrem(40);
+	font-weight: $Regular;
+	line-height: 1;
+	text-shadow: 0 0 myrem(4) rgba($color: #000000, $alpha: 0.05);
+	color: $white;
+
+	@include mq('md') {
+		font-size: myrem(64);
+	}
+}

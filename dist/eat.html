@@ -8,7 +8,7 @@
 	<meta name="robots" content="noindex,nofollow" />
 	
   <!-- meta情報 -->
-  <title>お知らせ ｜ 大王わさび農場</title>
+  <title>食べる・買う ｜ 大王わさび農場</title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <!-- ogp -->
@@ -25,12 +25,16 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
   <!-- css -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
   <link rel="stylesheet" href="./css/styles.css">
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js' integrity='sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==' crossorigin='anonymous'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js' integrity='sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==' crossorigin='anonymous'></script>
 	<script src="./js/weather.js"></script>
+	<script defer src="./js/splide.js"></script>
   <script defer src="./js/script.js"></script>
 </head>
 <body>
@@ -49,7 +53,7 @@
 							<a href="/points.html" class="p-header__link">見どころ</a>
 						</li>
 						<li class="p-header__list">
-							<a href="" class="p-header__link">食べる・買う</a>
+							<a href="/eat.html" class="p-header__link">食べる・買う</a>
 						</li>
 						<li class="p-header__list">
 							<a href="" class="p-header__link">旅行会社・団体様</a>
@@ -127,91 +131,135 @@
 			</div>
 		</div>
 	</div>
-<main>
-	<section class="p-info">
-		<div class="l-inner">
-			<div class="p-info__mv js-float-up">
-				<h1 class="p-info__mv-title" data-en="Information">お知らせ</h1>
-			</div>	
-			<ul class="p-info__lists">
-				<li class="js-float-up">
-					<a class="p-info__list" href="">
-						<figure class="p-info__img">
-							<img src="./images/example-img.jpg" alt="" loading="lazy">
-						</figure>
-						<div class="p-info__content">
-							<div class="p-info__body">
-								<h2 class="p-info__list-title">ここにタイトルが入ります。ここにタイトルが入ります。</h2>
-								<p class="p-info__list-text">ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。</p>
-							</div>
-							<div class="p-info__meta">
-								<div class="p-info__category">お知らせ</div>
-								<time datetime="" class="p-info__date">2024.07.08</time>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li class="js-float-up">
-					<a class="p-info__list" href="">
-						<figure class="p-info__img">
-							<img src="./images/example-img.jpg" alt="" loading="lazy">
-						</figure>
-						<div class="p-info__content">
-							<div class="p-info__body">
-								<h2 class="p-info__list-title">ここにタイトルが入ります。ここにタイトルが入ります。ここにタイトルが入ります。ここにタイトルが入ります。</h2>
-								<p class="p-info__list-text">ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。</p>
-							</div>
-							<div class="p-info__meta">
-								<div class="p-info__category">お知らせ</div>
-								<time datetime="" class="p-info__date">2024.07.08</time>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li class="js-float-up">
-					<a class="p-info__list" href="">
-						<figure class="p-info__img">
-							<img src="./images/eat-img1.jpg" alt="" loading="lazy">
-						</figure>
-						<div class="p-info__content">
-							<div class="p-info__body">
-								<h2 class="p-info__list-title">ここにタイトルが入ります。ここにタイトルが入ります。ここにタイトルが入ります。ここにタイトルが入ります。</h2>
-								<p class="p-info__list-text">ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。</p>
-							</div>
-							<div class="p-info__meta">
-								<div class="p-info__category">お知らせ</div>
-								<time datetime="" class="p-info__date">2024.07.08</time>
-							</div>
-						</div>
-					</a>
-				</li>
-			</ul>
-			<div class="p-info__pagination">
-				<ul class="p-info__pagination-list">
-					<!--<li><img class="p-info__pagination-list-prev" src="./images/arrow.png" alt=""></li>-->
-					<li class="is-active">1</li>
-					<li><a href="">2</a></li>
-					<li><a href="">3</a></li>
-					<li><a href="">4</a></li>
-					<li><a href="">5</a></li>
-					<li><a href=""><img class="p-info__pagination-list-next" src="./images/arrow.png" alt=""></a></li>
-				</ul>
+	<main>
+		<section class="c-mv">
+			<figure class="c-mv__img">
+				<img class="u-mobile" src="./images/eat-mv-sp.jpg" alt="湧水飯釜 ​大王庵">
+				<img class="u-desktop" src="./images/eat-mv.jpg" alt="湧水飯釜 ​大王庵">
+			</figure>
+			<div class="c-mv__title-box">
+				<h1 class="c-mv__title js-float-up" data-en="Restaurant">湧水飯釜 ​大王庵</h1>
 			</div>
-			<ul class="c-breadcrumb">
-				<li><a href="/">ホーム</a></li>
-				<li>お知らせ</li>
-			</ul>
-		</div>
-	</section>
-
-</main>
+		</section>
+		<section class="p-eat">
+			<div class="l-inner">
+				<div class="p-eat__top-wrapper">
+					<div class="p-eat__box-title-box">
+						<p class="p-eat__box-title">湧水飯釜 ​大王庵</p>
+						<p class="p-eat__box-time">営業時間：11:00～14:30</p>
+					</div>
+					<p class="p-eat__top-text">
+						思い出に残る和笑(なごみ)飯をどうぞ<br>
+						湧水を使って炊いた釜飯と<br>
+						こだわりのお味噌汁にわさびを添えて<br>
+						​もちろん、お蕎麦もご用意しております
+					</p>
+				</div>
+				<div class="p-eat__wrapper">
+					<div class="p-eat__wrapper-img-bg">
+						<figure class="p-eat__wrapper-img">
+							<img src="./images/eat-menu-photo.jpg" alt="和笑（なごみ）飯の写真" loading="lazy" width="272" height="168">
+						</figure>
+					</div>
+					<div class="p-eat__wrapper-body">
+						<h2 class="p-eat__wrapper-title" data-en="Thoughts">
+							湧き水で炊き上げる、<br>
+							自然の恵みを味わうひと時
+						</h2>
+						<p class="p-eat__wrapper-text">
+							わさびの生育に決して欠かせないのがきれいな「水」です。当農場には北アルプスからの伏流水があちらこちらから湧き出ています。そんな清流を使用してごはんを炊くと、ふっくらと甘みのあるおいしいご飯が炊きあがります。<br>
+							そして、１年半かけて懇切丁寧に育て上げた生わさびはすりおろした瞬間からわさび独特のツンとした香りと甘みが広がり、温かいご飯の上に乗せることでその香りが鼻に抜けていきます。<br>
+							「わさびとご飯」というシンプルな二つが組み合わさったとき、​シンプルなのにクセになる、そんな一品が出来上がりました。「わさびを主食として楽しむ」そんな楽しみが大王庵にはあります。<br>
+							こんなに乗せても大丈夫!?と思えるほどたっぷりのわさびをご飯に乗せて食べたとき本物のわさびの味をきっと感じていただけることと思います。当農場ご来場の際は「わさびとご飯」を楽しめる大王庵をご利用ください。<br>
+							ツンと鼻に抜ける感動をぜひ。
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="p-eat__menu">
+				<div class="p-eat__menu-title-box">
+					<h2 class="p-eat__menu-title" data-en="Menu">メニュー</h2>
+				</div>
+				<div class="p-eat__menu-wrapper">
+					<figure class="p-eat__menu-img">
+						<img src="./images/eat-menu.jpg" alt="メニュー">
+					</figure>
+				</div>
+			</div>
+			<div class="p-eat__img-wrapper">
+				<div class="splide" role="group">
+					<div class="splide__track">
+						<ul class="splide__list">
+							<li class="splide__slide p-eat__img">
+								<img src="./images/eat-bottom-img.jpg" alt="湧水飯釜 ​大王庵">
+							</li>
+							<li class="splide__slide p-eat__img">
+								<img src="./images/eat-bottom-img.jpg" alt="湧水飯釜 ​大王庵">
+							</li>
+							<li class="splide__slide p-eat__img">
+								<img src="./images/eat-bottom-img.jpg" alt="湧水飯釜 ​大王庵">
+							</li>
+							<li class="splide__slide p-eat__img">
+								<img src="./images/eat-bottom-img.jpg" alt="湧水飯釜 ​大王庵">
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="l-inner">
+				<div class="p-eat__archive">
+					<div class="p-eat__archive-title-box">
+						<h2 class="p-eat__archive-title">他店舗を見る</h2>
+					</div>
+					<div class="p-eat__archive-wrapper">
+						<a href="" class="p-eat__archive-box">
+							<figure class="p-eat__archive-img">
+								<img src="./images/eat-restaurant.jpg" alt="レストランオアシス" loading="lazy" width="130" height="100">
+							</figure>
+							<div class="p-eat__archive-body">
+								<p class="p-eat__archive-text">レストランオアシス</p>
+							</div>
+						</a>
+						<a href="" class="p-eat__archive-box">
+							<figure class="p-eat__archive-img">
+								<img src="./images/eat-food.jpg" alt="フードコート（仮）" loading="lazy" width="130" height="100">
+							</figure>
+							<div class="p-eat__archive-body">
+								<p class="p-eat__archive-text">フードコート（仮）</p>
+							</div>
+						</a>
+						<a href="" class="p-eat__archive-box">
+							<figure class="p-eat__archive-img">
+								<img src="./images/eat-cafe.jpg" alt="DAIOʼs CAFE" loading="lazy" width="130" height="100">
+							</figure>
+							<div class="p-eat__archive-body">
+								<p class="p-eat__archive-text">DAIOʼs CAFE</p>
+							</div>
+						</a>
+						<a href="" class="p-eat__archive-box">
+							<figure class="p-eat__archive-img">
+								<img src="./images/eat-wasabido.jpg" alt="おみやげ処　和さび堂" loading="lazy" width="130" height="100">
+							</figure>
+							<div class="p-eat__archive-body">
+								<p class="p-eat__archive-text">おみやげ処　和さび堂</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<ul class="c-breadcrumb">
+					<li><a href="/">ホーム</a></li>
+					<li>湧水飯釜 大王庵</li>
+				</ul>	
+			</div>
+		</section>
+	</main>
 <footer class="p-footer">
 	<div class="l-inner">
 		<div class="p-footer__top-wrapper">
 			<ul class="p-footer__menu">
 				<li class="p-footer__menu-item"><a href="/information.html">お知らせ</a></li>
 				<li class="p-footer__menu-item"><a href="">大王わさびについて</a></li>
-				<li class="p-footer__menu-item"><a href="">大王の歴史</a></li>
+				<li class="p-footer__menu-item"><a href="/history.html">大王の歴史</a></li>
 				<li class="p-footer__menu-item"><a href="/points.html">見どころ</a></li>
 				<li class="p-footer__menu-item"><a href="/events.html">イベント</a></li>
 				<li class="p-footer__menu-item"><a href="">クリアボート体験</a></li>
