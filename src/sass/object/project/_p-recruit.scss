@@ -1,0 +1,357 @@
+@use 'global' as *;
+
+.p-recruit {
+	padding-top: myrem(80);
+	padding-bottom: myrem(40);
+
+	@include mq('md') {
+		padding-top: myrem(100);
+		padding-bottom: myrem(70);
+	}
+}
+
+.p-recruit__lead {
+	font-weight: $Regular;
+	font-size: myrem(20);
+	line-height: calc(34 / 20);
+	text-shadow: 0 0 myrem(4) rgba($color: #000000, $alpha: 0.05);
+	max-width: myrem(280);
+	margin-inline: auto;
+
+	@include mq('md') {
+		font-size: myrem(30);
+		line-height: calc(60 / 30);
+		color: #000;
+		max-width: initial;
+		text-align: center;
+	}
+}
+
+.p-recruit__img {
+	margin-top: myrem(80);
+}
+
+.p-recruit__img img {
+	aspect-ratio: 315 / 400;
+	object-fit: cover;
+	width: 100%;
+
+	@include mq('md') {
+		aspect-ratio: 1240 / 500;
+	}
+}
+
+.p-recruit__message {
+	margin-top: myrem(80);
+	padding-bottom: myrem(80);
+	border-bottom: 1px solid #CCC;
+
+	@include mq('md') {
+		margin-top: myrem(160);
+		padding-bottom: myrem(88);
+		display: flex;
+	}
+}
+
+.p-recruit__title {
+	position: relative;
+	padding-top: myrem(22);
+	font-weight: $Medium;
+	font-size: myrem(20);
+	line-height: calc(34 / 20);
+	letter-spacing: 0.05em;
+
+	@include mq('md') {
+		padding-top: myrem(24);
+		font-size: myrem(26);
+		line-height: calc(41 / 26);
+		letter-spacing: 0.01em;
+		flex-shrink: 0;
+
+	}
+}
+
+.p-recruit__title::before {
+	content: attr(data-en);
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-weight: $Regular;
+	font-size: myrem(14);
+	line-height: 1;
+	letter-spacing: 0.01em;
+	color: #999;
+
+	@include mq('md') {
+		font-size: myrem(16);
+	}
+}
+
+.p-recruit__message-body {
+	margin-top: myrem(40);
+
+	@include mq('md') {
+		margin-top: initial;
+		margin-left: myrem(216);
+		display: flex;
+	}
+}
+
+.p-recruit__message-text {
+	font-weight: $Regular;
+	font-size: myrem(15);
+	line-height: calc(24 / 15);
+	letter-spacing: 0.02em;
+
+	@include mq('md') {
+		font-size: myrem(16);
+		line-height: calc(28 / 16);
+		letter-spacing: 0.01em;
+	}
+}
+
+.p-recruit__message-img-wrapper {
+	margin-top: myrem(40);
+	max-width: myrem(315);
+	width: 100%;
+	margin-inline: auto;
+
+	@include mq('md') {
+		margin-top: initial;
+		margin-left: myrem(84);
+		max-width: myrem(240);
+		flex-shrink: 0;
+	}
+}
+
+.p-recruit__message-img img {
+	aspect-ratio: 315 / 325;
+	object-fit: cover;
+	width: 100%;
+
+	@include mq('md') {
+		aspect-ratio: 240 / 248;
+		height: 100%;
+	}
+}
+
+.p-recruit__message-name {
+	margin-top: myrem(24);
+	font-weight: $Regular;
+	font-size: myrem(14);
+	line-height: calc(21 / 14);
+	letter-spacing: 0.01em;
+
+	@include mq('md') {
+		font-size: myrem(15);
+		line-height: calc(22 / 15);
+	}
+}
+
+.p-recruit__message-name span {
+	font-size: myrem(16);
+	line-height: calc(24 / 16);
+
+	@include mq('md') {
+		font-size: myrem(20);
+		line-height: calc(30 / 20);
+	}
+}
+
+.p-recruit__Philosophy {
+	padding-top: myrem(80);
+	padding-bottom: myrem(80);
+	border-bottom: 1px solid #CCC;
+
+	@include mq('md') {
+		display: flex;
+	}	
+}
+
+.p-recruit__Philosophy-box {
+	margin-top: myrem(40);
+	border: 1px solid #CCC;
+	text-align: center;
+	padding: myrem(40) myrem(39);
+
+	@include mq('md') {
+		margin-top: initial;
+		padding: myrem(36) myrem(53) myrem(37);
+		margin-left: auto;
+	}
+}
+
+.p-recruit__Philosophy-text {
+	font-weight: $Medium;
+	font-size: myrem(18);
+	line-height: calc(36 / 18);
+	letter-spacing: 0.01em;
+
+	@include mq('md') {
+		font-size: myrem(20);
+		line-height: calc(44 / 20);
+	}
+}
+
+.p-recruit__voice {
+	padding-top: myrem(80);
+	padding-bottom: myrem(80);
+	border-bottom: 1px solid #CCC;
+
+	@include mq('md') {
+		display: flex;
+	}
+}
+
+.p-recruit__voice-box {
+	margin-top: myrem(36);
+	max-width: myrem(315);
+	width: 100%;
+	margin-inline: auto;
+
+	@include mq('md') {
+		margin-top: initial;
+		margin-inline: initial;
+		max-width: initial;
+		display: flex;
+		flex: 0 0 myrem(840);
+		margin-left: auto;
+	}
+}
+
+.p-recruit__voice-img {
+	@include mq('md') {
+		max-width: myrem(279);
+		width: 100%;
+	}
+}
+
+.p-recruit__voice-img img {
+	aspect-ratio: 315 / 288;
+	object-fit: cover;
+	width: 100%;
+
+	@include mq('md') {
+		aspect-ratio: 279 / 255;
+	}
+
+}
+
+.p-recruit__voice-body {
+	background-color: #F4F1EE;
+	padding: myrem(30) myrem(20);
+
+	@include mq('md') {
+		padding: myrem(32) myrem(33) myrem(33);
+		flex: 0 0 myrem(561);
+	}
+}
+
+.p-recruit__voice-text {
+	font-weight: $Regular;
+	font-size: myrem(16);
+	line-height: calc(28 / 16);
+	letter-spacing: 0.01em;
+}
+
+.p-recruit__Requirements {
+	padding-top: myrem(80);
+	padding-bottom: myrem(96);
+}
+
+.p-recruit__Requirements-wrapper {
+
+	@include mq('md') {
+		display: flex;
+	}
+}
+
+.p-recruit__Requirements-btn-box {
+	margin-top: myrem(27);
+	display: flex;
+	gap: myrem(8);
+
+	@include mq('md') {
+		flex-direction: column;
+		gap: myrem(8);
+	}
+}
+
+.p-recruit__Requirements-btn {
+	text-align: center;
+	font-weight: $Regular;
+	font-size: myrem(14);
+	line-height: calc(19 / 14);
+	background-color: #EEE;
+	padding: myrem(5);
+
+	@include mq('md') {
+		max-width: myrem(220);
+		width: 100%;
+		font-size: myrem(16);
+		line-height: calc(19 / 16);
+		padding: myrem(15) myrem(22);
+	}
+}
+
+.p-recruit__Requirements-btn.is-switch {
+	background-color: #11312B;
+	color: $white;
+}
+
+.p-recruit__Requirements-lists {
+	display: none;
+	margin-top: myrem(14);
+
+	@include mq('md') {
+		margin-top: initial;
+		margin-left: auto;
+		flex: 0 0 myrem(762);
+	}
+}
+
+.p-recruit__Requirements-lists.is-switch {
+	display: block;
+}
+
+.p-recruit__Requirements-list {
+	display: flex;
+	align-items: start;
+	padding-top: myrem(24);
+	padding-bottom: myrem(24);
+	border-bottom: 1px solid #CCC;
+}
+
+.p-recruit__Requirements-list:last-child {
+	border-bottom: none;
+}
+
+.p-recruit__Requirements-title {
+	flex: 0 0 myrem(90);
+	font-weight: $Regular;
+	font-size: myrem(14);
+	line-height: calc(22 / 14);
+	letter-spacing: 0.02em;
+
+	@include mq('md') {
+		flex: 0 0 myrem(144);
+		font-size: myrem(15);
+		line-height: calc(27 / 15);
+		letter-spacing: 0.01em;
+	}
+}
+
+.p-recruit__Requirements-text {
+	font-weight: $Regular;
+	font-size: myrem(14);
+	line-height: calc(22 / 14);
+	letter-spacing: 0.02em;
+
+	@include mq('md') {
+		font-size: myrem(15);
+		line-height: calc(27 / 15);
+		letter-spacing: 0.01em;
+	}
+}
+
+

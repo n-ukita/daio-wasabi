@@ -1,0 +1,52 @@
+@use 'global' as *;
+
+.c-btn4 {
+	display: inline-block;
+	min-width: myrem(315);
+	padding: myrem(10) myrem(24);
+	text-align: center;
+	border: 1px solid rgba($color: #333, $alpha: 0.5);
+	transition: .3s;
+
+	@include mq('md') {
+		min-width: myrem(365);
+		padding: myrem(10) myrem(30);
+	}
+}
+
+.c-btn4 span {
+	display: block;
+	position: relative;
+	font-weight: $Regular;
+	font-size: myrem(14);
+	line-height: calc(25 / 14);
+
+	@include mq('md') {
+		font-size: myrem(16);
+		line-height: calc(28 / 16);
+	}
+}
+
+.c-btn4 span::before {
+	content: "";
+	position: absolute;
+	background: url(../images/arrow.png) no-repeat center center / contain;
+	width: myrem(16);
+	height: myrem(5);
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	transition: .3s;
+}
+
+@media (hover: hover) {
+	.c-btn4:hover {
+		opacity: 1;
+		border:1px solid rgba($color: #333, $alpha: 1);
+	}
+
+	.c-btn4:hover span::before {
+		right: myrem(-5);
+	}
+}
+

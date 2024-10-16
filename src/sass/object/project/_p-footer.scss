@@ -1,6 +1,7 @@
 @use 'global' as *;
 
 .p-footer {
+	position: relative;
 	padding-top: myrem(35);
 	padding-bottom: myrem(30);
 	background-color: #EEEEEE;

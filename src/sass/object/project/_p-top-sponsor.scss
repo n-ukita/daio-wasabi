@@ -2,11 +2,11 @@
 
 .p-top-sponsor {
 	padding-top: myrem(80);
-	padding-bottom: myrem(80);
+	padding-bottom: myrem(40);
 
 	@include mq('md') {
 		padding-top: myrem(100);
-		padding-bottom: myrem(100);
+		padding-bottom: myrem(50);
 	}
 }
 

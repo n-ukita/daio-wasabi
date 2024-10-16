@@ -128,7 +128,6 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 
 
-
 	/*================
 	ボタンアクション
 	=================*/
@@ -185,6 +184,40 @@ document.addEventListener('DOMContentLoaded', function () {
 					});
 			});
 	});
+
+			/*================
+		ビジネス　クリック用
+		=================*/
+
+// 全てのボタンを取得
+const buttons = document.querySelectorAll('.p-recruit__Requirements-btn');
+
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        // ボタンの data-index 属性から番号を取得
+        const index = button.getAttribute('data-index');
+
+        // 対応する要素を取得
+        const targetBusiness = document.getElementById(`list-${index}`);
+
+        // 対応する要素に is-switch クラスが既に付いている場合は処理を終了
+        if (targetBusiness.classList.contains('is-switch')) {
+            return; // 何もせずに終了
+        }
+
+        // 既存の is-switch クラスをすべての要素から削除（要素とボタン両方から削除）
+        document.querySelectorAll('.is-switch').forEach(element => {
+            element.classList.remove('is-switch');
+        });
+
+        // クリックされたボタンに対応する要素に is-switch クラスを追加
+        targetBusiness.classList.add('is-switch');
+
+        // クリックされたボタン自体にも is-switch クラスを追加
+        button.classList.add('is-switch');
+    });
+});
+
 
 
 	/*
@@ -247,7 +280,7 @@ jQuery(function ($) {
 
   // ページトップボタンの表示設定
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 70) {
+    if ($(this).scrollTop() > 500) {
       // 指定px以上のスクロールでボタンを表示
       topBtn.fadeIn();
     } else {

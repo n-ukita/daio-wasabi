@@ -2,10 +2,14 @@
 
 .c-scroll {
 	position: fixed;
-	right:myrem(24);
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 1000;
+	right:myrem(8);
+	bottom: myrem(10);
+	z-index: 2000;
+
+	@include mq('md') {
+		right:myrem(24);
+		bottom: myrem(20);
+	}
 
 }
 

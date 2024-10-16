@@ -1,11 +1,11 @@
 @use 'global' as *;
 
 .p-top-guidance {
-	padding-top: myrem(80);
+	padding-top: myrem(40);
 	padding-bottom: myrem(160);
 
 	@include mq('md') {
-		padding-top: myrem(100);
+		padding-top: myrem(50);
 		padding-bottom: myrem(121);
 		padding-left: myrem(80);
 		padding-right: myrem(100);

@@ -1,0 +1,228 @@
+@use 'global' as *;
+
+.p-contact {
+	padding-top: myrem(70);
+	padding-bottom: myrem(40);
+	background-color: #F7F8F5;
+
+	@include mq('md') {
+		padding-top: myrem(110);
+		padding-bottom: myrem(70);
+	}
+}
+
+.p-contact__mv {
+	margin-top: myrem(120);
+
+	@include mq('md') {
+		margin-top: myrem(160);
+	}
+}
+
+.p-contact__mv-title {
+	position: relative;
+	font-weight: $Regular;
+	font-size: myrem(20);
+	line-height: calc(22 / 20);
+	color: $head-color;
+	padding-top: myrem(64);
+
+	@include mq('md') {
+		font-size: myrem(30);
+		line-height: calc(36 / 30);
+		padding-top: myrem(88);
+	}
+}
+
+.p-contact__mv-title::before {
+	content: attr(data-en);
+	position: absolute;
+	font-weight: $Regular;
+	font-size: myrem(40);
+	line-height: calc(48 / 40);
+	color: #B4B5AC;
+	top: 0;
+	left: 0;
+
+	@include mq('md') {
+		font-size: myrem(64);
+		line-height: 1;
+	}
+}
+
+.p-contact__wrapper {
+	margin-top: myrem(100);
+
+	@include mq('md') {
+		margin-top: myrem(120);
+	}
+}
+
+.p-contact__lists {
+	display: grid;
+	grid-template-columns: repeat(1,1fr);
+	gap: myrem(40);
+	padding-top: myrem(48);
+	padding-bottom: myrem(120);
+	border-top: 1px solid #CCC;
+
+	@include mq('md') {
+		padding-top: myrem(100);
+		gap: myrem(50);
+	}
+}
+
+.p-contact__list {
+	background-color: $white;
+	padding: myrem(40) myrem(34);
+
+	@include mq('md') {
+		max-width: myrem(900);
+		margin-inline: auto;
+		width: 100%;
+	}
+}
+
+.p-contact__list-body {
+}
+
+.p-contact__list-title {
+	text-align: center;
+	font-weight: $Medium;
+	font-size: myrem(18);
+	line-height: calc(20 / 18);
+
+	@include mq('md') {
+		font-size: myrem(24);
+		line-height: calc(26 / 24);
+	}
+}
+
+.p-contact__list-title--lh {
+	line-height: calc(27 / 18);
+}
+
+.p-contact__list-text {
+	margin-top: myrem(16);
+	font-weight: $Regular;
+	font-size: myrem(14);
+	line-height: calc(22 / 14);
+	letter-spacing: 0.02em;
+
+	@include mq('md') {
+		font-size: myrem(16);
+		letter-spacing: 0.01em;
+		text-align: center;
+	}
+}
+
+.p-contact__list-box {
+	margin-top: myrem(24);
+	max-width: myrem(194);
+	margin-inline: auto;
+
+	@include mq('md') {
+		margin-top: myrem(32);
+		max-width: myrem(278);
+	}
+}
+
+.p-contact__list-box--mw {
+	max-width: myrem(228);
+
+	@include mq('md') {
+		max-width: myrem(406);
+	}
+}
+
+.p-contact__list-box--mw1 {
+	max-width: myrem(250);
+
+	@include mq('md') {
+		max-width: myrem(446);
+	}
+}
+
+.p-contact__list-tel,
+.p-contact__list-fax {
+	font-weight: $Medium;
+	font-size: myrem(20);
+	line-height: 1;
+	letter-spacing: 0.05em;
+
+	@include mq('md') {
+		font-weight: $Regular;
+		font-size: myrem(26);
+	}
+}
+
+.p-contact__list-fax {
+	margin-top: myrem(16);
+}
+
+.p-contact__list-num {
+	display: inline-block;
+	padding-left: myrem(18);
+
+	@include mq('md') {
+		padding-left: myrem(25);
+	}
+}
+
+.p-contact__list-num--pl {
+	padding-left: myrem(22);
+
+	@include mq('md') {
+		padding-left: myrem(30);
+	}
+}
+
+.p-contact__list-num--mail {
+	padding-left: myrem(14);
+}
+
+.p-contact__list-num--mail1 {
+	padding-left: myrem(10);
+}
+
+.p-contact__list-tel a {
+	pointer-events: auto;
+
+	@include mq('md') {
+		pointer-events: none;
+	}
+}
+
+.p-contact_list-mail {
+	margin-top: myrem(16);
+	font-weight: $Medium;
+	font-size: myrem(14);
+	line-height: 1;
+	letter-spacing: 0.05em;
+
+	@include mq('md') {
+		font-weight: $Regular;
+		font-size: myrem(26);
+	}
+}
+
+.p-contact_list-mail a span{
+	text-decoration: underline;
+
+	@include mq('md') {
+		text-decoration: none;
+	}
+}
+
+.p-contact_list-mail span {
+	display: inline-block;
+}
+
+@media (hover: hover) {
+	.p-contact__list-tel:hover {
+		span::before {
+			top: myrem(-10);
+		}
+	}
+}
+
