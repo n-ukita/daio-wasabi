@@ -17,6 +17,10 @@
 	}
 }
 
+.c-breadcrumb a {
+	white-space: nowrap;
+}
+
 .c-breadcrumb li + li {
 	padding-left: myrem(20);
 
@@ -29,5 +33,21 @@
 		top: 50%;
 		transform: translateY(-50%);
 		left: 0;
+	}
+}
+
+.c-breadcrumb--archive {
+	padding-top: myrem(120);
+
+	@include mq('md') {
+		padding-top: myrem(160);
+	}
+}
+
+.c-breadcrumb--detail {
+	padding-top: myrem(120);
+
+	@include mq('md') {
+		padding-top: myrem(160);
 	}
 }

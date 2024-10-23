@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+	<!--本番アップ前に消す-->
+	<meta name="robots" content="noindex,nofollow" />
+	
+  <!-- meta情報 -->
+  <title>商品一覧 ｜ 大王わさび農場</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="icon" href="" />
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- css -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js' integrity='sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==' crossorigin='anonymous'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js' integrity='sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==' crossorigin='anonymous'></script>
+	<script defer src="./js/splide.js"></script>
+	<script defer src="./js/ec-script.js"></script>
+</head>
+<body>
+	<header class="p-header p-header--ec">
+		<div class="l-header l-header--ec">
+			<div class="p-header__wrapper">
+				<div class="p-header__logo-box">
+					<div class="p-header__logo">
+						<a href="/"><img class="p-header__logo-img" src="./images/logo.png" alt="大王わさび農場"></a>
+					</div>
+					<div class="p-header__btn p-header__btn--ec">
+						<a href="/ec-top.html" class="c-btn3 c-btn3--ec"><span>ONLINE STORE</span></a>
+					</div>	
+				</div>
+				<ul class="p-header__wrapper-ec-lists">
+					<li class="p-header__wrapper-ec-list">
+						<a href="">商品一覧</a>
+					</li>
+					<li class="p-header__wrapper-ec-list">
+						<a href="">お買い物ガイド</a>
+					</li>
+				</ul>
+				<div class="p-header__icon-box">
+					<div class="p-header__icon p-header__icon--people">
+						<a href="/search.html">
+							<img src="./images/icon-people.svg" alt="検索">
+						</a>
+					</div>
+					<div class="p-header__icon p-header__icon--cart">
+						<a href="/cart.html">
+							<img src="./images/icon-cart.svg" alt="カート">
+						</a>
+					</div>
+					<div class="c-drawer-icon">
+						<div class="c-drawer-icon__bars">
+							<div class="c-drawer-icon__bar"></div>
+							<div class="c-drawer-icon__bar"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="c-drawer-content c-drawer-content--ec">
+		<div class="l-inner">
+			<p class="c-drawer-content__link"><a href="">商品一覧</a></p>
+			<ul class="c-drawer-content__lists">
+				<li class="c-drawer-content__list"><a href="">本わさびをお手軽に</a></li>
+				<li class="c-drawer-content__list"><a href="">わさび漬各種</a></li>
+				<li class="c-drawer-content__list"><a href="">自慢の漬物</a></li>
+				<li class="c-drawer-content__list"><a href="">こだわりのそば</a></li>
+				<li class="c-drawer-content__list"><a href="">わさび風味オリジナル</a></li>
+				<li class="c-drawer-content__list"><a href="">お菓子</a></li>
+				<li class="c-drawer-content__list"><a href="">セット商品</a></li>
+				<li class="c-drawer-content__list"><a href="">おすすめギフト</a></li>
+				<li class="c-drawer-content__list"><a href="">おろし板</a></li>
+			</ul>
+			<div class="c-drawer-content__tel-wrapper">
+				<div class="c-drawer-content__tel-box">
+					<p class="c-drawer-content__tel-text">（観光に関するお問合せ）</p>
+					<p class="c-drawer-content__tel"><a href="tel:0263-82-2118">Tel. 0263-82-2118</a></p>
+					<div class="c-drawer-content__tel-url">daio-info@daiowasabi.co.jp</div>
+				</div>
+				<div class="c-drawer-content__tel-box">
+					<p class="c-drawer-content__tel-text">（通販に関するお問合せ）</p>
+					<p class="c-drawer-content__tel"><a href="tel:0120-210-964">Tel. 0120-210-964</a></p>
+					<div class="c-drawer-content__tel-url">webshop@daiowasabi.jp</div>
+				</div>
+			</div>
+			<div class="c-drawer-content__bottom-wrapper">
+				<ul class="c-drawer-content__bottom-menu">
+					<li class="c-drawer-content__bottom-menu-item c-drawer-content__bottom-menu-item--ec">
+						<a href="">会社概要</a>
+					</li>
+					<li class="c-drawer-content__bottom-menu-item c-drawer-content__bottom-menu-item--ec">
+						<a href="">プライバシーポリシー</a>
+					</li>
+					<li class="c-drawer-content__bottom-menu-item c-drawer-content__bottom-menu-item--ec">
+						<a href="">お問い合わせ</a>
+					</li>
+					<li class="c-drawer-content__bottom-menu-item">
+						<a href="">特定商取引に関する表記</a>
+					</li>
+					<li class="c-drawer-content__bottom-menu-item">
+						<a href="">お買い物ガイド</a>
+					</li>
+				</ul>
+				<div class="c-drawer-content__bottom-box">
+					<div class="c-drawer-content__bottom-sns">
+						<a href="" class="c-drawer-content__bottom-img">
+							<img src="./images/ec-footer-insta.png" alt="インスタグラム">
+						</a>
+						<a href="" class="c-drawer-content__bottom-img">
+							<img src="./images/ec-footer-facebook.png" alt="フェイスブック">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<main>
+		<section class="p-ec-archive">
+			<div class="p-ec-archive__bg">
+				<figure class="p-ec-archive__img">
+					<img class="u-mobile" src="./images/category-mv-img1-sp.png" alt="本わさびをお手軽に">
+					<img class="u-desktop" src="./images/category-mv-img1.png" alt="本わさびをお手軽に">
+				</figure>
+				<div class="l-inner">
+					<div class="p-ec-archive__mv">
+						<h1 class="p-ec-archive__title js-float-up">本わさびをお手軽に</h1>
+					</div>
+				</div>
+			</div>
+			<div class="p-top-shop p-top-shop--ec-archive">
+				<div class="l-inner">
+					<ul class="p-top-shop__items">
+						<li class="p-top-shop__item js-float-down p-top-shop__item--new">
+							<a href="">
+								<figure class="p-top-shop__item-img">
+									<img src="./images/item-img.jpg" alt="" loading="lazy" width="315" height="210">
+								</figure>
+								<div class="p-top-shop__item-body">
+									<h3 class="p-top-shop__item-title">本わさびとそばと漬物のセット(化粧箱入)</h3>
+									<p class="p-top-shop__item-price">¥4,500 / 税込</p>
+									<p class="p-top-shop__text">賞味期限などの商品の説明が入ります。賞味期限などの商品の説明が入ります。賞味期限などの商品の説明が入ります。賞味期限などの商品の説明が入ります。</p>
+								</div>
+							</a>
+						</li>
+						<li class="p-top-shop__item js-float-down">
+							<a href="">
+								<figure class="p-top-shop__item-img">
+									<img src="./images/item-img.jpg" alt="" loading="lazy" width="315" height="210">
+								</figure>
+								<div class="p-top-shop__item-body">
+									<h3 class="p-top-shop__item-title">本わさびとそばと漬物のセット(化粧箱入)</h3>
+									<p class="p-top-shop__item-price">¥4,500 / 税込</p>
+									<p class="p-top-shop__text">賞味期限などの商品の説明が入ります。賞味期限などの商品の説明が入ります。賞味期限などの商品の説明が入ります。賞味期限などの商品の説明が入ります。</p>
+								</div>
+							</a>
+						</li>
+						<li class="p-top-shop__item js-float-down">
+							<a href="">
+								<figure class="p-top-shop__item-img">
+									<img src="./images/item-img.jpg" alt="" loading="lazy" width="315" height="210">
+								</figure>
+								<div class="p-top-shop__item-body">
+									<h3 class="p-top-shop__item-title">本わさびとそばと漬物のセット(化粧箱入)</h3>
+									<p class="p-top-shop__item-price">¥4,500 / 税込</p>
+									<p class="p-top-shop__text">賞味期限などの商品の説明が入ります。賞味期限などの商品の説明が入ります。賞味期限などの商品の説明が入ります。賞味期限などの商品の説明が入ります。</p>
+								</div>
+							</a>
+						</li>
+						<li class="p-top-shop__item js-float-down">
+							<a href="">
+								<figure class="p-top-shop__item-img">
+									<img src="./images/item-img.jpg" alt="" loading="lazy" width="315" height="210">
+								</figure>
+								<div class="p-top-shop__item-body">
+									<h3 class="p-top-shop__item-title">本わさびとそばと漬物のセット(化粧箱入)</h3>
+									<p class="p-top-shop__item-price">¥4,500 / 税込</p>
+									<p class="p-top-shop__text">賞味期限などの商品の説明が入ります。賞味期限などの商品の説明が入ります。賞味期限などの商品の説明が入ります。賞味期限などの商品の説明が入ります。</p>
+								</div>
+							</a>
+						</li>
+						<li class="p-top-shop__item js-float-down p-top-shop__item--new">
+							<a href="">
+								<figure class="p-top-shop__item-img">
+									<img src="./images/item-img.jpg" alt="" loading="lazy" width="315" height="210">
+								</figure>
+								<div class="p-top-shop__item-body">
+									<h3 class="p-top-shop__item-title">本わさびとそばと漬物のセット(化粧箱入)</h3>
+									<p class="p-top-shop__item-price">¥4,500 / 税込</p>
+									<p class="p-top-shop__text">賞味期限などの商品の説明が入ります。賞味期限などの商品の説明が入ります。賞味期限などの商品の説明が入ります。賞味期限などの商品の説明が入ります。</p>
+								</div>
+							</a>
+						</li>
+						<li class="p-top-shop__item js-float-down">
+							<a href="">
+								<figure class="p-top-shop__item-img">
+									<img src="./images/item-img.jpg" alt="" loading="lazy" width="315" height="210">
+								</figure>
+								<div class="p-top-shop__item-body">
+									<h3 class="p-top-shop__item-title">本わさびとそばと漬物のセット(化粧箱入)</h3>
+									<p class="p-top-shop__item-price">¥4,500 / 税込</p>
+									<p class="p-top-shop__text">賞味期限などの商品の説明が入ります。賞味期限などの商品の説明が入ります。賞味期限などの商品の説明が入ります。賞味期限などの商品の説明が入ります。</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="p-info__pagination">
+				<ul class="p-info__pagination-list">
+					<!--<li><img class="p-info__pagination-list-prev" src="./images/arrow.png" alt=""></li>-->
+					<li class="is-active">1</li>
+					<li><a href="">2</a></li>
+					<li><a href="">3</a></li>
+					<li><a href="">4</a></li>
+					<li><a href="">5</a></li>
+					<li><a href=""><img class="p-info__pagination-list-next" src="./images/arrow.png" alt=""></a></li>
+				</ul>
+			</div>
+			<div class="p-ec-top-category p-ec-top-category--archive">
+				<div class="l-inner">
+					<ul class="p-ec-top-category__lists">
+						<li class="p-ec-top-category__list js-stagger">
+							<a href="" class="p-ec-top-category__link">
+								<figure class="p-ec-top-category__img">
+									<img src="./images/category-img1.jpg" alt="本わさびをお手軽に" loading="lazy" width="150" height="100">
+								</figure>
+								<div class="p-ec-top-category__body">
+									<p class="p-ec-top-category__text">本わさびをお手軽に</p>
+								</div>
+							</a>
+						</li>
+						<li class="p-ec-top-category__list js-stagger">
+							<a href="" class="p-ec-top-category__link">
+								<figure class="p-ec-top-category__img">
+									<img src="./images/category-img2.jpg" alt="わさび漬各種" loading="lazy" width="150" height="100">
+								</figure>
+								<div class="p-ec-top-category__body">
+									<p class="p-ec-top-category__text">わさび漬各種</p>
+								</div>
+							</a>
+						</li>
+						<li class="p-ec-top-category__list js-stagger">
+							<a href="" class="p-ec-top-category__link">
+								<figure class="p-ec-top-category__img">
+									<img src="./images/category-img3.jpg" alt="自慢の漬物" loading="lazy" width="150" height="100">
+								</figure>
+								<div class="p-ec-top-category__body">
+									<p class="p-ec-top-category__text">自慢の漬物</p>
+								</div>
+							</a>
+						</li>
+						<li class="p-ec-top-category__list js-stagger">
+							<a href="" class="p-ec-top-category__link">
+								<figure class="p-ec-top-category__img">
+									<img src="./images/category-img4.jpg" alt="こだわりのそば" loading="lazy" width="150" height="100">
+								</figure>
+								<div class="p-ec-top-category__body">
+									<p class="p-ec-top-category__text">こだわりのそば</p>
+								</div>
+							</a>
+						</li>
+						<li class="p-ec-top-category__list js-stagger">
+							<a href="" class="p-ec-top-category__link">
+								<figure class="p-ec-top-category__img">
+									<img src="./images/category-img5.jpg" alt="わさび風味オリジナル" loading="lazy" width="150" height="100">
+								</figure>
+								<div class="p-ec-top-category__body">
+									<p class="p-ec-top-category__text">わさび風味<br class="u-mobile">オリジナル</p>
+								</div>
+							</a>
+						</li>
+						<li class="p-ec-top-category__list js-stagger">
+							<a href="" class="p-ec-top-category__link">
+								<figure class="p-ec-top-category__img">
+									<img src="./images/category-img6.jpg" alt="お菓子" loading="lazy" width="150" height="100">
+								</figure>
+								<div class="p-ec-top-category__body">
+									<p class="p-ec-top-category__text">お菓子</p>
+								</div>
+							</a>
+						</li>
+						<li class="p-ec-top-category__list js-stagger">
+							<a href="" class="p-ec-top-category__link">
+								<figure class="p-ec-top-category__img">
+									<img src="./images/category-img7.jpg" alt="セット商品" loading="lazy" width="150" height="100">
+								</figure>
+								<div class="p-ec-top-category__body">
+									<p class="p-ec-top-category__text">セット商品</p>
+								</div>
+							</a>
+						</li>
+						<li class="p-ec-top-category__list js-stagger">
+							<a href="" class="p-ec-top-category__link">
+								<figure class="p-ec-top-category__img">
+									<img src="./images/category-img8.jpg" alt="おすすめギフト" loading="lazy" width="150" height="100">
+								</figure>
+								<div class="p-ec-top-category__body">
+									<p class="p-ec-top-category__text">おすすめギフト</p>
+								</div>
+							</a>
+						</li>
+						<li class="p-ec-top-category__list js-stagger">
+							<a href="" class="p-ec-top-category__link">
+								<figure class="p-ec-top-category__img">
+									<img src="./images/category-img9.jpg" alt="おろし板" loading="lazy" width="150" height="100">
+								</figure>
+								<div class="p-ec-top-category__body">
+									<p class="p-ec-top-category__text">おろし板</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="l-inner">
+				<ul class="c-breadcrumb c-breadcrumb--archive">
+					<li><a href="/">ホーム</a></li>
+					<li><a href="">商品一覧</a></li>
+					<li>本わさびをお手軽に</li>
+				</ul>	
+			</div>
+		</section>
+	</main>
+	<footer class="p-footer p-footer--ec">
+		<div class="l-inner">
+			<div class="p-footer__top-wrapper p-footer__top-wrapper--ec">
+				<p class="p-footer__menu-item-ec"><a href="">商品一覧</a></p>
+				<ul class="p-footer__menu p-footer__menu--ec">
+					<li class="p-footer__menu-item"><a href="">本わさびをお手軽に</a></li>
+					<li class="p-footer__menu-item"><a href="">わさび漬各種</a></li>
+					<li class="p-footer__menu-item"><a href="">自慢の漬物</a></li>
+					<li class="p-footer__menu-item"><a href="">こだわりのそば</a></li>
+					<li class="p-footer__menu-item"><a href="">わさび風味オリジナル</a></li>
+					<li class="p-footer__menu-item"><a href="">お菓子</a></li>
+					<li class="p-footer__menu-item"><a href="">セット商品</a></li>
+					<li class="p-footer__menu-item"><a href="">おすすめギフト</a></li>
+					<li class="p-footer__menu-item"><a href="">おろし板</a></li>
+				</ul>
+			</div>
+			<div class="p-footer__middle-wrapper">
+				<div class="p-footer__logo-box">
+					<div class="p-footer__logo">
+						<img src="./images/logo.png" alt="大王わさび農場">
+					</div>
+					<div class="p-footer__days">
+						<p class="p-footer__days-text">年中無休</p>
+						<div class="p-footer__days-time">
+							3月～11月 8:00～17:00<br>
+							12月～2月 9:00～16:00
+						</div>
+					</div>
+				</div>
+				<div class="p-footer__tel-box">
+					<p class="p-footer__tel-text">（観光に関するお問合せ）</p>
+					<p class="p-footer__tel"><a href="tel:0263-82-2118">Tel. 0263-82-2118</a></p>
+					<div class="p-footer__tel-url">daio-info@daiowasabi.co.jp</div>
+				</div>
+				<div class="p-footer__tel-box">
+					<p class="p-footer__tel-text">（通販に関するお問合せ）</p>
+					<p class="p-footer__tel"><a href="tel:0120-210-964">Tel. 0120-210-964</a></p>
+					<div class="p-footer__tel-url">webshop@daiowasabi.jp</div>
+				</div>
+				<div class="p-footer__online">
+					<a href="/">
+						<figure class="p-footer__online-img">
+							<img src="./images/ec-footer-img.jpg" alt="大王わさびについて" loading="lazy">
+						</figure>
+						<div class="p-footer__online-body">
+							<p class="p-footer__online-text">WEB SITE</p>
+							<p class="p-footer__online-text">大王わさびについて</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="p-footer__bottom-wrapper">
+				<ul class="p-footer__bottom-menu">
+					<li class="p-footer__bottom-menu-item p-footer__bottom-menu-item--ec">
+						<a href="">会社概要</a>
+					</li>
+					<li class="p-footer__bottom-menu-item p-footer__bottom-menu-item--ec">
+						<a href="">プライバシーポリシー</a>
+					</li>
+					<li class="p-footer__bottom-menu-item p-footer__bottom-menu-item--ec">
+						<a href="">お問い合わせ</a>
+					</li>
+					<li class="p-footer__bottom-menu-item">
+						<a href="">特定商取引に関する表記</a>
+					</li>
+					<li class="p-footer__bottom-menu-item">
+						<a href="">お買い物ガイド</a>
+					</li>
+				</ul>
+				<div class="p-footer__bottom-box">
+					<div class="p-footer__bottom-sns">
+						<a href="" class="p-footer__bottom-img">
+							<img src="./images/ec-footer-insta.png" alt="インスタグラム">
+						</a>
+						<a href="" class="p-footer__bottom-img">
+							<img src="./images/ec-footer-facebook.png" alt="フェイスブック">
+						</a>
+					</div>
+					<small class="p-footer__bottom-copyright">©daiowasabi</small>
+				</div>
+			</div>
+		</div>
+		<div class="c-scroll c-scroll--ec js-pagetop">
+			<div class="c-scroll__btn"><span>Page Top</span></div>
+		</div>
+	</footer>
+</body>
+</html>

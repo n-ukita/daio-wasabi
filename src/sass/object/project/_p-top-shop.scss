@@ -7,6 +7,32 @@
 	border-bottom: 1px solid rgba($color: #CCC, $alpha: 0.5);
 }
 
+.p-top-shop--ec {
+	padding-top: myrem(40);
+	padding-bottom: myrem(120);
+	border-bottom: initial;
+	position: relative;
+
+	@include mq('md') {
+		padding-top: myrem(100);
+		padding-bottom: myrem(160);	
+	}
+}
+
+.p-top-shop--detail {
+	position: relative;
+	background-color: #F7F8F5;
+	border-bottom: initial;
+}
+
+.p-top-shop--ec-archive {
+	padding-top: myrem(40);
+	padding-bottom: myrem(80);
+	border-bottom: initial;
+	position: relative;
+
+}
+
 .p-top-shop::before {
 	content: "";
 	position: absolute;
@@ -22,6 +48,18 @@
 	}
 }
 
+.p-top-shop--ec::before {
+	display: none;
+}
+
+.p-top-shop--ec-archive::before {
+	display: none;
+}
+
+.p-top-shop--detail::before {
+	display: none;
+}
+
 .p-top-shop__title {
 	font-weight: $Medium;
 	font-size: myrem(28);
@@ -33,6 +71,15 @@
 		font-weight: $Regular;
 		font-size: myrem(40);
 		line-height: calc(48 / 40);
+	}
+}
+
+.p-top-shop__title--ec {
+	text-align: center;
+	
+	@include mq('md') {
+		font-size: myrem(30);
+		line-height: calc(36 / 30);
 	}
 }
 

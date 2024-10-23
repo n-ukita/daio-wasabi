@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function () {
   let content = document.querySelector('.c-drawer-content');
   let items = document.querySelectorAll('.p-header__link');
   let headerLogo = document.querySelector('.p-header__logo');
-	let onlineBtn = document.querySelector('.p-header__btn');
+	let onlineBtn = document.querySelector('.p-header__btn--hp');
+	let language = document.querySelector('.p-header__language-btn');
   let menuTL = gsap.timeline();
 
   icon.addEventListener('click',function(){
@@ -22,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
         content.classList.remove('is-active');
         headerLogo.classList.remove('is-active');
 				onlineBtn.classList.remove('is-active');
+				language.classList.remove('is-active');
         bar.classList.remove('is-active');
       },'<')
     }else{//開く
@@ -30,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
         content.classList.add('is-active');
         headerLogo.classList.add('is-active');
 				onlineBtn.classList.add('is-active');
+				language.classList.add('is-active');
         bar.classList.add('is-active');
       })
       .to(content,{autoAlpha:1,clipPath:'inset(0% 0% 0% 0%)',duration:.3 })
@@ -108,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   flows.forEach((flow)=>{
   mm.add('(min-width:768px)',function(){
-    gsap.fromTo(flow,{autoAlpha:0,y:'10%'},{autoAlpha:1,y:'0%',duration:1,stagger:.1,
+    gsap.fromTo(flow,{autoAlpha:0,y:'5%'},{autoAlpha:1,y:'0%',duration:1,stagger:.1,
       scrollTrigger:{
         //設定
         trigger:flow,
@@ -117,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   })
   mm.add('(max-width:767px)',function(){
-      gsap.fromTo(flow,{autoAlpha:0,y:'10%'},{autoAlpha:1,y:'0%',duration:1,stagger:.1,
+      gsap.fromTo(flow,{autoAlpha:0,y:'5%'},{autoAlpha:1,y:'0%',duration:1,stagger:.1,
         scrollTrigger:{
           //設定
           trigger:flow,
@@ -185,8 +188,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			});
 	});
 
-			/*================
-		ビジネス　クリック用
+		/*================
+		クリック用
 		=================*/
 
 // 全てのボタンを取得

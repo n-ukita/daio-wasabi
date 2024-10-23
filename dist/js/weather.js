@@ -3,6 +3,8 @@
 document.addEventListener('DOMContentLoaded', function () {
 
 	
+
+
 		// 気象庁APIの	長野県天気予報データを取得するURL
 		const apiUrl = 'https://www.jma.go.jp/bosai/forecast/data/forecast/200000.json';
 

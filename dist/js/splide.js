@@ -103,4 +103,66 @@ document.addEventListener('DOMContentLoaded', function () {
 		.mount();
 	}
 
+	if(this.location.pathname === '/about.html'){
+		const splide8 = new Splide("#splide8",{
+			type: 'loop',
+			perPage: 6,
+			gap:0,
+			arrows: false,
+			pagination: false,
+			drag:true,
+			autoScroll: {
+				speed:0.5,
+				pauseOnHover: false, // カーソルが乗ったらスクロールを停止させない
+				pauseOnFocus: false, // 矢印をクリックしてもスクロールを停止させない  	
+			},
+			cloneStatus: false, // クローン要素を作らない
+
+			breakpoints: {
+				767: {
+					perPage: 4,
+				},
+			},
+		})
+		.mount( window.splide.Extensions);
+	}
+
+	if(this.location.pathname === '/sponsor.html'){
+		const splide9 = new Splide("#splide9",{
+      autoplay: true,
+      type: "fade",
+      rewind: true,
+      perPage: 1,
+      perMove : 1,
+      pauseOnHover: false,
+      pauseOnFocus: false,
+      interval: 4000,
+      speed: 1500,
+      arrows: false,
+      pagination: false,
+    })
+    .mount();
+	}
+
+	if(this.location.pathname === '/ec-top.html'){
+		const splide10 = new Splide("#splide10",{
+      autoplay: true,
+      type: 'fade',
+      rewind: true,
+      perPage: 1,
+      perMove : 1,
+      pauseOnHover: false,
+      pauseOnFocus: false,
+      interval: 5000,
+      speed: 2000,
+      arrows: false,
+      pagination: true,
+			classes: {
+        pagination: "splide__pagination p-ec-top__pagination",
+        page: "splide__pagination__page p-ec-top__page",
+      },
+		})
+		.mount();
+	}
+
 });

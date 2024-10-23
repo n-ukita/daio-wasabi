@@ -1,0 +1,105 @@
+@use 'global' as *;
+
+.p-ec-top-attention {
+	padding-top: myrem(116);
+	padding-bottom: myrem(80);
+}
+
+.p-ec-top-attention__wrapper {
+	@include mq('md') {
+		display: flex;
+		max-width: myrem(840);
+		width: 100%;
+		justify-content: center;
+		margin-inline: auto;
+	}
+}
+
+.p-ec-top-attention__title-box {
+	text-align: center;
+}
+
+.p-ec-top-attention__title {
+	position: relative;
+	display: inline-block;
+	font-weight: $Medium;
+	font-size: myrem(28);
+	line-height: calc(42 / 28);
+	color: $head-color;
+	padding-top: myrem(22);
+
+	@include mq('md') {
+		font-weight: $Regular;
+		font-size: myrem(30);
+		line-height: calc(36 / 30);
+		padding-top: myrem(24);
+	}
+}
+
+.p-ec-top-attention__title::before {
+	content: attr(data-en);
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	font-weight: $Regular;
+	font-size: myrem(14);
+	line-height: 1;
+	letter-spacing: 0.01em;
+	color: #999;
+
+	@include mq('md') {
+		font-size: myrem(16);
+	}
+}
+
+.p-ec-top-attention__lists {
+	margin-top: myrem(24);
+
+	@include mq('md') {
+		margin-top: initial;
+		flex-grow: 1;
+		margin-left: myrem(100);
+	}
+}
+
+.p-ec-top-attention__list {
+	position: relative;
+	padding-top: myrem(16);
+	padding-bottom: myrem(16);
+	padding-right: myrem(22);
+	border-bottom: 1px solid rgba($color: #CCC, $alpha: 0.5);
+}
+
+.p-ec-top-attention__list::before {
+	content: "";
+	position: absolute;
+	border-right: 1px solid $black;
+	border-bottom: 1px solid $black;
+	width: myrem(8);
+	height: myrem(8);
+	top: 50%;
+	transform: translateY(-50%) rotate(45deg);
+	right: 0;
+}
+
+.p-ec-top-attention__list span {
+	display: inline-block;
+	position: relative;
+	font-weight: $Regular;
+	font-size: myrem(15);
+	line-height: calc(18 / 15);
+	letter-spacing: 0.01em;
+	padding-left: myrem(28);
+}
+
+.p-ec-top-attention__list span::before {
+	content: "";
+	position: absolute;
+	background: url('../images/icon-check.png') no-repeat center center / contain;
+	width: myrem(18);
+	height: myrem(18);
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+}

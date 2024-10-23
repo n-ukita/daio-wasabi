@@ -1,0 +1,61 @@
+@use 'global' as *;
+
+.p-ec-archive {
+	padding-top: myrem(70);
+	padding-bottom: myrem(40);
+	overflow: hidden;
+
+	@include mq('md') {
+		padding-top: myrem(110);
+	}
+}
+
+.p-ec-archive__bg {
+	position: relative;
+	background: linear-gradient(270deg, #F3F6FB 0%, #F1F4F9 100%);
+	overflow: hidden;
+}
+
+.p-ec-archive__img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+.p-ec-archive__img img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.p-ec-archive__mv {
+	padding-top: myrem(56);
+	padding-bottom: myrem(56);
+
+	@include mq('md') {
+		padding-top: myrem(94);
+		padding-bottom: myrem(95);
+	}
+}
+
+.p-ec-archive__title {
+	display: inline-block;
+	font-weight: $Medium;
+	font-size: myrem(28);
+	line-height: calc(42 / 28);
+	color: $head-color;
+	padding-bottom: myrem(9);
+	border-bottom: 1px solid #CCC;
+
+	@include mq('md') {
+		font-weight: $Regular;
+		font-size: myrem(36);
+		line-height: calc(61 / 36);
+		letter-spacing: 0.1em;
+		padding-bottom: myrem(12);
+	}
+}
+

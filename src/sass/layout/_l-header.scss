@@ -7,3 +7,16 @@
 		padding: myrem(24)  myrem(40) myrem(33) myrem(24);
 	}
 }
+
+.l-header--ec {
+	padding-top: myrem(7);
+	padding-bottom: myrem(8);
+	padding-left: myrem(16);
+
+	@include mq('md') {
+		padding-top: myrem(31);
+		padding-bottom: myrem(31);
+		padding-left: myrem(40);
+		padding-right: myrem(100);
+	}
+}

@@ -12,6 +12,12 @@
 	padding-right: myrem(41);
 	padding-bottom: myrem(12);
 }
+
+.c-btn1--media {
+	font-weight: $SemiBold;
+	min-width: myrem(115);
+}
+
 .c-btn1:before {
 	content: "";
 	position: absolute;

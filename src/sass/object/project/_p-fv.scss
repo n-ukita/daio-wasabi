@@ -3,7 +3,7 @@
 .p-fv {
 	width: 100%;
 	overflow: hidden;
-	height: 100svh;
+	/* height: 100svh; */
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -15,6 +15,7 @@
 	@include mq('md') {
 		padding-top: initial;
 		padding-bottom: initial;
+		height: 100svh;
 	}
 }
 
@@ -50,7 +51,7 @@
 }
 
 .p-fv__lists {
-	margin-top: auto;
+	margin-top: myrem(90);
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
 

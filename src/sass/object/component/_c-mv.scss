@@ -71,6 +71,7 @@
 	line-height: 1;
 	text-shadow: 0 0 myrem(4) rgba($color: #000000, $alpha: 0.05);
 	color: $white;
+	white-space: nowrap;
 
 	@include mq('md') {
 		font-size: myrem(64);

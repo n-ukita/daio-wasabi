@@ -1,0 +1,327 @@
+@use 'global' as *;
+
+.p-ec-customer {
+	padding-top: myrem(70);
+	padding-bottom: myrem(40);
+	background-color: #F7F8F5;
+
+	@include mq('md') {
+		padding-top: myrem(110);
+	}
+}
+
+.p-ec-customer__wrapper {
+	background-color: $white;
+	padding: myrem(50) myrem(30);
+
+	@include mq('md') {
+		padding: myrem(80) myrem(60);
+		max-width: myrem(1010);
+		width: 100%;
+		margin-inline: auto;
+	}
+}
+
+.p-ec-customer__title {
+	font-weight: $Medium;
+	font-size: myrem(28);
+	line-height: calc(42 / 28);
+
+	@include mq('md') {
+		font-size: myrem(36);
+		line-height: calc(64 / 36);
+	}
+}
+
+.p-ec-customer__form-wrapper {
+	margin-top: myrem(64);
+
+	@include mq('md') {
+		margin-top: myrem(80);
+	}
+}
+
+.p-ec-customer__form-title {
+	font-weight: $SemiBold;
+	font-size: myrem(20);
+	line-height: calc(36 / 20);
+
+	@include mq('md') {
+		font-size: myrem(24);
+		line-height: calc(43 / 24);
+	}
+}
+
+.ec-customer__required-text {
+	color: #CF1212;
+	text-align: left;
+	margin-top: myrem(8);
+	font-size: myrem(14);
+	line-height: calc(24 / 14);
+
+
+	@include mq('md') {
+		text-align: right;
+		font-weight: $Regular;
+		font-size: myrem(15);
+		line-height: calc(24 / 15);	
+	}
+}
+
+.p-ec-customer__form {
+	margin-top: myrem(24);
+	border: 1px solid #CCC;
+	padding: myrem(8) myrem(20) myrem(32);
+
+	@include mq('md') {
+		margin-top: myrem(32);
+		padding: myrem(16) myrem(72) myrem(48);
+	}
+}
+
+.p-ec-customer__form--mt{
+	margin-top: myrem(8);
+}
+
+.p-ec-customer__form-lists {
+
+}
+
+.p-ec-customer__form-list {
+	@include mq('md') {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.p-ec-customer__form-list{
+	margin-top: myrem(24);
+
+	@include mq('md') {
+		margin-top: myrem(32);
+	}
+}
+
+.p-ec-customer__form-list--mt {
+	margin-top: myrem(48);
+	@include mq('md') {
+		margin-top: myrem(64);
+	}
+}
+
+.p-ec-customer__form-label {
+	font-weight: $Medium;
+	font-size: myrem(16);
+	line-height: 1;
+
+	@include mq('md') {
+		flex: 0 0 myrem(124);
+	}
+}
+
+.p-ec-customer__form-required {
+	position: relative;
+	display: inline-block;
+}
+
+.p-ec-customer__form-required::before {
+	content: '*';
+	position: absolute;
+	top: 0;
+	right: myrem(-10);
+	color: #CF1212;
+}
+
+.p-ec-customer__form-input {
+	margin-top: myrem(12);
+	background-color: #F3F3F3;
+	border: none;
+	width: 100%;
+	font-size: myrem(16);
+	padding: myrem(11) myrem(16);
+
+	@include mq('md') {
+		margin-top: initial;
+		margin-left: myrem(24);
+		padding: myrem(12) myrem(15);
+	}
+}
+
+.p-ec-customer__form-list--text {
+	position: relative;
+}
+
+.p-ec-customer__form-list--text::before {
+	content: "新規会員登録する場合にご記入ください。";
+	position: absolute;
+	font-weight: $SemiBold;
+	color: #555;
+	font-size: myrem(13);
+	line-height: calc(23 / 13);
+	bottom: myrem(-25);
+	left: 0;
+
+	@include mq('md') {
+		left: myrem(150);
+		font-size: myrem(14);
+		line-height: calc(25 / 14);	
+	}
+}
+
+.p-ec-customer__form-password-text {
+	margin-top: myrem(32);
+	text-align: center;
+	font-weight: $SemiBold;
+	font-size: myrem(13);
+	line-height: calc(23 / 13);
+
+	@include mq('md') {
+		margin-top: myrem(24);
+		font-size: myrem(14);
+		line-height: calc(25 / 14);
+	}
+}
+
+.p-ec-customer__form-password-text a {
+	text-decoration: underline;
+}
+
+.p-ec-customer__form-btn {
+	margin-top: myrem(24);
+	text-align: center;
+}
+
+.p-ec-customer__form-box {
+	display: flex;
+	flex-direction: column;
+
+	@include mq('md') {
+		flex-direction: row;
+		width: 100%;
+	}
+}
+
+.p-ec-customer__form-box .p-ec-customer__form-input {
+
+	@include mq('md') {
+		flex-grow: 1;
+	}
+}
+
+.p-ec-customer__form-box2 {
+	display: flex;
+
+	@include mq('md') {
+		align-items: center;
+	}
+}
+
+.p-ec-customer__form-box2 .p-ec-customer__form-input {
+	@include mq('md') {
+		flex: 0 0 myrem(160);
+	}
+}
+
+.p-ec-customer__form-postcode {
+	margin-top: myrem(12);
+	margin-left: myrem(12);
+	font-weight: $Medium;
+	font-size: myrem(14);
+	line-height: 1;
+	letter-spacing: 0.04em;
+	background-color: #999999;
+	padding: myrem(8) myrem(12);
+	flex: 0 0 myrem(90);
+	color: $white;
+
+	@include mq('md') {
+		margin-top: initial;
+		margin-left: myrem(23);
+		padding: myrem(11) myrem(16);
+		white-space: nowrap;
+	}
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none; /* デフォルトの矢印を非表示 */
+}
+select::-ms-expand {
+  display: none; /* デフォルトの矢印を非表示(IE用) */
+}
+
+
+.p-ec-customer__form-list-select {
+	position: relative;
+}
+
+.p-ec-customer__form-list-select {
+	@include mq('md') {
+		max-width: myrem(311);
+		width: 100%;
+	}
+}
+
+.p-ec-customer__form-list-select::before {
+	content: "";
+	position: absolute;
+	width: myrem(12);
+	height: myrem(12);
+	border-bottom: 1.5px solid #AAA;
+	border-right: 1.5px solid #AAA;
+	top: 55%;
+	transform: translateY(-50%) rotate(45deg);
+	right: myrem(20);
+
+	@include mq('md') {
+		top: 45%;
+		transform: translateY(-50%) rotate(45deg);
+		right: 0;
+	}
+}
+
+select {
+	color: #999;
+}
+
+select:focus {
+	color: $black; /* 選択された場合は黒 */
+}
+
+select option {
+	color: $black; /* 通常のオプションは黒 */
+}
+
+.p-ec-customer__form-btn-wrapper {
+	margin-top: myrem(40);
+	display: flex;
+	flex-direction: column;
+	gap: myrem(24);
+	max-width: myrem(275);
+	margin-inline: auto;
+
+	@include mq('md') {
+		flex-direction: row;
+		max-width: initial;
+		gap: myrem(40);
+	}
+}
+
+.p-ec-customer__form-return-btn {
+	display: inline-block;
+	font-weight: $Medium;
+	font-size: myrem(16);
+	line-height: calc(28 / 16);
+
+	@include mq('md') {
+		order: 1;
+		max-width: myrem(253);
+		width: 100%;
+		text-align: left;
+	}
+
+}
+
+.p-ec-customer__form-return-btn a {
+	border-bottom: 1px solid #333;
+}

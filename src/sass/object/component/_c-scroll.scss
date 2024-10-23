@@ -2,7 +2,7 @@
 
 .c-scroll {
 	position: fixed;
-	right:myrem(8);
+	right:myrem(14);
 	bottom: myrem(10);
 	z-index: 2000;
 
@@ -38,6 +38,10 @@
 	padding-top: myrem(57);
 }
 
+.c-scroll--ec span {
+	color: $white;
+}
+
 .c-scroll__btn span::before {
 	content: "";
 	position: absolute;
@@ -48,4 +52,16 @@
 	left: 50%;
 	transform: translateX(-50%);
 	transition: .3s;
+}
+
+.c-scroll--ec span:before {
+	background: url("../images/arrow-scroll-white.png") no-repeat center center / contain;
+}
+
+.c-scroll--ec.is-active span {
+	color: $black;
+}
+
+.c-scroll--ec.is-active .c-scroll__btn span::before {
+	background: url("../images/arrow-scroll.png") no-repeat center center / contain;
 }

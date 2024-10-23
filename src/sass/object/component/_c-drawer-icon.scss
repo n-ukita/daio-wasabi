@@ -56,6 +56,20 @@
 		transform: translateY(-1px) rotate(-15deg);
 		background-color: $black;
 	}
-
 }
 
+.p-header--ec-top .c-drawer-icon__bars.is-active {
+	.c-drawer-icon__bar {
+		background-color: $white;
+	}
+}
+
+.p-header--ec .c-drawer-icon__bar {
+	background-color: $white;
+}
+
+.p-header--ec .c-drawer-icon__bars.is-active {
+	.c-drawer-icon__bar {
+		background-color: $white;
+	}
+}

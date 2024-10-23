@@ -1,0 +1,43 @@
+@use 'global' as *;
+
+.c-btn5 {
+	min-width: myrem(315);
+	display: inline-block;
+	background-color: #235542;
+	color: $white;
+	font-weight: $SemiBold;
+	font-size: myrem(18);
+	line-height: calc(32 / 18);
+	padding-top: myrem(14);
+	padding-bottom: myrem(14);
+
+	@include mq('md') {
+		min-width: myrem(253);
+		padding-top: myrem(12);
+		padding-bottom: myrem(12);
+	}
+}
+
+.c-btn5--customer {
+	min-width: myrem(275);
+
+	@include mq('md') {
+		min-width: myrem(253);
+	}
+}
+
+.c-btn5--form {
+	background-color: #F7F8F5;
+	color: #235542;
+	border: 1px solid #235542;
+
+	@include mq('md') {
+		order: 2;
+	}
+}
+
+.c-btn5--form2 {
+	@include mq('md') {
+		order: 3;
+	}
+}

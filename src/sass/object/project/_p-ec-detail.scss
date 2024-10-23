@@ -1,0 +1,364 @@
+@use 'global' as *;
+
+.p-ec-detail {
+	padding-top: myrem(70);
+	padding-bottom: myrem(40);
+
+	@include mq('md') {
+		padding-top: myrem(110);
+	}
+}
+
+.p-ec-detail__wrapper {
+
+	@include mq('md') {
+		position: relative;
+		margin-top: myrem(100);
+		display: flex;
+		max-width: myrem(1240);
+		width: 100%;
+		margin-inline: auto;
+		overflow: visible;
+		padding-bottom: myrem(80);
+	}
+}
+
+.p-ec-detail__img-box {
+	
+	@include mq('md') {
+		max-width: myrem(777);
+		position: sticky;
+		top: myrem(210);
+		align-self: flex-start; // sticky要素を親の開始位置に揃える
+		height: auto;
+	}
+}
+
+.p-ec-detail__img {
+	display: none;
+}
+
+.p-ec-detail__img.is-display {
+	display: block;
+}
+
+.p-ec-detail__img img {
+	aspect-ratio: 375 / 287;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+
+	@include mq('md') {
+		aspect-ratio: 777 / 597;
+	}
+}
+
+.p-ec-detail__img-lists {
+	margin-top: myrem(12);
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+	gap: myrem(8);
+	padding-left: myrem(20);
+	padding-right: myrem(20);
+
+	@include mq('md') {
+		margin-top: myrem(30);
+		gap: myrem(16);
+		padding-left: initial;
+		padding-right: initial;
+	}
+}
+
+.p-ec-detail__img-list.is-display {
+	border: 1px solid #AAA;
+}
+
+.p-ec-detail__img-list:hover {
+	@include mq('md') {
+		cursor: pointer;
+	}
+}
+
+.p-ec-detail__img-list img {
+	aspect-ratio: 60 / 45;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.p-ec-detail__body {
+	margin-top: myrem(32);
+	padding-left: myrem(30);
+	padding-right: myrem(30);
+
+	@include mq('md') {
+		margin-top: initial;
+		padding-left: myrem(40);
+		padding-right: initial;
+	}
+}
+
+.p-ec-detail__body-title {
+	font-weight: $Medium;
+	font-size: myrem(28);
+	line-height: calc(42 / 28);
+
+	@include mq('md') {
+		font-size: myrem(36);
+		line-height: calc(64 / 36);
+	}
+}
+
+.p-ec-detail__body-price {
+	margin-top: myrem(8);
+	font-weight: $Medium;
+	font-size: myrem(24);
+	line-height: calc(43 / 24);
+	letter-spacing: 0.05em;
+
+	@include mq('md') {
+		font-size: myrem(36);
+		line-height: calc(64 / 36);
+	}
+}
+
+.p-ec-detail__body-text {
+	margin-top: myrem(8);
+	font-weight: $Regular;
+	font-size: myrem(14);
+	line-height: calc(22 / 14);
+	letter-spacing: 0.05em;
+
+	@include mq('md') {
+		font-size: myrem(15);
+		line-height: calc(25 / 15);
+	}
+}
+
+.p-ec-detail__body-box {
+	margin-top: myrem(26);
+}
+
+.p-ec-detail__body-box-text {
+	font-weight: $SemiBold;
+	font-size: myrem(15);
+	line-height: calc(27 / 15);
+	letter-spacing: 0.05em;
+}
+
+.p-ec-detail__body-box-select {
+	margin-top: myrem(10);
+	display: flex;
+	justify-content: space-between;
+	max-width: myrem(315);
+	width: 100%;
+	border: 1px solid $black;
+	padding: myrem(18) myrem(28);
+	font-size: myrem(16);
+	font-weight: $Medium;
+	line-height: calc(23 / 16);
+	color: #458D54;
+}
+
+input[type="number"] {
+	appearance: none;
+	border: none;
+	text-align: center;
+}
+
+/* Chrome, Safari, Edge, Opera用 */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox用 */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.p-ec-detail__decrement {
+}
+
+.p-ec-detail__body-input {
+}
+
+.p-ec-detail__increment {
+}
+
+.p-ec-detail__body-cart {
+	margin-top: myrem(20);
+	border: 1px solid $black;
+	max-width: myrem(315);
+	width: 100%;
+	text-align: center;
+	padding: myrem(18) myrem(28);
+	font-weight: $Medium;
+	font-size: myrem(16);
+	line-height: calc(23 / 16);
+
+	@include mq('md') {
+		margin-top: myrem(21);
+	}
+}
+
+.p-ec-detail__body-about-title {
+	margin-top: myrem(48);
+	font-weight: $SemiBold;
+	font-size: myrem(20);
+	line-height: calc(36 / 20);
+	letter-spacing: 0.05em;
+
+	@include mq('md') {
+		margin-top: myrem(40);
+	}
+}
+
+.p-ec-detail__body-about-text {
+	margin-top: myrem(24);
+	font-weight: $Regular;
+	font-size: myrem(14);
+	line-height: calc(22 / 14);
+	letter-spacing: 0.05em;
+
+	@include mq('md') {
+		font-size: myrem(15);
+		line-height: calc(25 / 15);
+	}
+}
+
+.p-ec-detail__lists-wrapper {
+	margin-top: myrem(40);
+
+	@include mq('md') {
+		margin-top: initial;
+	}
+}
+
+.p-ec-detail__lists-wrapper-title {
+	font-weight: $SemiBold;
+	font-size: myrem(20);
+	line-height: calc(36 / 20);
+	letter-spacing: 0.05em;
+}
+
+.p-ec-detail__lists {
+	margin-top: myrem(24);
+	border-top: 1px solid rgba($color: #CCC, $alpha: 0.5);
+}
+
+.p-ec-detail__list {
+	position: relative;
+	padding-top: myrem(8);
+	padding-bottom: myrem(8);
+	border-bottom: 1px solid rgba($color: #CCC, $alpha: 0.5);
+
+	@include mq('md') {
+		padding-top: myrem(10);
+		padding-bottom: myrem(10);
+	}
+}
+
+.p-ec-detail__list::before {
+	content: "";
+	position: absolute;
+	width: myrem(12);
+	height: myrem(12);
+	border-bottom: 1.5px solid #AAA;
+	border-right: 1.5px solid #AAA;
+	top: myrem(14);
+	right: 0;
+	transform: rotate(-135deg);
+
+	@include mq('md') {
+		top: 50%;
+		transform: translateY(-50%) rotate(-135deg);
+	}
+}
+
+.p-ec-detail__list.is-active::before {
+	top: myrem(6);
+	transform: rotate(45deg);
+
+	@include mq('md') {
+		top: 50%;
+		transform: translateY(-50%) rotate(45deg);
+	}
+}
+
+.p-ec-detail__list-box {
+	@include mq('md') {
+		display: flex;
+	}
+}
+
+.p-ec-detail__list-title {
+	font-weight: $SemiBold;
+	font-size: myrem(14);
+	line-height: calc(22 / 14);
+	letter-spacing: 0.05em;
+
+	@include mq('md') {
+		flex: 0 0 myrem(110);
+		font-size: myrem(13);
+		line-height: 2;
+	}
+}
+
+.p-ec-detail__list-text {
+	margin-top: myrem(8);
+	font-weight: $Regular;
+	font-size: myrem(14);
+	line-height: calc(22 / 14);
+	letter-spacing: 0.05em;
+
+	@include mq('md') {
+		margin-top: initial;
+		font-size: myrem(15);
+		line-height: calc(25 / 15);
+		padding-right: myrem(68);
+	}
+}
+
+.p-ec-detail__bottom-wrapper {
+	margin-top: myrem(40);
+	padding-bottom: myrem(80);
+
+	@include mq('md') {
+		padding-bottom: myrem(100);
+	}
+}
+
+.p-ec-detail__bottom-wrapper-title {
+	font-weight: $SemiBold;
+	font-size: myrem(20);
+	line-height: calc(36 / 20);
+	letter-spacing: 0.05em;
+}
+
+.p-ec-detail__bottom-wrapper-text {
+	position: relative;
+	font-weight: $Regular;
+	font-size: myrem(14);
+	line-height: calc(22 / 14);
+	letter-spacing: 0.05em;
+	padding-left: myrem(20);
+	display: inline-block;
+}
+
+.p-ec-detail__bottom-wrapper-text-mt {
+	margin-top: myrem(24);
+}
+
+.p-ec-detail__bottom-wrapper-text::before {
+	content: "";
+	position: absolute;
+	width: myrem(4);
+	height: myrem(4);
+	border-radius: 50%;
+	background-color: $black;
+	top: myrem(10);
+	left: myrem(8);
+}
+

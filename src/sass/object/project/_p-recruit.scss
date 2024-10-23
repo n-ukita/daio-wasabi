@@ -3,6 +3,7 @@
 .p-recruit {
 	padding-top: myrem(80);
 	padding-bottom: myrem(40);
+	background-color: #F7F8F5;
 
 	@include mq('md') {
 		padding-top: myrem(100);
@@ -230,6 +231,7 @@
 	aspect-ratio: 315 / 288;
 	object-fit: cover;
 	width: 100%;
+	height: 100%;
 
 	@include mq('md') {
 		aspect-ratio: 279 / 255;

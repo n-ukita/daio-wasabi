@@ -32,7 +32,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js' integrity='sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==' crossorigin='anonymous'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js' integrity='sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==' crossorigin='anonymous'></script>
-	<script src="./js/weather.js"></script>
+	<script src="./js/open-weather.js"></script>
   <script defer src="./js/script.js"></script>
 </head>
 <body>
@@ -40,13 +40,13 @@
 		<div class="l-header">
 			<div class="p-header__wrapper">
 				<div class="p-header__logo">
-					<a href="/"><img class="p-header__logo--top" src="./images/header-logo.png" alt="大王わさび農場"></a>
-					<a href="/"><img class="p-header__logo--change" src="./images/header-logo-black.png" alt="大王わさび農場"></a>
+					<a href="/"><img class="p-header__logo--top" src="./images/logo.png" alt="大王わさび農場"></a>
+					<a href="/"><img class="p-header__logo--change" src="./images/logo-black.png" alt="大王わさび農場"></a>
 				</div>
 				<nav class="p-header__nav">
 					<ul class="p-header__lists">
 						<li class="p-header__list">
-							<a href="" class="p-header__link">大王わさびについて</a>
+							<a href="/about.html" class="p-header__link">大王わさびについて</a>
 						</li>
 						<li class="p-header__list">
 							<a href="/points.html" class="p-header__link">見どころ</a>
@@ -58,6 +58,9 @@
 							<a href="/travel.html" class="p-header__link">旅行会社・団体様</a>
 						</li>
 						<li class="p-header__list">
+							<a href="/sponsor.html" class="p-header__link">スポンサーチーム</a>
+						</li>
+						<li class="p-header__list">
 							<a href="/recruit.html" class="p-header__link">採用情報</a>
 						</li>
 						<li class="p-header__list">
@@ -65,8 +68,11 @@
 						</li>
 					</ul>
 				</nav>
-				<div class="p-header__btn">
-					<a href="" class="c-btn3"><span>オンラインストア</span></a>
+				<div class="p-header__language-btn">
+					<a href="" class="p-header__link">JP / <span>EN</span></a>
+				</div>
+				<div class="p-header__btn p-header__btn--hp">
+					<a href="/ec-top.html" class="c-btn3"><span>オンラインストア</span></a>
 				</div>
 				<div class="c-drawer-icon">
           <div class="c-drawer-icon__bars">
@@ -82,10 +88,10 @@
 			<ul class="c-drawer-content__lists">
 				<li class="c-drawer-content__list"><a href="/information.html">お知らせ</a></li>
 				<li class="c-drawer-content__list"><a href="/eat.html">食べる・買う</a></li>
-				<li class="c-drawer-content__list"><a href="">大王わさびについて</a></li>
+				<li class="c-drawer-content__list"><a href="/about.html">大王わさびについて</a></li>
 				<li class="c-drawer-content__list"><a href="/travel.html">旅行会社・団体様</a></li>
 				<li class="c-drawer-content__list"><a href="/history.html">大王の歴史</a></li>
-				<li class="c-drawer-content__list"><a href="">スポンサーチーム</a></li>
+				<li class="c-drawer-content__list"><a href="/sponsor.html">スポンサーチーム</a></li>
 				<li class="c-drawer-content__list"><a href="/points.html">見どころ</a></li>
 				<li class="c-drawer-content__list"><a href="">近隣観光案内</a></li>
 				<li class="c-drawer-content__list"><a href="/events.html">イベント</a></li>
@@ -133,7 +139,7 @@
 	<main>
 		<section class="p-fv">
 			<figure class="p-fv__img">
-					<video src="./movie/fv-movie.mp4" loop autoplay muted></video>
+					<video src="./movie/fv-movie.mp4" playsinline loop autoplay muted></video>
 <!-- 				<img class="u-mobile" src="./images/fv-bg-sp.png" alt="わさび背景" width="375" height="667">
 				<img class="u-desktop" src="./images/fv-bg.png" alt="わさび背景" width="1400" height="800">
  -->			</figure>
@@ -214,7 +220,7 @@
 							</a>
 						</li>
 						<div class="p-top-info__btn u-mobile">
-							<a href="" class="c-btn1">View All</a>
+							<a href="/information.html" class="c-btn1">View All</a>
 						</div>
 					</ul>
 				</div>
@@ -265,7 +271,7 @@
 			</div>
 			<div class="l-inner">
 				<div class="p-top-about__btn js-float-down">
-					<a href="" class="c-btn2">大王わさびについて<div class="c-btn2__arrow"><span></span></div></a>
+					<a href="/about.html" class="c-btn2">大王わさびについて<div class="c-btn2__arrow"><span></span></div></a>
 				</div>
 			</div>
 		</section>
@@ -756,7 +762,7 @@
 					<div class="p-top-sponsor__body js-float-left">
 						<p class="p-top-sponsor__text">ベルギーのプロサッカークラブ「シント＝トロイデンVV（STVV）」のスポンサーを務めています。STVVは、日本人選手も多く活躍するクラブで、国際的な舞台での成功を目指しています。大王わさびはこのクラブを通じて、地元産業の魅力を世界に広めるとともにスポーツを通じた国際交流を応援しています。</p>
 						<div class="p-top-sponsor__btn">
-							<a href="" class="c-btn1">View All</a>
+							<a href="/sponsor.html" class="c-btn1">View All</a>
 						</div>
 					</div>
 				</div>
@@ -858,14 +864,14 @@
 			<div class="p-footer__top-wrapper">
 				<ul class="p-footer__menu">
 					<li class="p-footer__menu-item"><a href="/information.html">お知らせ</a></li>
-					<li class="p-footer__menu-item"><a href="">大王わさびについて</a></li>
+					<li class="p-footer__menu-item"><a href="/about.html">大王わさびについて</a></li>
 					<li class="p-footer__menu-item"><a href="/history.html">大王の歴史</a></li>
 					<li class="p-footer__menu-item"><a href="/points.html">見どころ</a></li>
 					<li class="p-footer__menu-item"><a href="/events.html">イベント</a></li>
 					<li class="p-footer__menu-item"><a href="">クリアボート体験</a></li>
 					<li class="p-footer__menu-item"><a href="/eat.html">食べる・買う</a></li>
-					<li class="p-footer__menu-item"><a href="">旅行会社・団体様</a></li>
-					<li class="p-footer__menu-item"><a href="">スポンサーチーム</a></li>
+					<li class="p-footer__menu-item"><a href="/travel.html">旅行会社・団体様</a></li>
+					<li class="p-footer__menu-item"><a href="/sponsor.html">スポンサーチーム</a></li>
 					<li class="p-footer__menu-item"><a href="">近隣観光案内</a></li>
 					<li class="p-footer__menu-item"><a href="/recruit.html">採用情報</a></li>
 					<li class="p-footer__menu-item"><a href="/contact.html">お問い合わせ</a></li>
@@ -874,7 +880,7 @@
 			<div class="p-footer__middle-wrapper">
 				<div class="p-footer__logo-box">
 					<div class="p-footer__logo">
-						<img src="./images/footer-logo.png" alt="大王わさび農場">
+						<img src="./images/logo-black.png" alt="大王わさび農場">
 					</div>
 					<div class="p-footer__days">
 						<p class="p-footer__days-text">年中無休</p>
