@@ -156,9 +156,6 @@
 	}
 }
 
-.p-ec-cart__lists {
-}
-
 .p-ec-cart__list {
 	padding-top: myrem(24);
 	padding-bottom: myrem(24);
@@ -296,6 +293,7 @@
 	padding-top: myrem(5);
 	padding-left: myrem(20);
 	padding-bottom: myrem(4);
+	color: $black;
 
 	@include mq('md') {
 		font-size: myrem(14);
@@ -366,12 +364,14 @@
 }
 
 .p-ec-cart__text-btn {
+	display: inline-block;
 	margin-top: myrem(48);
 	display: inline-block;
 	font-weight: $Medium;
 	font-size: myrem(16);
 	line-height: calc(28 / 16);
 	border-bottom: 1px solid $black;
+	color: $black;
 
 	@include mq('md') {
 		margin-top: myrem(27);

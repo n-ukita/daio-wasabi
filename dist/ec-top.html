@@ -23,7 +23,8 @@
   <!--google fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <!-- css -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
   <link rel="stylesheet" href="./css/styles.css">
@@ -58,8 +59,8 @@
 				</ul>
 				<div class="p-header__icon-box">
 					<div class="p-header__icon p-header__icon--people">
-						<a href="/search.html">
-							<img src="./images/icon-people.svg" alt="検索">
+						<a href="/ec-customer.html">
+							<img src="./images/icon-people.svg" alt="お客様情報入力">
 						</a>
 					</div>
 					<div class="p-header__icon p-header__icon--cart">
@@ -106,19 +107,16 @@
 			<div class="c-drawer-content__bottom-wrapper">
 				<ul class="c-drawer-content__bottom-menu">
 					<li class="c-drawer-content__bottom-menu-item c-drawer-content__bottom-menu-item--ec">
-						<a href="">会社概要</a>
+						<a href="/company.html">会社概要</a>
 					</li>
 					<li class="c-drawer-content__bottom-menu-item c-drawer-content__bottom-menu-item--ec">
-						<a href="">プライバシーポリシー</a>
+						<a href="/privacy.html">プライバシーポリシー</a>
 					</li>
 					<li class="c-drawer-content__bottom-menu-item c-drawer-content__bottom-menu-item--ec">
-						<a href="">お問い合わせ</a>
+						<a href="/contact.html">お問い合わせ</a>
 					</li>
 					<li class="c-drawer-content__bottom-menu-item">
-						<a href="">特定商取引に関する表記</a>
-					</li>
-					<li class="c-drawer-content__bottom-menu-item">
-						<a href="">お買い物ガイド</a>
+						<a href="/ec-guide.html">お買い物ガイド</a>
 					</li>
 				</ul>
 				<div class="c-drawer-content__bottom-box">
@@ -186,9 +184,18 @@
 						<h2 class="p-ec-top-attention__title js-float-down" data-en="Attention">ご注意</h2>
 					</div>
 					<ul class="p-ec-top-attention__lists">
-						<li class="p-ec-top-attention__list js-float-down"><span>住所間違いにご注意ください</span></li>
-						<li class="p-ec-top-attention__list js-float-down"><span>ご注文後のキャンセルはお受けできません</span></li>
-						<li class="p-ec-top-attention__list js-float-down"><span>PayPay決済導入しました</span></li>
+						<li class="p-ec-top-attention__list">
+							<h3 class="p-ec-top-attention__list-title"><span>住所間違いにご注意ください</span></h3>
+							<p class="p-ec-top-attention__list-text">お届け先住所が正しくない場合、商品が届かないことがあります。ご注文の際は、住所をよくご確認の上、ご入力ください。</p>
+						</li>
+						<li class="p-ec-top-attention__list">
+							<h3 class="p-ec-top-attention__list-title"><span>ご注文後のキャンセルはお受けできません</span></h3>
+							<p class="p-ec-top-attention__list-text">ご注文後のキャンセルはお受けできませんご注文後のキャンセルはお受けできません</p>
+						</li>
+						<li class="p-ec-top-attention__list">
+							<h3 class="p-ec-top-attention__list-title"><span>PayPay決済導入しました</span></h3>
+							<p class="p-ec-top-attention__list-text">PayPay決済を導入しました。PayPay決済を導入しました。PayPay決済を導入しました。</p>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -434,9 +441,6 @@
 					</li>
 					<li class="p-footer__bottom-menu-item p-footer__bottom-menu-item--ec">
 						<a href="">お問い合わせ</a>
-					</li>
-					<li class="p-footer__bottom-menu-item">
-						<a href="">特定商取引に関する表記</a>
 					</li>
 					<li class="p-footer__bottom-menu-item">
 						<a href="">お買い物ガイド</a>

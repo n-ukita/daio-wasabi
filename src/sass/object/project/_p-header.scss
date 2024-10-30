@@ -225,7 +225,6 @@
 	gap: myrem(20);
 	align-items: center;
 	margin-left: auto;
-	/* margin-left: myrem(40); */
 
 	@include mq('md') {
 		gap: myrem(32);
@@ -239,10 +238,6 @@
 	}
 }
 
-.p-header__icon--people {
-
-}
-
 .p-header__icon--people img {
 	width: myrem(24);
 	height: myrem(24);
@@ -251,10 +246,6 @@
 		width: myrem(30);
 		height: myrem(30);
 	}
-}
-
-.p-header__icon--cart {
-
 }
 
 .p-header__icon--cart img {
@@ -279,7 +270,6 @@
 		display: flex;
 		margin-left: auto;
 	}
-	
 }
 
 .p-header__wrapper-ec-list {

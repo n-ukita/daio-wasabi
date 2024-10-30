@@ -30,7 +30,6 @@
 	padding-bottom: myrem(80);
 	border-bottom: initial;
 	position: relative;
-
 }
 
 .p-top-shop::before {
@@ -100,9 +99,6 @@
 	}
 }
 
-.p-top-shop__item {
-}
-
 .p-top-shop__item--new {
 	position: relative;
 }
@@ -130,11 +126,7 @@
 		height: myrem(50);
 		font-size: myrem(14);
 		line-height: calc(25 / 14);
-
 	}
-}
-
-.p-top-shop__item-img {
 }
 
 .p-top-shop__item-img img {

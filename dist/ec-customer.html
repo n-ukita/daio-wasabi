@@ -23,7 +23,8 @@
   <!--google fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <!-- css -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
   <link rel="stylesheet" href="./css/styles.css">
@@ -58,12 +59,12 @@
 				</ul>
 				<div class="p-header__icon-box">
 					<div class="p-header__icon p-header__icon--people">
-						<a href="/search.html">
-							<img src="./images/icon-people.svg" alt="検索">
+						<a href="/ec-customer.html">
+							<img src="./images/icon-people.svg" alt="お客様情報入力">
 						</a>
 					</div>
 					<div class="p-header__icon p-header__icon--cart">
-						<a href="/cart.html">
+						<a href="/ec-cart.html">
 							<img src="./images/icon-cart.svg" alt="カート">
 						</a>
 					</div>
@@ -115,9 +116,6 @@
 						<a href="">お問い合わせ</a>
 					</li>
 					<li class="c-drawer-content__bottom-menu-item">
-						<a href="">特定商取引に関する表記</a>
-					</li>
-					<li class="c-drawer-content__bottom-menu-item">
 						<a href="">お買い物ガイド</a>
 					</li>
 				</ul>
@@ -139,10 +137,10 @@
 			<div class="l-inner">
 				<div class="c-ec-cart">
 					<div class="c-ec-cart__wrapper">
-						<button class="c-ec-cart__btn">1.カート</button>
-						<button class="c-ec-cart__btn is-active">2.お客様情報</button>
-						<button class="c-ec-cart__btn">3.発送・支払方法</button>
-						<button class="c-ec-cart__btn">4.内容確認</button>
+						<div class="c-ec-cart__btn">1.カート</div>
+						<div class="c-ec-cart__btn is-active">2.お客様情報</div>
+						<div class="c-ec-cart__btn">3.発送・支払方法</div>
+						<div class="c-ec-cart__btn">4.内容確認</div>
 					</div>
 				</div>
 			</div>
@@ -162,9 +160,9 @@
 									<input type="password" name="パスワード" id="member-password" class="p-ec-customer__form-input">
 								</li>
 							</ul>
-							<p class="p-ec-customer__form-password-text"><a href="">パスワードをお忘れですか？</a></p>
+							<p class="p-ec-customer__form-password-text"><a href="/ec-payment.html">パスワードをお忘れですか？</a></p>
 							<div class="p-ec-customer__form-btn">
-								<button class="c-btn5 c-btn5--customer"><span>次へ</span></button>
+								<button type="submit" class="c-btn5 c-btn5--customer"><span>次へ</span></button>
 							</div>
 						</form>
 					</div>
@@ -268,8 +266,8 @@
 									</div>
 								</li>
 								<li class="p-ec-customer__form-list">
-									<label for="municipalities" class="p-ec-customer__form-label"><span class="p-ec-customer__form-required">市区町村</span></label>
-									<input type="text" name="市区町村" id="municipalities" class="p-ec-customer__form-input" placeholder="横浜市上北町">
+									<label for="municipalities" class="p-ec-customer__form-label"><span class="p-ec-customer__form-required">市区郡町村</span></label>
+									<input type="text" name="市区郡町村" id="municipalities" class="p-ec-customer__form-input" placeholder="横浜市上北町">
 								</li>
 								<li class="p-ec-customer__form-list">
 									<label for="address" class="p-ec-customer__form-label"><span class="p-ec-customer__form-required">番地</span></label>
@@ -289,9 +287,9 @@
 								</li>
 							</ul>
 							<div class="p-ec-customer__form-btn-wrapper">
-								<button class="c-btn5 c-btn5--customer c-btn5--form"><span>次へ</span></button>
-								<button class="c-btn5 c-btn5--customer c-btn5--form2"><span>会員登録しながら次へ</span></button>
-								<button class="p-ec-customer__form-return-btn"><a href="">戻る</a></button>
+								<button type="submit" class="c-btn5 c-btn5--customer c-btn5--form"><span>次へ</span></button>
+								<button type="submit" class="c-btn5 c-btn5--customer c-btn5--form2"><span>会員登録しながら次へ</span></button>
+								<button type="submit" class="p-ec-customer__form-return-btn"><span>戻る</span></button>
 							</div>
 						</form>
 					</div>
@@ -366,9 +364,6 @@
 					</li>
 					<li class="p-footer__bottom-menu-item p-footer__bottom-menu-item--ec">
 						<a href="">お問い合わせ</a>
-					</li>
-					<li class="p-footer__bottom-menu-item">
-						<a href="">特定商取引に関する表記</a>
 					</li>
 					<li class="p-footer__bottom-menu-item">
 						<a href="">お買い物ガイド</a>

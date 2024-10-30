@@ -14,7 +14,6 @@
 	@include mq('md') {
 		padding-bottom: myrem(80);
 	}
-
 }
 
 .p-top-about__wrapper {
@@ -27,7 +26,6 @@
 	width: inherit;
 	height: inherit;
 	overflow: hidden;
-
 }
 
 .p-top-about__bg {
@@ -46,7 +44,6 @@
 	object-fit: cover;
 	aspect-ratio: 1400 / 800;
 }
-
 
 .p-top-about__box {
 	padding-top: myrem(100);

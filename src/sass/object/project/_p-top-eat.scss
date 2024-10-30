@@ -40,14 +40,12 @@
 		height: 100svh;
 		position: sticky;
 		top: 0;
-		/* margin-bottom: 20vh; */
 	}
 }
 
 .p-top-eat__list:last-child {
 	margin-bottom: initial;
 }
-
 
 .p-top-eat__list-wrapper {
 	@include mq('md') {

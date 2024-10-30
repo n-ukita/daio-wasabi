@@ -43,7 +43,6 @@
 	left: 0;
 	width: myrem(54);
 	height: myrem(20);
-	/* overflow: hidden; */
 
 	@include mq('md') {
 		width: myrem(110);

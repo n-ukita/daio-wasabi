@@ -448,7 +448,6 @@
 	height: myrem(6);
 }
 
-
 .p-travel__pagination {
 	bottom: myrem(-25);
 	gap: myrem(8);
@@ -483,7 +482,7 @@
 	font-weight: $Bold;
 	font-size: myrem(14);
 	line-height: 1;
-	letter-spacing: 0.1;
+	letter-spacing: 0.1em;
 	margin-bottom: myrem(16);
 
 	@include mq('md') {

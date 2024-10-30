@@ -40,7 +40,6 @@
 		margin-inline: initial;
 		grid-template-columns: repeat(3, 1fr);
 		gap: myrem(24);
-
 	}
 }
 
@@ -71,7 +70,6 @@
 	@include mq('md') {
 		aspect-ratio: 120 / 80;
 	}
-
 }
 
 .p-ec-top-category__body {

@@ -375,25 +375,44 @@ jQuery(function ($) {
   });
 
 	// 商品情報のアコーディオン
-	$('.p-ec-detail__list-text').hide();
+$('.p-ec-detail__list-text').hide();
 $('.p-ec-detail__list-text.is-active').show();
 
 $('.p-ec-detail__list').on('click', function() {
   // クリックした要素内のリストテキストを取得
   const $listText = $('.p-ec-detail__list-text', this);
   
-  // すでに is-active クラスが付いている場合は何もしない
+  // すでに is-active クラスが付いている場合は外してスライドアップ
   if ($listText.hasClass('is-active')) {
+    $listText.removeClass('is-active').slideUp();
+    $(this).removeClass('is-active');
     return;
   }
 
-  // すべてのテキスト要素とリスト要素から is-active クラスを外してスライドアップ
-  $('.p-ec-detail__list-text').removeClass('is-active').slideUp();
-  $('.p-ec-detail__list').removeClass('is-active');
-  
-  // クリックした要素に is-active クラスを付けてスライドダウン
+  // 他のテキスト要素は触らずに、クリックした要素に is-active クラスを付けてスライドダウン
   $listText.addClass('is-active').slideDown();
   $(this).addClass('is-active');
 });
+
+	// ご注意のアコーディオン
+	$('.p-ec-top-attention__list-text').hide();
+	$('.p-ec-top-attention__list-text.is-active').show();
+	
+	$('.p-ec-top-attention__list').on('click', function() {
+		// クリックした要素内のリストテキストを取得
+		const $listText = $('.p-ec-top-attention__list-text', this);
+		
+		// すでに is-active クラスが付いている場合は外してスライドアップ
+		if ($listText.hasClass('is-active')) {
+			$listText.removeClass('is-active').slideUp();
+			$(this).removeClass('is-active');
+			return;
+		}
+	
+		// 他のテキスト要素は触らずに、クリックした要素に is-active クラスを付けてスライドダウン
+		$listText.addClass('is-active').slideDown();
+		$(this).addClass('is-active');
+	});
+	
 
 });

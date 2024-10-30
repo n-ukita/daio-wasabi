@@ -10,6 +10,7 @@
 	line-height: calc(32 / 18);
 	padding-top: myrem(14);
 	padding-bottom: myrem(14);
+	text-align: center;
 
 	@include mq('md') {
 		min-width: myrem(253);

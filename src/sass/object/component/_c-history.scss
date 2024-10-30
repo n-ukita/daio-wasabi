@@ -1,8 +1,5 @@
 @use 'global' as *;
 
-.c-history {
-}
-
 .c-history__scroll {
 	text-align: right;
 	padding-right: myrem(30);
@@ -115,9 +112,7 @@
 	top: myrem(-144);
 	left:50%;
 	transform: translateX(-50%);
-
 }
-
 
 .c-history__table-text {
 	margin-top: myrem(14);

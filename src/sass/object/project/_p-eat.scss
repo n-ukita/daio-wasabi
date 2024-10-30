@@ -28,9 +28,6 @@
 	}
 }
 
-.p-eat__box-title-box {
-}
-
 .p-eat__box-title {
 	font-weight: $Regular;
 	font-size: myrem(24);
@@ -101,9 +98,6 @@
 		padding: myrem(161) myrem(41) myrem(147) myrem(42);
 		flex-shrink: 0;
 	}
-}
-
-.p-eat__wrapper-img {
 }
 
 .p-eat__wrapper-img img {
@@ -241,7 +235,6 @@
 }
 
 .p-eat__menu-img {
-
 	@include mq('md') {
 		max-width: myrem(800);
 		margin-inline: auto;
@@ -263,9 +256,6 @@
 		margin-top: myrem(40);
 		padding-bottom: myrem(120);
 	}
-}
-
-.p-eat__img {
 }
 
 .p-eat__img img {

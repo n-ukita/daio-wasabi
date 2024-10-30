@@ -116,9 +116,6 @@
 	}
 }
 
-.p-footer__logo-box {
-}
-
 .p-footer__logo {
 	max-width: myrem(254);
 	width: 100%;
@@ -185,7 +182,6 @@
 .p-footer--ec .p-footer__days-time {
 	color: $white;
 	border-left: 1px solid rgba($white, $alpha: 0.5);
-
 }
 
 .p-footer__tel-box {
@@ -343,9 +339,6 @@
 	gap: myrem(10);
 }
 
-.p-footer__bottom-menu-item {
-}
-
 .p-footer__bottom-menu-item a {
 	opacity: 1;
 	font-weight: $Regular;
@@ -373,6 +366,10 @@
 	bottom: 0;
 	left: 0;
 	transition: .3s ease-in-out;
+}
+
+.p-footer--ec .p-footer__bottom-menu-item a:hover::before {
+	background-color: $white;
 }
 
 .p-footer__bottom-menu-item--ec a::after {

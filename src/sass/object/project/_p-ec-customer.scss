@@ -83,10 +83,6 @@
 	margin-top: myrem(8);
 }
 
-.p-ec-customer__form-lists {
-
-}
-
 .p-ec-customer__form-list {
 	@include mq('md') {
 		display: flex;
@@ -133,11 +129,12 @@
 }
 
 .p-ec-customer__form-input {
+	font-family: $font-sub;
 	margin-top: myrem(12);
 	background-color: #F3F3F3;
 	border: none;
 	width: 100%;
-	font-size: myrem(16);
+	font-size: myrem(14);
 	padding: myrem(11) myrem(16);
 
 	@include mq('md') {
@@ -250,7 +247,6 @@ select::-ms-expand {
   display: none; /* デフォルトの矢印を非表示(IE用) */
 }
 
-
 .p-ec-customer__form-list-select {
 	position: relative;
 }
@@ -280,7 +276,7 @@ select::-ms-expand {
 	}
 }
 
-select {
+.p-ec-customer__form-list-select select {
 	color: #999;
 }
 
@@ -312,6 +308,7 @@ select option {
 	font-weight: $Medium;
 	font-size: myrem(16);
 	line-height: calc(28 / 16);
+	color: $black;
 
 	@include mq('md') {
 		order: 1;
@@ -319,9 +316,8 @@ select option {
 		width: 100%;
 		text-align: left;
 	}
-
 }
 
-.p-ec-customer__form-return-btn a {
+.p-ec-customer__form-return-btn span {
 	border-bottom: 1px solid #333;
 }

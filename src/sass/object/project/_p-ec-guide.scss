@@ -8,7 +8,6 @@
 	@include mq('md') {
 		padding-top: myrem(110);
 	}
-
 }
 
 .p-ec-guide__mv {
@@ -266,4 +265,8 @@
 .p-ec-guide__list-lead--mail a,
 .p-ec-guide__list-box-text--mail a {
 	text-decoration: underline;
+}
+
+.p-ec-guide__list-text-red {
+	color: #CF1212;
 }

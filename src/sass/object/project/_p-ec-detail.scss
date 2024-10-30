@@ -24,7 +24,6 @@
 }
 
 .p-ec-detail__img-box {
-	
 	@include mq('md') {
 		max-width: myrem(777);
 		position: sticky;
@@ -178,15 +177,6 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 
-.p-ec-detail__decrement {
-}
-
-.p-ec-detail__body-input {
-}
-
-.p-ec-detail__increment {
-}
-
 .p-ec-detail__body-cart {
 	margin-top: myrem(20);
 	border: 1px solid $black;
@@ -197,6 +187,7 @@ input[type="number"] {
 	font-weight: $Medium;
 	font-size: myrem(16);
 	line-height: calc(23 / 16);
+	color: $black;
 
 	@include mq('md') {
 		margin-top: myrem(21);
@@ -362,3 +353,11 @@ input[type="number"] {
 	left: myrem(8);
 }
 
+.p-ec-detail__body-input {
+	width: 100%;
+}
+
+.p-ec-detail__decrement,
+.p-ec-detail__increment {
+	color: $black;
+}

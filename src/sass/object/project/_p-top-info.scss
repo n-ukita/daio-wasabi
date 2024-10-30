@@ -78,7 +78,6 @@
 	}
 }
 
-
 .p-top-info__lists {
 
 	@include mq('md') {
@@ -130,8 +129,6 @@
 	left: 0;
 	transition: .5s;
 }
-
-
 
 .p-top-info__list-title {
 	font-weight: $Regular;
