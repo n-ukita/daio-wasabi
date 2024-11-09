@@ -20,9 +20,14 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	top: 0;
-	left: 0;
+	bottom: 0;
+	right: 0;
 	z-index: 0;
+	max-width: myrem(167);
+
+	@include mq('md') {
+		max-width: myrem(630);
+	}
 }
 
 .p-ec-archive__img img {
@@ -32,8 +37,8 @@
 }
 
 .p-ec-archive__mv {
-	padding-top: myrem(56);
-	padding-bottom: myrem(56);
+	padding-top: myrem(35);
+	padding-bottom: myrem(43);
 
 	@include mq('md') {
 		padding-top: myrem(94);
@@ -49,6 +54,7 @@
 	color: $head-color;
 	padding-bottom: myrem(9);
 	border-bottom: 1px solid #CCC;
+	max-width: myrem(167);
 
 	@include mq('md') {
 		font-weight: $Regular;
@@ -56,6 +62,7 @@
 		line-height: calc(61 / 36);
 		letter-spacing: 0.1em;
 		padding-bottom: myrem(12);
+		max-width: initial;
 	}
 }
 

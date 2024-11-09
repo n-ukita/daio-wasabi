@@ -167,8 +167,30 @@
 						カレンダー
 					</div>
 					<div class="p-travel__Reservation-btn js-float-down">
-						<a href="" class="c-btn4"><span>キャンセルポリシーを見る</span></a>
+						<button class="c-btn4 js-open" data-id="3"><span>キャンセルポリシーを見る</span></button>
 					</div>
+					<!-- モーダルここから -->
+					<div class="c-modal c-modal__overlay" id="overlay">
+						<div class="c-modal__window" data-id="modal3">
+							<div class="c-modal__policy">
+								<h3 class="c-modal__policy-title">キャンセルポリシー</h3>
+								<p class="c-modal__policy-text">
+									キャンセルポリシーは以下の通りです。<br>
+									・ご予約日の3日前まで：無料<br>
+									・ご予約日の2日前：50%<br>
+									・ご予約日の前日：100%<br>
+									・当日：100%<br>
+									・無断キャンセル：100%<br>
+									・ご予約の変更・キャンセルは、お電話にてお願いいたします。<br>
+									・お電話の際には、お名前、ご予約日時をお知らせください。<br>
+								</p>
+							</div>
+							<div class="c-modal__btn-wrapper">
+								<button class="c-modal__close-btn js-close"><span>閉じる</span></button>
+							</div>
+						</div>
+					</div>
+					<!-- モーダルここまで -->
 				</div>
 				<div class="p-travel__menu">
 					<h2 class="p-travel__title js-float-down" data-en="Menu">メニュー一覧</h2>

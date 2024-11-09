@@ -311,4 +311,10 @@ jQuery(function ($) {
     return false;
   });
 
+	//　スポンサーページの動画モーダル
+
+	$(()=> {
+		$('.p-sponsor__message-wrapper-img').modalVideo({channel: 'youtube'});
+ 	});
+
 });
